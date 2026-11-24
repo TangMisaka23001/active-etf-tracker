@@ -1,47 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import holdings from '../data/top-holdings.json';
-import { mdToHtml } from '../lib/md';
-import mideaMd from '../../analysis/000333-midea.md?raw';
-import catlMd from '../../analysis/300750-catl.md?raw';
-import nauraMd from '../../analysis/002371-naura.md?raw';
-import cmbMd from '../../analysis/600036-cmb.md?raw';
-import innocloudMd from '../../analysis/300308-innocloud.md?raw';
+import verdicts from '../data/stock-verdicts.json';
 
-const reports: Record<string, string> = {
-  '000333': mideaMd,
-  '300750': catlMd,
-  '002371': nauraMd,
-  '600036': cmbMd,
-  '300308': innocloudMd,
-};
-const fileName: Record<string, string> = {
-  '000333': '000333-midea.md',
-  '300750': '300750-catl.md',
-  '002371': '002371-naura.md',
-  '600036': '600036-cmb.md',
-  '300308': '300308-innocloud.md',
-};
-// 一句话结论与关键数，取自各股龟龟方法分析报告（研究截止日 2026-11-24，股价为 2026-11-23 收盘）。
-const verdicts: Record<
-  string,
-  { op: string; price: 'pass' | 'fail'; coverage: string; support: string; now: string; note?: string }
-> = {
-  '000333': { op: '稳定偏弱、温和回落', price: 'fail', coverage: '0.28', support: '26.78 元', now: '94.13 元' },
-  '300750': { op: '稳定偏改善', price: 'fail', coverage: '50.6%', support: '115.16 元', now: '227.39 元' },
-  '002371': { op: '增长未转化为现金', price: 'fail', coverage: '-0.26%', support: '0 元', now: '541.09 元' },
-  '600036': {
-    op: '稳定偏弱',
-    price: 'pass',
-    coverage: '不适用',
-    support: '—',
-    now: '43.26 元',
-    note: '银行不适用现金回本法，价格判断用 PB 0.92、TTM 股息率 4.66%。',
-  },
-  '300308': { op: '改善', price: 'fail', coverage: '0.11', support: '约 45 元', now: '417.20 元' },
-};
-const stripTitle = (md: string) => md.replace(/^# .*\n/, '');
-const repo = 'https://github.com/TangMisaka23001/active-etf-tracker/blob/main/analysis/';
 const stocks = holdings.stocks;
 const base = import.meta.env.BASE_URL;
 ---
@@ -50,7 +11,7 @@ const base = import.meta.env.BASE_URL;
   <h1>按持仓股票看重叠</h1>
   <p class="lede">
     2026-11-24 PCF Top20 快照里，18 只基金一共出现 174 只不同股票。下面是被最多基金同时持有的
-    5 只：每只列出哪些基金持有它、各占该基金 PCF 篮子多大权重，并用龟龟方法（V5.2.2）做一遍经营与价格分析。
+    5 只，每只都用龟龟方法（V5.2.2）做过一遍经营与价格分析，点股票名进它自己的分析页。
   </p>
   <p class="lede">
     权重口径：PCF 申购赎回清单里该股票占单只基金篮子的比例；“合计权重”是各基金占比相加，仅用于看重叠程度，不代表合计持股比例。
@@ -73,6 +34,7 @@ const base = import.meta.env.BASE_URL;
           <th>六年现金回本覆盖</th>
           <th>趋势参考价</th>
           <th>现价（11-23 收盘）</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -81,7 +43,7 @@ const base = import.meta.env.BASE_URL;
           return (
             <tr>
               <td>
-                <a href={`#stock-${s.code}`}>
+                <a href={`${base}stocks/${s.code}`}>
                   {s.name}（{s.code}）
                 </a>
               </td>
@@ -98,6 +60,9 @@ const base = import.meta.env.BASE_URL;
               <td>{v.coverage}</td>
               <td>{v.support}</td>
               <td>{v.now}</td>
+              <td>
+                <a href={`${base}stocks/${s.code}`}>分析 →</a>
+              </td>
             </tr>
           );
         })}
@@ -108,76 +73,6 @@ const base = import.meta.env.BASE_URL;
     5 只里 4 只价格条件未通过，只有招商银行通过（银行不适用现金回本法，用 PB 与股息率判断）。
     5 只中只有宁德时代在赛博龟龟陪审团站内有收录报告，其余 4 只该站没有页面。
   </p>
-
-  {stocks.map((s) => {
-    const v = verdicts[s.code];
-    return (
-      <section class="stock-sec" id={`stock-${s.code}`}>
-        <h2>
-          {s.name}（{s.code}） · {s.fundCount} 只基金持有，合计权重 {s.totalWeightPct.toFixed(2)}%
-        </h2>
-        <p>
-          经营基准：<strong>{v.op}</strong>；
-          价格条件：
-          {v.price === 'pass' ? (
-            <span class="badge ok">通过 · 安全垫中等</span>
-          ) : (
-            <span class="badge fail">未通过</span>
-          )}
-          {v.note && <span> {v.note}</span>}
-        </p>
-
-        <h3>哪些基金持有它</h3>
-        <div class="tbl-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>基金代码</th>
-                <th>基金简称</th>
-                <th>管理人</th>
-                <th>占该基金 PCF 篮子权重</th>
-              </tr>
-            </thead>
-            <tbody>
-              {s.holders.map((h) => (
-                <tr>
-                  <td>
-                    <a href={`${base}etf/${h.etfCode}`}>{h.etfCode}</a>
-                  </td>
-                  <td>{h.etfShort}</td>
-                  <td>{h.manager}</td>
-                  <td>{h.weightPct.toFixed(2)}%</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        {s.turtleTurtle && (
-          <div class="extlink">
-            外部参考：赛博龟龟陪审团站内也有这只股票的报告——
-            <a href={s.turtleTurtle.companyUrl} target="_blank" rel="noopener">
-              宁德时代 · {s.turtleTurtle.reportCount} 份站内报告
-            </a>
-            ，其中一份与本站同为 V5.2.2 方法（
-            <a href={s.turtleTurtle.v522ReportUrl} target="_blank" rel="noopener">
-              V5.2.2 报告
-            </a>
-            ）。站内报告与本站分析是独立的研究结论，请分别看各自的资料截至日期与风险提示。
-          </div>
-        )}
-
-        <h3>龟龟方法分析（V5.2.2，研究截止日 2026-11-24）</h3>
-        <div class="analysis" set:html={mdToHtml(stripTitle(reports[s.code]))} />
-        <p>
-          完整报告原文（Markdown）：{' '}
-          <a href={`${repo}${fileName[s.code]}`} target="_blank" rel="noopener">
-            {fileName[s.code]}
-          </a>
-        </p>
-      </section>
-    );
-  })}
 
   <h2>方法说明</h2>
   <p>

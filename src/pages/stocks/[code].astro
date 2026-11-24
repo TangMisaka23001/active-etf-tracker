@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import holdings from '../../data/top-holdings.json';
+import verdicts from '../../data/stock-verdicts.json';
+import { mdToHtml } from '../../lib/md';
+
+// 每只股票的分析报告就是它自己的 md 文件（analysis/<code>-*.md），本页只渲染这一只。
+import mideaMd from '../../../analysis/000333-midea.md?raw';
+import catlMd from '../../../analysis/300750-catl.md?raw';
+import nauraMd from '../../../analysis/002371-naura.md?raw';
+import cmbMd from '../../../analysis/600036-cmb.md?raw';
+import innocloudMd from '../../../analysis/300308-innocloud.md?raw';
+const reportByCode: Record<string, string> = {
+  '000333': mideaMd,
+  '300750': catlMd,
+  '002371': nauraMd,
+  '600036': cmbMd,
+  '300308': innocloudMd,
+};
+const fileName: Record<string, string> = {
+  '000333': '000333-midea.md',
+  '300750': '300750-catl.md',
+  '002371': '002371-naura.md',
+  '600036': '600036-cmb.md',
+  '300308': '300308-innocloud.md',
+};
+
+export function getStaticPaths() {
+  return holdings.stocks.map((s) => ({ params: { code: s.code }, props: { stock: s } }));
+}
+const { stock } = Astro.props;
+const v = verdicts[stock.code];
+const stripTitle = (md: string) => md.replace(/^# .*\n/, '');
+const repo = 'https://github.com/TangMisaka23001/active-etf-tracker/blob/main/analysis/';
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout title={`${stock.name}（${stock.code}）· 持仓与龟龟方法分析`}>
+  <p>
+    <a href={`${base}stocks`}>← 回到重叠最高的 5 只</a> · <a href={base}>18 只总榜</a>
+  </p>
+  <h1>
+    {stock.name}（{stock.code}）
+  </h1>
+  <p class="lede">
+    {stock.fundCount} 只基金持有，合计权重 {stock.totalWeightPct.toFixed(2)}%（各基金 PCF
+    篮子占比相加，仅用于看重叠程度）。持仓来自 2026-11-24 PCF Top20 快照，是申赎篮子估算，不等同基金精确持仓。
+  </p>
+  <p>
+    经营基准：<strong>{v.op}</strong>；
+    价格条件：
+    {v.price === 'pass' ? (
+      <span class="badge ok">通过 · 安全垫中等</span>
+    ) : (
+      <span class="badge fail">未通过</span>
+    )}
+    {v.note && <span> {v.note}</span>}
+  </p>
+  <p class="lede">
+    六年现金回本覆盖 {v.coverage} · 趋势参考价 {v.support} · 现价（11-23 收盘）{v.now}
+  </p>
+
+  <h2>哪些基金持有它</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>基金代码</th>
+          <th>基金简称</th>
+          <th>管理人</th>
+          <th>占该基金 PCF 篮子权重</th>
+        </tr>
+      </thead>
+      <tbody>
+        {stock.holders.map((h) => (
+          <tr>
+            <td>
+              <a href={`${base}etf/${h.etfCode}`}>{h.etfCode}</a>
+            </td>
+            <td>{h.etfShort}</td>
+            <td>{h.manager}</td>
+            <td>{h.weightPct.toFixed(2)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  {stock.turtleTurtle && (
+    <div class="extlink">
+      外部参考：赛博龟龟陪审团站内也有这只股票的报告——
+      <a href={stock.turtleTurtle.companyUrl} target="_blank" rel="noopener">
+        {stock.name} · {stock.turtleTurtle.reportCount} 份站内报告
+      </a>
+      ，其中一份与本站同为 V5.2.2 方法（
+      <a href={stock.turtleTurtle.v522ReportUrl} target="_blank" rel="noopener">
+        V5.2.2 报告
+      </a>
+      ）。站内报告与本站分析是独立的研究结论，请分别看各自的资料截至日期与风险提示。
+    </div>
+  )}
+
+  <h2>龟龟方法分析（V5.2.2，研究截止日 2026-11-24）</h2>
+  <div class="analysis" set:html={mdToHtml(stripTitle(reportByCode[stock.code]))} />
+  <p>
+    完整报告原文（Markdown）：{' '}
+    <a href={`${repo}${fileName[stock.code]}`} target="_blank" rel="noopener">
+      {fileName[stock.code]}
+    </a>
+  </p>
+
+  <h2>方法说明</h2>
+  <p>
+    龟龟方法（V5.2.2）：先判断经营，再判断价格。经营用六问定六年基准（稳定 / 改善 / 衰退）；
+    价格用六年现金回本：归母自由现金正常化后按停止增长口径外推六年，加上净现金，看能否覆盖当前市值——覆盖 ≥1
+    才算价格条件通过。银行、保险、地产开发商不适用现金回本法，本站对招商银行改用 ROE / 分红 / 资产质量 / 资本框架判断。
+    额外投资尽调未启用。分析仅供参考，不构成投资建议。
+  </p>
+</Layout>
