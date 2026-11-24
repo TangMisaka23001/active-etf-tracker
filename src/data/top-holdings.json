@@ -283,6 +283,960 @@
         }
       ],
       "turtleTurtle": null
+    },
+    {
+      "code": "600030",
+      "name": "中信证券",
+      "fundCount": 5,
+      "totalWeightPct": 12.46,
+      "holders": [
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 3.4658
+        },
+        {
+          "etfCode": "158906",
+          "etfShort": "华宝均衡精选",
+          "manager": "华宝基金",
+          "weightPct": 3.1263
+        },
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 2.3667
+        },
+        {
+          "etfCode": "158909",
+          "etfShort": "建信均衡优选",
+          "manager": "建信基金",
+          "weightPct": 1.9581
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.5477
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "601166",
+      "name": "兴业银行",
+      "fundCount": 5,
+      "totalWeightPct": 10.67,
+      "holders": [
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 2.971
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 2.4124
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.8458
+        },
+        {
+          "etfCode": "158906",
+          "etfShort": "华宝均衡精选",
+          "manager": "华宝基金",
+          "weightPct": 1.7261
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.7153
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "601288",
+      "name": "农业银行",
+      "fundCount": 5,
+      "totalWeightPct": 10.62,
+      "holders": [
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 3.1397
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 2.2104
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 2.0841
+        },
+        {
+          "etfCode": "158902",
+          "etfShort": "大成红利智选",
+          "manager": "大成基金",
+          "weightPct": 1.7407
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.4448
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "000338",
+      "name": "潍柴动力",
+      "fundCount": 5,
+      "totalWeightPct": 9.67,
+      "holders": [
+        {
+          "etfCode": "581080",
+          "etfShort": "招商价值智选",
+          "manager": "招商基金",
+          "weightPct": 3.7442
+        },
+        {
+          "etfCode": "581030",
+          "etfShort": "华夏质量甄选",
+          "manager": "华夏基金",
+          "weightPct": 2.4587
+        },
+        {
+          "etfCode": "581070",
+          "etfShort": "平安红利景气",
+          "manager": "平安基金",
+          "weightPct": 1.2926
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.1948
+        },
+        {
+          "etfCode": "581060",
+          "etfShort": "永赢景气均衡",
+          "manager": "永赢基金",
+          "weightPct": 0.9773
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/000338-sz/",
+        "reportCount": 3,
+        "v522ReportUrl": null
+      }
+    },
+    {
+      "code": "600887",
+      "name": "伊利股份",
+      "fundCount": 5,
+      "totalWeightPct": 8.01,
+      "holders": [
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 2.1335
+        },
+        {
+          "etfCode": "158909",
+          "etfShort": "建信均衡优选",
+          "manager": "建信基金",
+          "weightPct": 1.6819
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.6717
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.3594
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 1.1658
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/600887-sh/",
+        "reportCount": 3,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-600887-sh-v522-codex/"
+      }
+    },
+    {
+      "code": "601318",
+      "name": "中国平安",
+      "fundCount": 4,
+      "totalWeightPct": 13.63,
+      "holders": [
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 5.1091
+        },
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 3.8322
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 2.5058
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 2.1823
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/601318-sh/",
+        "reportCount": 1,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-601318-sh-v522-zcode/"
+      }
+    },
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "fundCount": 4,
+      "totalWeightPct": 9.76,
+      "holders": [
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 3.0097
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 2.8035
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 2.1222
+        },
+        {
+          "etfCode": "158909",
+          "etfShort": "建信均衡优选",
+          "manager": "建信基金",
+          "weightPct": 1.8242
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "600919",
+      "name": "江苏银行",
+      "fundCount": 4,
+      "totalWeightPct": 7.86,
+      "holders": [
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 2.2401
+        },
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 2.1413
+        },
+        {
+          "etfCode": "158902",
+          "etfShort": "大成红利智选",
+          "manager": "大成基金",
+          "weightPct": 1.7757
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.7035
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "fundCount": 4,
+      "totalWeightPct": 7.72,
+      "holders": [
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 3.16
+        },
+        {
+          "etfCode": "158906",
+          "etfShort": "华宝均衡精选",
+          "manager": "华宝基金",
+          "weightPct": 1.9479
+        },
+        {
+          "etfCode": "581000",
+          "etfShort": "摩根大盘成长",
+          "manager": "摩根基金",
+          "weightPct": 1.8792
+        },
+        {
+          "etfCode": "581010",
+          "etfShort": "汇添富均衡智选",
+          "manager": "汇添富基金",
+          "weightPct": 0.7334
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "fundCount": 4,
+      "totalWeightPct": 7.01,
+      "holders": [
+        {
+          "etfCode": "581030",
+          "etfShort": "华夏质量甄选",
+          "manager": "华夏基金",
+          "weightPct": 2.5297
+        },
+        {
+          "etfCode": "158909",
+          "etfShort": "建信均衡优选",
+          "manager": "建信基金",
+          "weightPct": 2.151
+        },
+        {
+          "etfCode": "581000",
+          "etfShort": "摩根大盘成长",
+          "manager": "摩根基金",
+          "weightPct": 1.4106
+        },
+        {
+          "etfCode": "581010",
+          "etfShort": "汇添富均衡智选",
+          "manager": "汇添富基金",
+          "weightPct": 0.9175
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/002714-sz/",
+        "reportCount": 1,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-002714-sz-v522-zcode/"
+      }
+    },
+    {
+      "code": "002142",
+      "name": "宁波银行",
+      "fundCount": 4,
+      "totalWeightPct": 6.76,
+      "holders": [
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 2.6119
+        },
+        {
+          "etfCode": "581090",
+          "etfShort": "华泰柏瑞价值精选",
+          "manager": "华泰柏瑞基金",
+          "weightPct": 2.1227
+        },
+        {
+          "etfCode": "581070",
+          "etfShort": "平安红利景气",
+          "manager": "平安基金",
+          "weightPct": 1.7367
+        },
+        {
+          "etfCode": "581010",
+          "etfShort": "汇添富均衡智选",
+          "manager": "汇添富基金",
+          "weightPct": 0.2839
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "fundCount": 3,
+      "totalWeightPct": 7.49,
+      "holders": [
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 3.9634
+        },
+        {
+          "etfCode": "158906",
+          "etfShort": "华宝均衡精选",
+          "manager": "华宝基金",
+          "weightPct": 2.0358
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.4868
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/603259-sh/",
+        "reportCount": 3,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-603259-sh-v522-zcode/"
+      }
+    },
+    {
+      "code": "601939",
+      "name": "建设银行",
+      "fundCount": 3,
+      "totalWeightPct": 7.08,
+      "holders": [
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 3.7892
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 2.116
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 1.178
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "002602",
+      "name": "世纪华通",
+      "fundCount": 3,
+      "totalWeightPct": 6.93,
+      "holders": [
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 3.2999
+        },
+        {
+          "etfCode": "158906",
+          "etfShort": "华宝均衡精选",
+          "manager": "华宝基金",
+          "weightPct": 2.6744
+        },
+        {
+          "etfCode": "581000",
+          "etfShort": "摩根大盘成长",
+          "manager": "摩根基金",
+          "weightPct": 0.9555
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "fundCount": 3,
+      "totalWeightPct": 6.74,
+      "holders": [
+        {
+          "etfCode": "581000",
+          "etfShort": "摩根大盘成长",
+          "manager": "摩根基金",
+          "weightPct": 3.142
+        },
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 2.2898
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.31
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "601988",
+      "name": "中国银行",
+      "fundCount": 3,
+      "totalWeightPct": 6.72,
+      "holders": [
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 2.4559
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 2.1664
+        },
+        {
+          "etfCode": "158902",
+          "etfShort": "大成红利智选",
+          "manager": "大成基金",
+          "weightPct": 2.0964
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "002415",
+      "name": "海康威视",
+      "fundCount": 3,
+      "totalWeightPct": 6.7,
+      "holders": [
+        {
+          "etfCode": "581080",
+          "etfShort": "招商价值智选",
+          "manager": "招商基金",
+          "weightPct": 3.2553
+        },
+        {
+          "etfCode": "581030",
+          "etfShort": "华夏质量甄选",
+          "manager": "华夏基金",
+          "weightPct": 2.4939
+        },
+        {
+          "etfCode": "581020",
+          "etfShort": "华安均衡慧选",
+          "manager": "华安基金",
+          "weightPct": 0.949
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/002415-sz/",
+        "reportCount": 5,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-002415-sz-v522-zcode/"
+      }
+    },
+    {
+      "code": "601919",
+      "name": "中远海控",
+      "fundCount": 3,
+      "totalWeightPct": 6.3,
+      "holders": [
+        {
+          "etfCode": "158902",
+          "etfShort": "大成红利智选",
+          "manager": "大成基金",
+          "weightPct": 3.7735
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.3447
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.1843
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/601919-sh/",
+        "reportCount": 3,
+        "v522ReportUrl": null
+      }
+    },
+    {
+      "code": "601225",
+      "name": "陕西煤业",
+      "fundCount": 3,
+      "totalWeightPct": 5.74,
+      "holders": [
+        {
+          "etfCode": "158902",
+          "etfShort": "大成红利智选",
+          "manager": "大成基金",
+          "weightPct": 2.2024
+        },
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 1.8882
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.6475
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "002001",
+      "name": "新和成",
+      "fundCount": 3,
+      "totalWeightPct": 5.69,
+      "holders": [
+        {
+          "etfCode": "158905",
+          "etfShort": "工银红利",
+          "manager": "工银瑞信基金",
+          "weightPct": 2.4948
+        },
+        {
+          "etfCode": "581070",
+          "etfShort": "平安红利景气",
+          "manager": "平安基金",
+          "weightPct": 1.7477
+        },
+        {
+          "etfCode": "581020",
+          "etfShort": "华安均衡慧选",
+          "manager": "华安基金",
+          "weightPct": 1.4476
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/002001-sz/",
+        "reportCount": 1,
+        "v522ReportUrl": null
+      }
+    },
+    {
+      "code": "601857",
+      "name": "中国石油",
+      "fundCount": 3,
+      "totalWeightPct": 5.47,
+      "holders": [
+        {
+          "etfCode": "158905",
+          "etfShort": "工银红利",
+          "manager": "工银瑞信基金",
+          "weightPct": 2.4877
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 1.7849
+        },
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.1945
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "000651",
+      "name": "格力电器",
+      "fundCount": 3,
+      "totalWeightPct": 5.44,
+      "holders": [
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 2.65
+        },
+        {
+          "etfCode": "158902",
+          "etfShort": "大成红利智选",
+          "manager": "大成基金",
+          "weightPct": 2.0504
+        },
+        {
+          "etfCode": "581010",
+          "etfShort": "汇添富均衡智选",
+          "manager": "汇添富基金",
+          "weightPct": 0.7397
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/000651-sz/",
+        "reportCount": 6,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-000651-sz-v522-codex/"
+      }
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "fundCount": 3,
+      "totalWeightPct": 5.38,
+      "holders": [
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 2.0791
+        },
+        {
+          "etfCode": "158906",
+          "etfShort": "华宝均衡精选",
+          "manager": "华宝基金",
+          "weightPct": 1.9756
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.3237
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "000725",
+      "name": "京东方A",
+      "fundCount": 3,
+      "totalWeightPct": 5.36,
+      "holders": [
+        {
+          "etfCode": "158903",
+          "etfShort": "鹏华价值臻选",
+          "manager": "鹏华基金",
+          "weightPct": 2.078
+        },
+        {
+          "etfCode": "581050",
+          "etfShort": "易方达品质均衡",
+          "manager": "易方达基金",
+          "weightPct": 1.6808
+        },
+        {
+          "etfCode": "158909",
+          "etfShort": "建信均衡优选",
+          "manager": "建信基金",
+          "weightPct": 1.5974
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "600900",
+      "name": "长江电力",
+      "fundCount": 3,
+      "totalWeightPct": 5.21,
+      "holders": [
+        {
+          "etfCode": "158908",
+          "etfShort": "天弘均衡量化",
+          "manager": "天弘基金",
+          "weightPct": 1.7699
+        },
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.7412
+        },
+        {
+          "etfCode": "158909",
+          "etfShort": "建信均衡优选",
+          "manager": "建信基金",
+          "weightPct": 1.6992
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/600900-sh/",
+        "reportCount": 1,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-600900-sh-v522-zcode/"
+      }
+    },
+    {
+      "code": "002475",
+      "name": "立讯精密",
+      "fundCount": 3,
+      "totalWeightPct": 4.68,
+      "holders": [
+        {
+          "etfCode": "158907",
+          "etfShort": "国泰鑫汇均衡",
+          "manager": "国泰基金",
+          "weightPct": 3.1164
+        },
+        {
+          "etfCode": "581000",
+          "etfShort": "摩根大盘成长",
+          "manager": "摩根基金",
+          "weightPct": 1.2782
+        },
+        {
+          "etfCode": "581010",
+          "etfShort": "汇添富均衡智选",
+          "manager": "汇添富基金",
+          "weightPct": 0.2806
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/002475-sz/",
+        "reportCount": 1,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-002475-sz-v522-zcode/"
+      }
+    },
+    {
+      "code": "300760",
+      "name": "迈瑞医疗",
+      "fundCount": 3,
+      "totalWeightPct": 4.4,
+      "holders": [
+        {
+          "etfCode": "581030",
+          "etfShort": "华夏质量甄选",
+          "manager": "华夏基金",
+          "weightPct": 2.7898
+        },
+        {
+          "etfCode": "581020",
+          "etfShort": "华安均衡慧选",
+          "manager": "华安基金",
+          "weightPct": 1.2386
+        },
+        {
+          "etfCode": "581010",
+          "etfShort": "汇添富均衡智选",
+          "manager": "汇添富基金",
+          "weightPct": 0.371
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "601998",
+      "name": "中信银行",
+      "fundCount": 3,
+      "totalWeightPct": 4.39,
+      "holders": [
+        {
+          "etfCode": "158900",
+          "etfShort": "南方均衡配置",
+          "manager": "南方基金",
+          "weightPct": 1.7208
+        },
+        {
+          "etfCode": "158902",
+          "etfShort": "大成红利智选",
+          "manager": "大成基金",
+          "weightPct": 1.5314
+        },
+        {
+          "etfCode": "158901",
+          "etfShort": "富国价值优选",
+          "manager": "富国基金",
+          "weightPct": 1.1416
+        }
+      ],
+      "turtleTurtle": null
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "fundCount": 3,
+      "totalWeightPct": 4.05,
+      "holders": [
+        {
+          "etfCode": "581030",
+          "etfShort": "华夏质量甄选",
+          "manager": "华夏基金",
+          "weightPct": 2.1355
+        },
+        {
+          "etfCode": "581000",
+          "etfShort": "摩根大盘成长",
+          "manager": "摩根基金",
+          "weightPct": 0.9703
+        },
+        {
+          "etfCode": "581020",
+          "etfShort": "华安均衡慧选",
+          "manager": "华安基金",
+          "weightPct": 0.9481
+        }
+      ],
+      "turtleTurtle": {
+        "companyUrl": "https://turtle-turtle.com/companies/300274-sz/",
+        "reportCount": 1,
+        "v522ReportUrl": "https://turtle-turtle.com/reports/company-300274-sz-v522-zcode/"
+      }
+    },
+    {
+      "code": "000951",
+      "name": "中国重汽",
+      "fundCount": 3,
+      "totalWeightPct": 3.94,
+      "holders": [
+        {
+          "etfCode": "581030",
+          "etfShort": "华夏质量甄选",
+          "manager": "华夏基金",
+          "weightPct": 1.787
+        },
+        {
+          "etfCode": "581070",
+          "etfShort": "平安红利景气",
+          "manager": "平安基金",
+          "weightPct": 1.1632
+        },
+        {
+          "etfCode": "581020",
+          "etfShort": "华安均衡慧选",
+          "manager": "华安基金",
+          "weightPct": 0.9917
+        }
+      ],
+      "turtleTurtle": null
     }
   ]
 }

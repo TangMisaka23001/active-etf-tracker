@@ -10,12 +10,72 @@ import catlMd from '../../../analysis/300750-catl.md?raw';
 import nauraMd from '../../../analysis/002371-naura.md?raw';
 import cmbMd from '../../../analysis/600036-cmb.md?raw';
 import innocloudMd from '../../../analysis/300308-innocloud.md?raw';
+import citic_secMd from '../../../analysis/600030-citic-sec.md?raw';
+import industrial_bankMd from '../../../analysis/601166-industrial-bank.md?raw';
+import abcMd from '../../../analysis/601288-abc.md?raw';
+import weichaiMd from '../../../analysis/000338-weichai.md?raw';
+import yiliMd from '../../../analysis/600887-yili.md?raw';
+import ping_anMd from '../../../analysis/601318-ping-an.md?raw';
+import icbcMd from '../../../analysis/601398-icbc.md?raw';
+import jiangsu_bankMd from '../../../analysis/600919-jiangsu-bank.md?raw';
+import eoptolinkMd from '../../../analysis/300502-eoptolink.md?raw';
+import muyuanMd from '../../../analysis/002714-muyuan.md?raw';
+import bank_of_ningboMd from '../../../analysis/002142-bank-of-ningbo.md?raw';
+import wuxi_apptecMd from '../../../analysis/603259-wuxi-apptec.md?raw';
+import ccbMd from '../../../analysis/601939-ccb.md?raw';
+import century_huatongMd from '../../../analysis/002602-century-huatong.md?raw';
+import hsccMd from '../../../analysis/002463-hscc.md?raw';
+import bocMd from '../../../analysis/601988-boc.md?raw';
+import hikvisionMd from '../../../analysis/002415-hikvision.md?raw';
+import cosco_shippingMd from '../../../analysis/601919-cosco-shipping.md?raw';
+import shaanxi_coalMd from '../../../analysis/601225-shaanxi-coal.md?raw';
+import nhuMd from '../../../analysis/002001-nhu.md?raw';
+import petrochinaMd from '../../../analysis/601857-petrochina.md?raw';
+import greeMd from '../../../analysis/000651-gree.md?raw';
+import zijin_miningMd from '../../../analysis/601899-zijin-mining.md?raw';
+import boeMd from '../../../analysis/000725-boe.md?raw';
+import yangtze_powerMd from '../../../analysis/600900-yangtze-power.md?raw';
+import luxshareMd from '../../../analysis/002475-luxshare.md?raw';
+import mindrayMd from '../../../analysis/300760-mindray.md?raw';
+import cnc_bMd from '../../../analysis/601998-cnc-b.md?raw';
+import sungrowMd from '../../../analysis/300274-sungrow.md?raw';
+import sinotrukMd from '../../../analysis/000951-sinotruk.md?raw';
 const reportByCode: Record<string, string> = {
   '000333': mideaMd,
   '300750': catlMd,
   '002371': nauraMd,
   '600036': cmbMd,
   '300308': innocloudMd,
+  '600030': citic_secMd,
+  '601166': industrial_bankMd,
+  '601288': abcMd,
+  '000338': weichaiMd,
+  '600887': yiliMd,
+  '601318': ping_anMd,
+  '601398': icbcMd,
+  '600919': jiangsu_bankMd,
+  '300502': eoptolinkMd,
+  '002714': muyuanMd,
+  '002142': bank_of_ningboMd,
+  '603259': wuxi_apptecMd,
+  '601939': ccbMd,
+  '002602': century_huatongMd,
+  '002463': hsccMd,
+  '601988': bocMd,
+  '002415': hikvisionMd,
+  '601919': cosco_shippingMd,
+  '601225': shaanxi_coalMd,
+  '002001': nhuMd,
+  '601857': petrochinaMd,
+  '000651': greeMd,
+  '601899': zijin_miningMd,
+  '000725': boeMd,
+  '600900': yangtze_powerMd,
+  '002475': luxshareMd,
+  '300760': mindrayMd,
+  '601998': cnc_bMd,
+  '300274': sungrowMd,
+  '000951': sinotrukMd,
 };
 const fileName: Record<string, string> = {
   '000333': '000333-midea.md',
@@ -23,6 +83,36 @@ const fileName: Record<string, string> = {
   '002371': '002371-naura.md',
   '600036': '600036-cmb.md',
   '300308': '300308-innocloud.md',
+  '600030': '600030-citic-sec.md',
+  '601166': '601166-industrial-bank.md',
+  '601288': '601288-abc.md',
+  '000338': '000338-weichai.md',
+  '600887': '600887-yili.md',
+  '601318': '601318-ping-an.md',
+  '601398': '601398-icbc.md',
+  '600919': '600919-jiangsu-bank.md',
+  '300502': '300502-eoptolink.md',
+  '002714': '002714-muyuan.md',
+  '002142': '002142-bank-of-ningbo.md',
+  '603259': '603259-wuxi-apptec.md',
+  '601939': '601939-ccb.md',
+  '002602': '002602-century-huatong.md',
+  '002463': '002463-hscc.md',
+  '601988': '601988-boc.md',
+  '002415': '002415-hikvision.md',
+  '601919': '601919-cosco-shipping.md',
+  '601225': '601225-shaanxi-coal.md',
+  '002001': '002001-nhu.md',
+  '601857': '601857-petrochina.md',
+  '000651': '000651-gree.md',
+  '601899': '601899-zijin-mining.md',
+  '000725': '000725-boe.md',
+  '600900': '600900-yangtze-power.md',
+  '002475': '002475-luxshare.md',
+  '300760': '300760-mindray.md',
+  '601998': '601998-cnc-b.md',
+  '300274': '300274-sungrow.md',
+  '000951': '000951-sinotruk.md',
 };
 
 export function getStaticPaths() {
@@ -37,7 +127,7 @@ const base = import.meta.env.BASE_URL;
 
 <Layout title={`${stock.name}（${stock.code}）· 持仓与龟龟方法分析`}>
   <p>
-    <a href={`${base}stocks`}>← 回到重叠最高的 5 只</a> · <a href={base}>18 只总榜</a>
+    <a href={`${base}stocks`}>← 回到重叠最高的 35 只</a> · <a href={base}>18 只总榜</a>
   </p>
   <h1>
     {stock.name}（{stock.code}）
@@ -92,11 +182,18 @@ const base = import.meta.env.BASE_URL;
       <a href={stock.turtleTurtle.companyUrl} target="_blank" rel="noopener">
         {stock.name} · {stock.turtleTurtle.reportCount} 份站内报告
       </a>
-      ，其中一份与本站同为 V5.2.2 方法（
-      <a href={stock.turtleTurtle.v522ReportUrl} target="_blank" rel="noopener">
-        V5.2.2 报告
-      </a>
-      ）。站内报告与本站分析是独立的研究结论，请分别看各自的资料截至日期与风险提示。
+      {stock.turtleTurtle.v522ReportUrl ? (
+        <>
+          ，其中一份与本站同为 V5.2.2 方法（
+          <a href={stock.turtleTurtle.v522ReportUrl} target="_blank" rel="noopener">
+            V5.2.2 报告
+          </a>
+          ）。
+        </>
+      ) : (
+        '。'
+      )}
+      站内报告与本站分析是独立的研究结论，请分别看各自的资料截至日期与风险提示。
     </div>
   )}
 

@@ -1,1 +1,339 @@
-{"000333":{"coverage":"0.28","name":"美的集团","now":"94.13 元","op":"稳定偏弱、温和回落","price":"fail","priceDetail":"覆盖 0.28","support":"26.78 元"},"002371":{"coverage":"-0.26%","name":"北方华创","now":"541.09 元","op":"增长未转化为现金","price":"fail","priceDetail":"覆盖 -0.26%","support":"0 元"},"300308":{"coverage":"0.11","name":"中际旭创","now":"417.20 元","op":"改善","price":"fail","priceDetail":"覆盖 0.11","support":"约 45 元"},"300750":{"coverage":"50.6%","name":"宁德时代","now":"227.39 元","op":"稳定偏改善","price":"fail","priceDetail":"覆盖 50.6%","support":"115.16 元"},"600036":{"coverage":"不适用","name":"招商银行","note":"银行不适用现金回本法，价格判断用 PB 0.92、TTM 股息率 4.66%。","now":"43.26 元","op":"稳定偏弱","price":"pass","priceDetail":"PB 0.92","support":"—"}}
+{
+  "000333": {
+    "coverage": "0.28",
+    "name": "美的集团",
+    "now": "94.13 元",
+    "op": "稳定偏弱、温和回落",
+    "price": "fail",
+    "priceDetail": "覆盖 0.28",
+    "support": "26.78 元"
+  },
+  "000338": {
+    "coverage": "0.52",
+    "name": "潍柴动力",
+    "now": "18.66 元",
+    "op": "稳定",
+    "price": "fail",
+    "priceDetail": "覆盖 0.52",
+    "support": "约 9.79 元"
+  },
+  "000651": {
+    "coverage": "0.90",
+    "name": "格力电器",
+    "note": "最接近通过的一只；仅 F_norm 且一年内到期非流动资产全额计入 A 的乐观组合才达 1.05",
+    "now": "40.65 元",
+    "op": "六年期小幅衰退",
+    "price": "fail",
+    "priceDetail": "覆盖 0.90",
+    "support": "36.72 元"
+  },
+  "000725": {
+    "coverage": "−0.01",
+    "name": "京东方A",
+    "note": "边界状态：六年正常化现金距填平净债务仅差 9.9 亿，F0 上修约 1.7 亿/年即可翻正",
+    "now": "4.47 元",
+    "op": "稳定偏弱",
+    "price": "fail",
+    "priceDetail": "覆盖 −0.01",
+    "support": "0 元"
+  },
+  "000951": {
+    "coverage": "0.65",
+    "name": "中国重汽",
+    "note": "平坦覆盖 0.72，参考价 14.18 元",
+    "now": "19.59 元",
+    "op": "改善",
+    "price": "fail",
+    "priceDetail": "覆盖 0.65",
+    "support": "12.83 元"
+  },
+  "002001": {
+    "coverage": "0.24",
+    "name": "新和成",
+    "now": "25.23 元",
+    "op": "稳定",
+    "price": "fail",
+    "priceDetail": "覆盖 0.24",
+    "support": "约 6.00 元"
+  },
+  "002142": {
+    "coverage": "不适用",
+    "name": "宁波银行",
+    "note": "安全垫中等偏薄；PB 另有普通股口径 0.95",
+    "now": "35.10 元",
+    "op": "改善（温和改善）",
+    "price": "pass",
+    "priceDetail": "PB 0.81",
+    "support": "—"
+  },
+  "002371": {
+    "coverage": "-0.26%",
+    "name": "北方华创",
+    "now": "541.09 元",
+    "op": "增长未转化为现金",
+    "price": "fail",
+    "priceDetail": "覆盖 -0.26%",
+    "support": "0 元"
+  },
+  "002415": {
+    "coverage": "0.26",
+    "name": "海康威视",
+    "now": "35.15 元",
+    "op": "改善（温和改善）",
+    "price": "fail",
+    "priceDetail": "覆盖 0.26",
+    "support": "约 9.22 元"
+  },
+  "002463": {
+    "coverage": "−0.02",
+    "name": "沪电股份",
+    "note": "早年 Capex/OCF 取自 StockAnalysis，未逐项对年报核对",
+    "now": "82.70 元",
+    "op": "改善",
+    "price": "fail",
+    "priceDetail": "覆盖 −0.02",
+    "support": "0 元"
+  },
+  "002475": {
+    "coverage": "−0.15",
+    "name": "立讯精密",
+    "note": "F_norm 与 L 均为负，F0=0",
+    "now": "46.26 元",
+    "op": "稳定偏弱",
+    "price": "fail",
+    "priceDetail": "覆盖 −0.15",
+    "support": "0 元"
+  },
+  "002602": {
+    "coverage": "0.29",
+    "name": "世纪华通",
+    "now": "10.64 元",
+    "op": "改善",
+    "price": "fail",
+    "priceDetail": "覆盖 0.29",
+    "support": "约 3.10 元"
+  },
+  "002714": {
+    "coverage": "−0.20",
+    "name": "牧原股份",
+    "now": "45.38 元",
+    "op": "稳定",
+    "price": "fail",
+    "priceDetail": "覆盖 −0.20",
+    "support": "0 元"
+  },
+  "300274": {
+    "coverage": "0.26",
+    "name": "阳光电源",
+    "note": "平坦覆盖 0.32，参考价 22.10 元",
+    "now": "70.23 元",
+    "op": "稳定偏弱",
+    "price": "fail",
+    "priceDetail": "覆盖 0.26",
+    "support": "18.06 元"
+  },
+  "300308": {
+    "coverage": "0.11",
+    "name": "中际旭创",
+    "now": "417.20 元",
+    "op": "改善",
+    "price": "fail",
+    "priceDetail": "覆盖 0.11",
+    "support": "约 45 元"
+  },
+  "300502": {
+    "coverage": "0.04",
+    "name": "新易盛",
+    "now": "181.36 元",
+    "op": "改善",
+    "price": "fail",
+    "priceDetail": "覆盖 0.04",
+    "support": "约 6.85 元"
+  },
+  "300750": {
+    "coverage": "50.6%",
+    "name": "宁德时代",
+    "now": "227.39 元",
+    "op": "稳定偏改善",
+    "price": "fail",
+    "priceDetail": "覆盖 50.6%",
+    "support": "115.16 元"
+  },
+  "300760": {
+    "coverage": "0.37",
+    "name": "迈瑞医疗",
+    "note": "弱复苏初期；平坦覆盖 0.30，参考价 54.25 元",
+    "now": "183.50 元",
+    "op": "稳定偏弱",
+    "price": "fail",
+    "priceDetail": "覆盖 0.37",
+    "support": "68.32 元"
+  },
+  "600030": {
+    "coverage": "不适用",
+    "name": "中信证券",
+    "note": "银行式框架，安全垫中等",
+    "now": "25.26 元",
+    "op": "改善",
+    "price": "pass",
+    "priceDetail": "PB 1.33",
+    "support": "—"
+  },
+  "600036": {
+    "coverage": "不适用",
+    "name": "招商银行",
+    "note": "银行不适用现金回本法，价格判断用 PB 0.92、TTM 股息率 4.66%。",
+    "now": "43.26 元",
+    "op": "稳定偏弱",
+    "price": "pass",
+    "priceDetail": "PB 0.92",
+    "support": "—"
+  },
+  "600887": {
+    "coverage": "0.19",
+    "name": "伊利股份",
+    "now": "32.85 元",
+    "op": "稳定偏弱",
+    "price": "fail",
+    "priceDetail": "覆盖 0.19",
+    "support": "约 6.23 元"
+  },
+  "600900": {
+    "coverage": "0.06",
+    "name": "长江电力",
+    "note": "平坦覆盖 −0.03，参考价 0 元；趋势 delta 主要是一次性四季度基数效应，外推偏乐观",
+    "now": "31.35 元",
+    "op": "稳定",
+    "price": "fail",
+    "priceDetail": "覆盖 0.06",
+    "support": "约 1.93 元"
+  },
+  "600919": {
+    "coverage": "不适用",
+    "name": "江苏银行",
+    "note": "安全垫偏薄",
+    "now": "13.50 元",
+    "op": "稳定",
+    "price": "pass",
+    "priceDetail": "PB 0.88",
+    "support": "—"
+  },
+  "601166": {
+    "coverage": "不适用",
+    "name": "兴业银行",
+    "note": "安全垫中等",
+    "now": "20.06 元",
+    "op": "稳定偏弱",
+    "price": "pass",
+    "priceDetail": "PB 0.50",
+    "support": "—"
+  },
+  "601225": {
+    "coverage": "0.49",
+    "name": "陕西煤业",
+    "note": "2021 年 Capex 为倒算值，L_prev 的 alpha 未核实，delta 取 0",
+    "now": "27.58 元",
+    "op": "稳定",
+    "price": "fail",
+    "priceDetail": "覆盖 0.49",
+    "support": "约 13.54 元"
+  },
+  "601288": {
+    "coverage": "不适用",
+    "name": "农业银行",
+    "note": "安全垫薄",
+    "now": "7.83 元",
+    "op": "稳定",
+    "price": "pass",
+    "priceDetail": "PB 0.95",
+    "support": "—"
+  },
+  "601318": {
+    "coverage": "不适用",
+    "name": "中国平安",
+    "note": "保险框架，安全垫中等",
+    "now": "53.70 元",
+    "op": "稳定偏弱",
+    "price": "pass",
+    "priceDetail": "P/EV 0.65",
+    "support": "—"
+  },
+  "601398": {
+    "coverage": "不适用",
+    "name": "工商银行",
+    "note": "安全垫中等；PB 精确值未核实",
+    "now": "9.15 元",
+    "op": "稳定",
+    "price": "pass",
+    "priceDetail": "PB 0.81",
+    "support": "—"
+  },
+  "601857": {
+    "coverage": "0.30",
+    "name": "中国石油",
+    "now": "12.53 元",
+    "op": "稳定",
+    "price": "fail",
+    "priceDetail": "覆盖 0.30",
+    "support": "3.73 元"
+  },
+  "601899": {
+    "coverage": "−0.03",
+    "name": "紫金矿业",
+    "note": "报告按平坦=趋势报 −0.03（未外推 +5.00 亿/年 delta）；若按规则外推趋势覆盖约 −0.02，结论不变",
+    "now": "24.26 元",
+    "op": "改善",
+    "price": "fail",
+    "priceDetail": "覆盖 −0.03",
+    "support": "0 元"
+  },
+  "601919": {
+    "coverage": "0.52",
+    "name": "中远海控",
+    "note": "平坦覆盖 0.66；K 的有息债务约 727.89 亿据净债务倒推，明细未核实",
+    "now": "17.64 元",
+    "op": "稳定（周期中位回归）",
+    "price": "fail",
+    "priceDetail": "覆盖 0.52",
+    "support": "约 9.08 元"
+  },
+  "601939": {
+    "coverage": "不适用",
+    "name": "建设银行",
+    "note": "安全垫薄",
+    "now": "12.39 元",
+    "op": "稳定",
+    "price": "pass",
+    "priceDetail": "PB 0.88",
+    "support": "—"
+  },
+  "601988": {
+    "coverage": "不适用",
+    "name": "中国银行",
+    "note": "安全垫薄",
+    "now": "7.39 元",
+    "op": "稳定",
+    "price": "pass",
+    "priceDetail": "PB 0.85",
+    "support": "—"
+  },
+  "601998": {
+    "coverage": "不适用",
+    "name": "中信银行",
+    "note": "安全垫薄；通过前提 ROE 不跌破 9% 且分红率维持 30% 以上",
+    "now": "9.66 元",
+    "op": "稳定偏弱",
+    "price": "pass",
+    "priceDetail": "PB 0.71",
+    "support": "—"
+  },
+  "603259": {
+    "coverage": "0.21",
+    "name": "药明康德",
+    "now": "146.55 元",
+    "op": "改善",
+    "price": "fail",
+    "priceDetail": "覆盖 0.21",
+    "support": "约 30.17 元"
+  }
+}
