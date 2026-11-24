@@ -104,18 +104,26 @@ async function quotesTencent(list) {
     if (!m) continue;
     const p = m[1].split('~');
     if (!tradingDate) tradingDate = p.find((x) => /^\d{4}-\d{2}-\d{2}/.test(x))?.slice(0, 10) ?? null;
+    // 注意：q=s_xxx 返回的是精简格式，与完整版字段完全不同：
+    //   p[3]=现价，p[4]=涨跌额，p[5]=涨跌幅(%)，p[6]=成交量，p[7]=成交额；
+    //   没有昨收/开盘/最高/最低。之前按完整格式把 p[4] 当昨收、p[5] 当开盘，
+    //   昨收变成 0.005 这种涨跌额，涨跌幅就被算成 +19760% 之类的天文数字。
     const price = num(p[3]);
-    const prev = num(p[4]);
-    if (price === null || prev === null) continue;
+    const chg = num(p[4]);
+    const changePct = num(p[5]);
+    if (price === null || chg === null || changePct === null) continue;
+    // A 股 ETF 日涨跌幅限 ±10%，超出即判定为源格式漂移，跳过本行走下一个源。
+    if (Math.abs(changePct) > 10.5) continue;
+    const prev = +(price - chg).toFixed(3);
     out[p[2]] = {
       price,
       prevClose: prev,
-      open: num(p[5]),
+      open: null,
       high: null,
       low: null,
       volume: num(p[6]),
-      turnover: null,
-      changePct: +(((price - prev) / prev) * 100).toFixed(2),
+      turnover: num(p[7]),
+      changePct,
       source: 'tencent',
     };
   }
@@ -313,13 +321,18 @@ async function stockPrices(codes) {
 }
 async function pcfSZSE(e) {
   const referer = { Referer: 'https://www.szse.cn/disclosure/fund/currency/index.html' };
-  const payload = await fetchJson(
-    `https://www.szse.cn/api/report/ShowReport/data?CATALOGID=sgshqd&loading=first&txtJCorDH=${e.code}`,
-    referer,
-  );
-  const blocks = Array.isArray(payload) ? payload : [];
-  const rows = blocks.flatMap((b) => b?.data ?? []);
-  if (!rows.length) throw new Error('SZSE PCF: no report rows');
+  // ShowReport 在 GitHub Runner 上常连不上（疑似屏蔽机房 IP），失败不直接判死，
+  // 后面用 reportdocs 直链兜底。
+  let rows = [];
+  try {
+    const payload = await fetchJson(
+      `https://www.szse.cn/api/report/ShowReport/data?CATALOGID=sgshqd&loading=first&txtJCorDH=${e.code}`,
+      referer,
+    );
+    rows = (Array.isArray(payload) ? payload : []).flatMap((b) => b?.data ?? []);
+  } catch {
+    rows = [];
+  }
   const cell = String(rows[0]?.jjdm ?? '');
   // 首选：encode-open 给的 txt 直链，如 /files/text/etf/ETF15890020261124.txt
   const direct = cell.match(/encode-open=['"]([^'"]+\.txt)['"]/);
@@ -353,6 +366,24 @@ async function pcfSZSE(e) {
         }
       }
       if (text) break;
+    }
+    // 最后兜底：按 ETF<code><YYYYMMDD>.txt 的固定格式直接拼 reportdocs 直链，
+    // 今天及前 3 天各试一次（周末/节假日往前找最近交易日），绕开被屏蔽的
+    // www.szse.cn 接口。
+    for (let back = 0; back < 4 && !text; back++) {
+      const d = new Date(`${cstToday()}T12:00:00+08:00`);
+      d.setDate(d.getDate() - back);
+      const ymd = d.toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' }).replaceAll('-', '');
+      const url = `https://reportdocs.static.szse.cn/files/text/etf/ETF${e.code}${ymd}.txt`;
+      try {
+        const t = await fetchTextGBK(url, referer);
+        if (t.includes('申购赎回清单')) {
+          text = t;
+          sourceUrl = url;
+        }
+      } catch {
+        // 换前一天再试
+      }
     }
     if (!text) throw new Error(`SZSE PCF: download failed: ${lastErr}`);
   }

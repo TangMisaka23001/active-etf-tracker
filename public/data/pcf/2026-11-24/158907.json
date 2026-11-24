@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-24",
+  "etf": "158907",
+  "name": "国泰鑫汇均衡收益主动ETF",
+  "source": "szse_pcf_txt",
+  "tradingDay": "2026-11-24",
+  "navPerCU": 2972807.41,
+  "navPerShare": 0.9909,
+  "componentCount": 52,
+  "top": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "weightPct": 4.856,
+      "quantity": 100,
+      "flag": "允许"
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "weightPct": 3.9386,
+      "quantity": 800,
+      "flag": "允许"
+    },
+    {
+      "code": "601318",
+      "name": "中国平安",
+      "weightPct": 3.811,
+      "quantity": 2100,
+      "flag": "允许"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "weightPct": 3.7196,
+      "quantity": 200,
+      "flag": "允许"
+    },
+    {
+      "code": "002008",
+      "name": "大族激光",
+      "weightPct": 3.5211,
+      "quantity": 2200,
+      "flag": "允许"
+    },
+    {
+      "code": "600030",
+      "name": "中信证券",
+      "weightPct": 3.4617,
+      "quantity": 4100,
+      "flag": "允许"
+    },
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "weightPct": 3.3462,
+      "quantity": 2300,
+      "flag": "允许"
+    },
+    {
+      "code": "002602",
+      "name": "世纪华通",
+      "weightPct": 3.2848,
+      "quantity": 9000,
+      "flag": "允许"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "weightPct": 3.2153,
+      "quantity": 500,
+      "flag": "允许"
+    },
+    {
+      "code": "600309",
+      "name": "万华化学",
+      "weightPct": 3.209,
+      "quantity": 1400,
+      "flag": "允许"
+    },
+    {
+      "code": "002475",
+      "name": "立讯精密",
+      "weightPct": 3.103,
+      "quantity": 1900,
+      "flag": "允许"
+    },
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "weightPct": 3.0065,
+      "quantity": 9800,
+      "flag": "允许"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "weightPct": 2.9665,
+      "quantity": 200,
+      "flag": "允许"
+    },
+    {
+      "code": "600183",
+      "name": "生益科技",
+      "weightPct": 2.8096,
+      "quantity": 1300,
+      "flag": "允许"
+    },
+    {
+      "code": "600031",
+      "name": "三一重工",
+      "weightPct": 2.5128,
+      "quantity": 4100,
+      "flag": "允许"
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "weightPct": 2.3331,
+      "quantity": 800,
+      "flag": "允许"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "weightPct": 2.3208,
+      "quantity": 300,
+      "flag": "允许"
+    },
+    {
+      "code": "601688",
+      "name": "华泰证券",
+      "weightPct": 2.3183,
+      "quantity": 4000,
+      "flag": "允许"
+    },
+    {
+      "code": "601766",
+      "name": "中国中车",
+      "weightPct": 2.2937,
+      "quantity": 10300,
+      "flag": "允许"
+    },
+    {
+      "code": "000400",
+      "name": "许继电气",
+      "weightPct": 2.2687,
+      "quantity": 2600,
+      "flag": "允许"
+    }
+  ],
+  "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890720261124.txt",
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}
