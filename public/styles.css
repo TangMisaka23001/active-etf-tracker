@@ -25,6 +25,10 @@ tbody tr:hover { background: #f8fafc; }
 .badge.ok { background: #e6f4ea; color: #1e7d32; }
 .badge.fail { background: #fdecea; color: #c0392b; }
 .tbl-wrap { overflow-x: auto; }
+/* 按持仓股票总览表：10 列要在一屏内放下——表头缩短、允许换行、收紧间距 */
+.stocks th, .stocks td { padding: 7px 8px; }
+.stocks th { white-space: normal; }
+.stocks td:nth-child(4) { white-space: normal; min-width: 84px; }
 .note { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 14px; font-size: 14px; }
 .foot { color: #777; font-size: 13px; padding: 24px 16px 40px; }
 .spark { display: block; }
