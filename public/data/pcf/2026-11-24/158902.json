@@ -11,7 +11,7 @@
     {
       "code": "601919",
       "name": "中远海控",
-      "weightPct": 3.7778,
+      "weightPct": 3.782,
       "quantity": 2100,
       "flag": "允许"
     },
@@ -25,49 +25,49 @@
     {
       "code": "601225",
       "name": "陕西煤业",
-      "weightPct": 2.2065,
+      "weightPct": 2.2089,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "601988",
       "name": "中国银行",
-      "weightPct": 2.1162,
+      "weightPct": 2.1247,
       "quantity": 2800,
       "flag": "允许"
     },
     {
       "code": "600398",
       "name": "海澜之家",
-      "weightPct": 2.0592,
+      "weightPct": 2.0624,
       "quantity": 3200,
       "flag": "允许"
     },
     {
       "code": "601699",
       "name": "潞安环能",
-      "weightPct": 2.0592,
+      "weightPct": 2.0608,
       "quantity": 1600,
       "flag": "允许"
     },
     {
       "code": "000651",
       "name": "格力电器",
-      "weightPct": 2.0489,
+      "weightPct": 2.0534,
       "quantity": 500,
       "flag": "允许"
     },
     {
       "code": "601658",
       "name": "邮储银行",
-      "weightPct": 2.0193,
+      "weightPct": 2.0296,
       "quantity": 3400,
       "flag": "允许"
     },
     {
       "code": "603565",
       "name": "中谷物流",
-      "weightPct": 1.8925,
+      "weightPct": 1.8941,
       "quantity": 1500,
       "flag": "允许"
     },
@@ -81,21 +81,21 @@
     {
       "code": "600919",
       "name": "江苏银行",
-      "weightPct": 1.7796,
+      "weightPct": 1.7849,
       "quantity": 1300,
       "flag": "允许"
     },
     {
       "code": "601916",
       "name": "浙商银行",
-      "weightPct": 1.7763,
+      "weightPct": 1.782,
       "quantity": 5700,
       "flag": "允许"
     },
     {
       "code": "601288",
       "name": "农业银行",
-      "weightPct": 1.7585,
+      "weightPct": 1.7629,
       "quantity": 2200,
       "flag": "允许"
     },
@@ -109,42 +109,42 @@
     {
       "code": "601009",
       "name": "南京银行",
-      "weightPct": 1.633,
+      "weightPct": 1.6342,
       "quantity": 1200,
       "flag": "允许"
     },
     {
       "code": "600039",
       "name": "四川路桥",
-      "weightPct": 1.6045,
+      "weightPct": 1.6063,
       "quantity": 1800,
       "flag": "允许"
     },
     {
       "code": "600901",
       "name": "江苏金租",
-      "weightPct": 1.5703,
+      "weightPct": 1.5743,
       "quantity": 2000,
       "flag": "允许"
     },
     {
       "code": "601998",
       "name": "中信银行",
-      "weightPct": 1.5492,
+      "weightPct": 1.5476,
       "quantity": 1600,
       "flag": "允许"
     },
     {
       "code": "600755",
       "name": "厦门国贸",
-      "weightPct": 1.4964,
+      "weightPct": 1.5052,
       "quantity": 2900,
       "flag": "允许"
     },
     {
       "code": "600348",
       "name": "华阳股份",
-      "weightPct": 1.4956,
+      "weightPct": 1.5014,
       "quantity": 1900,
       "flag": "允许"
     }
