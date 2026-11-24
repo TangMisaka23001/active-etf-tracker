@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import etfs from '../../data/etfs.json';
 import verdicts from '../../data/stock-verdicts.json';
+import holdings from '../../data/top-holdings.json';
 import latest from '../../../public/data/latest.json';
 import history from '../../../public/data/history.json';
 import { readFileSync, existsSync } from 'node:fs';
@@ -28,6 +29,8 @@ if (latest.date) {
 const cls = (v) => (v == null ? 'flat' : v > 0 ? 'up' : v < 0 ? 'down' : 'flat');
 const fmt = (v, suffix = '') => (v == null ? '—' : `${v > 0 ? '+' : ''}${Number(v).toFixed(2)}${suffix}`);
 const analyzedCount = pcfSnap ? pcfSnap.top.filter((t) => verdicts[t.code]).length : 0;
+const turtleByCode: Record<string, { companyUrl: string; reportCount: number } | null> = {};
+for (const s of holdings.stocks) turtleByCode[s.code] = s.turtleTurtle ?? null;
 ---
 
 <Layout title={`${etf.short}（${etf.code}）| 主动ETF追踪`}>
@@ -68,7 +71,7 @@ const analyzedCount = pcfSnap ? pcfSnap.top.filter((t) => verdicts[t.code]).leng
       )}
       {analyzedCount > 0 && (
         <p class="lede">
-          其中 {analyzedCount} 只已有龟龟方法分析（V5.2.2，研究截止日 2026-11-24），价格条件见下表，点“分析”进该股票的独立分析页。
+          其中 {analyzedCount} 只已有龟龟方法分析（V5.2.2，研究截止日 2026-11-24），价格条件见下表，点“分析”进该股票的独立分析页；其中在赛博龟龟陪审团站内有收录报告的，表里另有“几份报告”外链。
         </p>
       )}
       <div class="tbl-wrap">
@@ -91,6 +94,14 @@ const analyzedCount = pcfSnap ? pcfSnap.top.filter((t) => verdicts[t.code]).leng
                       )}{' '}
                       {verdicts[t.code].priceDetail} ·{' '}
                       <a href={`${import.meta.env.BASE_URL}stocks/${t.code}`}>分析 →</a>
+                      {turtleByCode[t.code] ? (
+                        <>
+                          {' '}·{' '}
+                          <a href={turtleByCode[t.code].companyUrl} target="_blank" rel="noopener">
+                            {turtleByCode[t.code].reportCount} 份报告 →
+                          </a>
+                        </>
+                      ) : null}
                     </>
                   ) : (
                     '—'
