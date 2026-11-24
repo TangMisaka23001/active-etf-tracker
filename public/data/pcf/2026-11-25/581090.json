@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-25",
+  "etf": "581090",
+  "name": "华泰柏瑞价值精选主动ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-24",
+  "navPerCU": 992110.38,
+  "navPerShare": 0.9921,
+  "componentCount": 35,
+  "top": [
+    {
+      "code": "002128",
+      "name": "电投能源",
+      "weightPct": 3.755,
+      "quantity": 1400,
+      "flag": "1"
+    },
+    {
+      "code": "002948",
+      "name": "青岛银行",
+      "weightPct": 3.6689,
+      "quantity": 5600,
+      "flag": "1"
+    },
+    {
+      "code": "002966",
+      "name": "苏州银行",
+      "weightPct": 3.6141,
+      "quantity": 3600,
+      "flag": "1"
+    },
+    {
+      "code": "000729",
+      "name": "燕京啤酒",
+      "weightPct": 3.5809,
+      "quantity": 3100,
+      "flag": "1"
+    },
+    {
+      "code": "000807",
+      "name": "云铝股份",
+      "weightPct": 2.152,
+      "quantity": 1000,
+      "flag": "1"
+    },
+    {
+      "code": "002532",
+      "name": "天山铝业",
+      "weightPct": 2.1348,
+      "quantity": 2000,
+      "flag": "1"
+    },
+    {
+      "code": "002142",
+      "name": "宁波银行",
+      "weightPct": 2.1227,
+      "quantity": 600,
+      "flag": "1"
+    },
+    {
+      "code": "000598",
+      "name": "兴蓉环境",
+      "weightPct": 2.0828,
+      "quantity": 2800,
+      "flag": "1"
+    },
+    {
+      "code": "000423",
+      "name": "东阿阿胶",
+      "weightPct": 2.0816,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "000776",
+      "name": "广发证券",
+      "weightPct": 2.0689,
+      "quantity": 1100,
+      "flag": "1"
+    },
+    {
+      "code": "000933",
+      "name": "神火股份",
+      "weightPct": 2.0139,
+      "quantity": 900,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}

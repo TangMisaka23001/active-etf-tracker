@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-24",
-  "fetchedAt": "2026-11-24T07:52:44.733Z",
+  "date": "2026-11-25",
+  "fetchedAt": "2026-11-24T19:15:22.255Z",
   "source": "eastmoney/tencent/sina/yahoo (first success per ETF)",
   "etfs": {
     "158900": {
@@ -350,58 +350,58 @@
   },
   "shares": {
     "581000": {
-      "shares10k": 192201.75,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 234501.75,
+      "date": "2026-11-24",
+      "change10k": 42300,
+      "changePct": 22.01
     },
     "581010": {
-      "shares10k": 166504.62,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 168504.62,
+      "date": "2026-11-24",
+      "change10k": 2000,
+      "changePct": 1.2
     },
     "581020": {
-      "shares10k": 161610.1,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 157410.1,
+      "date": "2026-11-24",
+      "change10k": -4200,
+      "changePct": -2.6
     },
     "581030": {
-      "shares10k": 176204.07,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 179604.07,
+      "date": "2026-11-24",
+      "change10k": 3400,
+      "changePct": 1.93
     },
     "581050": {
-      "shares10k": 180001.13,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 179601.13,
+      "date": "2026-11-24",
+      "change10k": -400,
+      "changePct": -0.22
     },
     "581060": {
-      "shares10k": 159810.39,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 144810.39,
+      "date": "2026-11-24",
+      "change10k": -15000,
+      "changePct": -9.39
     },
     "581070": {
-      "shares10k": 170508.89,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 156308.89,
+      "date": "2026-11-24",
+      "change10k": -14200,
+      "changePct": -8.33
     },
     "581080": {
-      "shares10k": 170603.36,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 167603.36,
+      "date": "2026-11-24",
+      "change10k": -3000,
+      "changePct": -1.76
     },
     "581090": {
-      "shares10k": 150703.4,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
+      "shares10k": 141203.4,
+      "date": "2026-11-24",
+      "change10k": -9500,
+      "changePct": -6.3
     }
   },
   "missingQuotes": []
