@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "fetchedAt": "2026-11-24T03:31:54.288Z",
+  "fetchedAt": "2026-11-24T03:39:45.631Z",
   "source": "eastmoney/tencent/sina/yahoo (first success per ETF)",
   "etfs": {
     "158900": {
@@ -276,133 +276,78 @@
       "error": null
     },
     "581000": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 60,
-      "navPerShare": 0.9651,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581010": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 480,
-      "navPerShare": 0.9892,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581020": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 48,
-      "navPerShare": 0.9877,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581030": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 44,
-      "navPerShare": 0.9866,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581050": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 35,
-      "navPerShare": 0.9973,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581060": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 38,
-      "navPerShare": 1.0183,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581070": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 54,
-      "navPerShare": 1.0105,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581080": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 178,
-      "navPerShare": 0.9718,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     },
     "581090": {
-      "status": "ok",
+      "status": "failed",
       "source": "sse_pcf",
-      "tradingDay": "2026-11-24",
-      "componentCount": 35,
-      "navPerShare": 0.9921,
-      "error": null
+      "tradingDay": null,
+      "componentCount": null,
+      "navPerShare": null,
+      "error": "fetch failed"
     }
   },
-  "shares": {
-    "581000": {
-      "shares10k": 192201.75,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581010": {
-      "shares10k": 166504.62,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581020": {
-      "shares10k": 161610.1,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581030": {
-      "shares10k": 176204.07,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581050": {
-      "shares10k": 180001.13,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581060": {
-      "shares10k": 159810.39,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581070": {
-      "shares10k": 170508.89,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581080": {
-      "shares10k": 170603.36,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    },
-    "581090": {
-      "shares10k": 150703.4,
-      "date": "2026-11-23",
-      "change10k": 0,
-      "changePct": 0
-    }
-  },
+  "shares": {},
   "missingQuotes": []
 }
