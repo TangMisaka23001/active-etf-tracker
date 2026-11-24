@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  fetch-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -54,4 +54,20 @@ jobs:
         with:
           path: dist
 
-      - uses: actions/deploy-pages@v5
+  # 上传和部署分开两个 job：deploy-pages 查产物时，产物列表接口有
+  # 最终一致性延迟；同一个 job 里上传完 200 多毫秒就查，偶尔查到 0 个
+  # （actions/deploy-pages#451）。分开后部署在构建结束数秒后才开始查，
+  # 避开这个竞态。
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
