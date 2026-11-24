@@ -29,6 +29,11 @@ tbody tr:hover { background: #f8fafc; }
 .stocks th, .stocks td { padding: 7px 8px; }
 .stocks th { white-space: normal; }
 .stocks td:nth-child(4) { white-space: normal; min-width: 84px; }
+/* 总榜：长赢评价列允许换行 */
+.funds td:nth-child(10) { white-space: normal; min-width: 170px; text-align: left; }
+/* 长赢评价六条线读数表 */
+.readings td:first-child { white-space: nowrap; font-weight: 600; text-align: left; }
+.readings td:last-child { white-space: normal; text-align: left; }
 .note { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 14px; font-size: 14px; }
 .foot { color: #777; font-size: 13px; padding: 24px 16px 40px; }
 .spark { display: block; }

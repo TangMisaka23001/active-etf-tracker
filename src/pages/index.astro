@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import etfs from '../data/etfs.json';
 import baseline from '../data/baseline.json';
+import fundGrades from '../data/fund-grades.json';
 import latest from '../../public/data/latest.json';
 import history from '../../public/data/history.json';
 
@@ -46,6 +47,8 @@ const fmtSharesChg = (s: { change10k: number | null; changePct: number | null } 
   s?.change10k == null
     ? ''
     : `${s.change10k > 0 ? '+' : ''}${Math.round(s.change10k).toLocaleString()}万份${s.changePct != null ? ` (${s.changePct > 0 ? '+' : ''}${s.changePct.toFixed(2)}%)` : ''}`;
+const gradeCls = (gr: string) => (gr === 'A' ? 'ok' : gr === 'C' ? 'fail' : '');
+const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B 一般' : 'C 差');
 ---
 
 <Layout title="首批18只主动ETF追踪 | 每日涨跌与PCF持仓">
@@ -76,9 +79,9 @@ const fmtSharesChg = (s: { change10k: number | null; changePct: number | null } 
 
   <h2>每日涨跌 · 按当日涨跌幅排序</h2>
   <div class="tbl-wrap">
-    <table>
+    <table class="funds">
       <thead>
-        <tr><th>代码</th><th>基金</th><th>风格</th><th>最新价</th><th>当日涨跌</th><th>上市以来</th><th>份额</th><th>走势</th><th>PCF</th><th></th></tr>
+        <tr><th>代码</th><th>基金</th><th>风格</th><th>最新价</th><th>当日涨跌</th><th>上市以来</th><th>份额</th><th>走势</th><th>PCF</th><th>长赢评价</th><th></th></tr>
       </thead>
       <tbody>
         {sorted.map((r) => {
@@ -112,6 +115,18 @@ const fmtSharesChg = (s: { change10k: number | null; changePct: number | null } 
                     {pcf.status === 'ok' ? `✓ ${pcf.componentCount}只成分` : '✗ 失败'}
                   </span>
                 ) : '—'}
+              </td>
+              <td>
+                {(() => {
+                  const g = fundGrades.grades[r.code];
+                  return g ? (
+                    <>
+                      <span class={`badge ${gradeCls(g.grade)}`}>{gradeLabel(g.grade)}</span>
+                      <br />
+                      <span style="font-size:13px">{g.brief}</span>
+                    </>
+                  ) : '—';
+                })()}
               </td>
               <td><a href={`${import.meta.env.BASE_URL}etf/${r.code}/`}>详情 →</a></td>
             </tr>
@@ -148,6 +163,7 @@ const fmtSharesChg = (s: { change10k: number | null; changePct: number | null } 
     <li><strong>上市以来</strong>：相对本站记录的首个交易日（2026-11-23）收盘价，不是相对1元发行价。</li>
     <li><strong>基金份额</strong>：总份额（亿份）及相对上一份份额记录的增减。份额增是申购、减是赎回，是资金进出的直接口径。上交所按日归档，深交所只有当前快照（T日晚为预估值、T+1早为确认值）；两所数据日期可能比行情晚一天，页面显示的是份额自身的日期。</li>
     <li><strong>持仓变动</strong>：点进单只详情页，看当日 PCF Top20 与上一日快照的对比（新增 / 剔除 / 权重变化≥0.5个百分点）。</li>
+    <li><strong>长赢评价</strong>：按且慢长赢方法对 2026-11-24 PCF Top20 持仓的评价（估值 / 拥挤度 / 风险三线，加质量与分红、分散度、仓位），A 优秀、B 一般、C 差；点进详情页看六条线读数与详细评价。这是持仓评价，不是投资建议。</li>
     <li><strong>PCF 口径</strong>：PCF 是申赎篮子，基于前一交易日日终组合，用于申赎与套利，不等同基金精确持仓；完整持仓以季报/半年报/年报为准。</li>
   </ul>
 </Layout>

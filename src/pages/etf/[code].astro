@@ -3,6 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import etfs from '../../data/etfs.json';
 import verdicts from '../../data/stock-verdicts.json';
 import holdings from '../../data/top-holdings.json';
+import fundGrades from '../../data/fund-grades.json';
+import { mdToHtml } from '../../lib/md';
 import latest from '../../../public/data/latest.json';
 import history from '../../../public/data/history.json';
 import { readFileSync, existsSync } from 'node:fs';
@@ -31,6 +33,9 @@ const fmt = (v, suffix = '') => (v == null ? '—' : `${v > 0 ? '+' : ''}${Numbe
 const analyzedCount = pcfSnap ? pcfSnap.top.filter((t) => verdicts[t.code]).length : 0;
 const turtleByCode: Record<string, { companyUrl: string; reportCount: number } | null> = {};
 for (const s of holdings.stocks) turtleByCode[s.code] = s.turtleTurtle ?? null;
+const grade = fundGrades.grades[etf.code];
+const gradeCls = (gr: string) => (gr === 'A' ? 'ok' : gr === 'C' ? 'fail' : '');
+const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B 一般' : 'C 差');
 ---
 
 <Layout title={`${etf.short}（${etf.code}）| 主动ETF追踪`}>
@@ -116,6 +121,30 @@ for (const s of holdings.stocks) turtleByCode[s.code] = s.turtleTurtle ?? null;
     </>
   ) : (
     <p class="lede">暂无 PCF 快照。深交所 / 上交所接口偶有失败时，状态会记在最新数据里，不阻塞其它 17 只。</p>
+  )}
+
+  {grade && (
+    <>
+      <h2>长赢持仓评价（{fundGrades.cutoff}）</h2>
+      <p class="lede">
+        <span class={`badge ${gradeCls(grade.grade)}`}>{gradeLabel(grade.grade)}</span>{' '}
+        {grade.brief}
+      </p>
+      <div class="tbl-wrap">
+        <table class="readings">
+          <tbody>
+            <tr><td>估值</td><td>{grade.valuation}</td></tr>
+            <tr><td>拥挤度</td><td>{grade.crowding}</td></tr>
+            <tr><td>风险</td><td>{grade.risk}</td></tr>
+            <tr><td>质量与分红</td><td>{grade.quality}</td></tr>
+            <tr><td>分散度</td><td>{grade.diversification}</td></tr>
+            <tr><td>仓位</td><td>{grade.position}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="analysis" set:html={mdToHtml(grade.detail)} />
+      <p class="lede">评价方法：且慢长赢方法（估值 / 拥挤度 / 风险三线，加质量与分红、分散度、仓位），持仓为 {fundGrades.cutoff} PCF Top20 快照；股息率与 ROE 等数据以当时可核实的为准，未核实项见评价正文。</p>
+    </>
   )}
 
   <h2>每日收盘价与份额历史</h2>
