@@ -11,28 +11,28 @@
     {
       "code": "600519",
       "name": "贵州茅台",
-      "weightPct": 4.8828,
+      "weightPct": 4.8807,
       "quantity": 100,
       "flag": "允许"
     },
     {
       "code": "603259",
       "name": "药明康德",
-      "weightPct": 3.9236,
+      "weightPct": 3.9082,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "601318",
       "name": "中国平安",
-      "weightPct": 3.8563,
+      "weightPct": 3.8605,
       "quantity": 2100,
       "flag": "允许"
     },
     {
       "code": "002371",
       "name": "北方华创",
-      "weightPct": 3.6835,
+      "weightPct": 3.7079,
       "quantity": 200,
       "flag": "允许"
     },
@@ -46,42 +46,42 @@
     {
       "code": "002008",
       "name": "大族激光",
-      "weightPct": 3.459,
+      "weightPct": 3.4545,
       "quantity": 2200,
       "flag": "允许"
     },
     {
       "code": "600036",
       "name": "招商银行",
-      "weightPct": 3.3469,
+      "weightPct": 3.3462,
       "quantity": 2300,
       "flag": "允许"
     },
     {
       "code": "002602",
       "name": "世纪华通",
-      "weightPct": 3.2424,
+      "weightPct": 3.2484,
       "quantity": 9000,
       "flag": "允许"
     },
     {
       "code": "600309",
       "name": "万华化学",
-      "weightPct": 3.1929,
+      "weightPct": 3.1887,
       "quantity": 1400,
       "flag": "允许"
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "weightPct": 3.1724,
+      "weightPct": 3.1452,
       "quantity": 500,
       "flag": "允许"
     },
     {
       "code": "002475",
       "name": "立讯精密",
-      "weightPct": 3.11,
+      "weightPct": 3.1113,
       "quantity": 1900,
       "flag": "允许"
     },
@@ -95,14 +95,14 @@
     {
       "code": "300308",
       "name": "中际旭创",
-      "weightPct": 2.9085,
+      "weightPct": 2.8965,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "600183",
       "name": "生益科技",
-      "weightPct": 2.741,
+      "weightPct": 2.7357,
       "quantity": 1300,
       "flag": "允许"
     },
@@ -121,24 +121,24 @@
       "flag": "允许"
     },
     {
-      "code": "002463",
-      "name": "沪电股份",
-      "weightPct": 2.3073,
-      "quantity": 800,
+      "code": "000400",
+      "name": "许继电气",
+      "weightPct": 2.3116,
+      "quantity": 2600,
       "flag": "允许"
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "weightPct": 2.303,
+      "weightPct": 2.3072,
       "quantity": 300,
       "flag": "允许"
     },
     {
-      "code": "000400",
-      "name": "许继电气",
-      "weightPct": 2.2984,
-      "quantity": 2600,
+      "code": "002463",
+      "name": "沪电股份",
+      "weightPct": 2.3009,
+      "quantity": 800,
       "flag": "允许"
     },
     {
