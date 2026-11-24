@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-24",
+  "etf": "581030",
+  "name": "华夏质量甄选主动ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-24",
+  "navPerCU": 1973245.34,
+  "navPerShare": 0.9866,
+  "componentCount": 44,
+  "top": [
+    {
+      "code": "300760",
+      "name": "迈瑞医疗",
+      "weightPct": 2.7898,
+      "quantity": 300,
+      "flag": "1"
+    },
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "weightPct": 2.5297,
+      "quantity": 1100,
+      "flag": "1"
+    },
+    {
+      "code": "002415",
+      "name": "海康威视",
+      "weightPct": 2.4939,
+      "quantity": 1400,
+      "flag": "1"
+    },
+    {
+      "code": "002064",
+      "name": "华峰化学",
+      "weightPct": 2.4657,
+      "quantity": 5400,
+      "flag": "1"
+    },
+    {
+      "code": "300012",
+      "name": "华测检测",
+      "weightPct": 2.4649,
+      "quantity": 3100,
+      "flag": "1"
+    },
+    {
+      "code": "000338",
+      "name": "潍柴动力",
+      "weightPct": 2.4587,
+      "quantity": 2600,
+      "flag": "1"
+    },
+    {
+      "code": "300832",
+      "name": "新产业",
+      "weightPct": 2.3511,
+      "quantity": 800,
+      "flag": "1"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "weightPct": 2.3047,
+      "quantity": 200,
+      "flag": "1"
+    },
+    {
+      "code": "000596",
+      "name": "古井贡酒",
+      "weightPct": 2.1552,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "weightPct": 2.1355,
+      "quantity": 600,
+      "flag": "1"
+    },
+    {
+      "code": "002078",
+      "name": "太阳纸业",
+      "weightPct": 2.034,
+      "quantity": 2900,
+      "flag": "1"
+    },
+    {
+      "code": "002126",
+      "name": "银轮股份",
+      "weightPct": 2.0133,
+      "quantity": 1600,
+      "flag": "1"
+    },
+    {
+      "code": "300979",
+      "name": "华利集团",
+      "weightPct": 2.0029,
+      "quantity": 1100,
+      "flag": "1"
+    },
+    {
+      "code": "002027",
+      "name": "分众传媒",
+      "weightPct": 1.985,
+      "quantity": 7200,
+      "flag": "1"
+    },
+    {
+      "code": "002847",
+      "name": "盐津铺子",
+      "weightPct": 1.9101,
+      "quantity": 1000,
+      "flag": "1"
+    },
+    {
+      "code": "000951",
+      "name": "中国重汽",
+      "weightPct": 1.787,
+      "quantity": 1800,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}
