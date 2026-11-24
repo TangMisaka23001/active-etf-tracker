@@ -353,36 +353,36 @@
       "date": "2026-11-24",
       "etfs": {
         "158900": {
-          "price": 0.994,
+          "price": 0.993,
           "prevClose": 0.988,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 1205685,
-          "turnover": 11982,
-          "changePct": 0.61,
+          "volume": 1387388,
+          "turnover": 13785,
+          "changePct": 0.51,
           "source": "tencent"
         },
         "158901": {
-          "price": 0.99,
+          "price": 0.989,
           "prevClose": 0.986,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 888214,
-          "turnover": 8815,
-          "changePct": 0.41,
+          "volume": 975830,
+          "turnover": 9681,
+          "changePct": 0.3,
           "source": "tencent"
         },
         "158902": {
-          "price": 0.98,
+          "price": 0.979,
           "prevClose": 0.984,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 566571,
-          "turnover": 5569,
-          "changePct": -0.41,
+          "volume": 657361,
+          "turnover": 6458,
+          "changePct": -0.51,
           "source": "tencent"
         },
         "158903": {
@@ -391,42 +391,42 @@
           "open": null,
           "high": null,
           "low": null,
-          "volume": 827962,
-          "turnover": 8267,
+          "volume": 972316,
+          "turnover": 9709,
           "changePct": -0.2,
           "source": "tencent"
         },
         "158905": {
-          "price": 0.98,
+          "price": 0.978,
           "prevClose": 0.975,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 677176,
-          "turnover": 6644,
-          "changePct": 0.51,
+          "volume": 770179,
+          "turnover": 7555,
+          "changePct": 0.31,
           "source": "tencent"
         },
         "158906": {
-          "price": 0.973,
+          "price": 0.972,
           "prevClose": 0.962,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 813308,
-          "turnover": 7948,
-          "changePct": 1.14,
+          "volume": 886326,
+          "turnover": 8659,
+          "changePct": 1.04,
           "source": "tencent"
         },
         "158907": {
-          "price": 0.994,
+          "price": 0.993,
           "prevClose": 0.986,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 4165229,
-          "turnover": 41840,
-          "changePct": 0.81,
+          "volume": 4395056,
+          "turnover": 44127,
+          "changePct": 0.71,
           "source": "tencent"
         },
         "158908": {
@@ -435,42 +435,42 @@
           "open": null,
           "high": null,
           "low": null,
-          "volume": 1223440,
-          "turnover": 12106,
+          "volume": 1332475,
+          "turnover": 13180,
           "changePct": 1.55,
           "source": "tencent"
         },
         "158909": {
-          "price": 0.99,
+          "price": 0.991,
           "prevClose": 0.98,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 583478,
-          "turnover": 5777,
-          "changePct": 1.02,
+          "volume": 674742,
+          "turnover": 6683,
+          "changePct": 1.12,
           "source": "tencent"
         },
         "581000": {
-          "price": 0.978,
+          "price": 0.974,
           "prevClose": 0.963,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 1345272,
-          "turnover": 13285,
-          "changePct": 1.56,
+          "volume": 1425678,
+          "turnover": 14071,
+          "changePct": 1.14,
           "source": "tencent"
         },
         "581010": {
-          "price": 0.989,
+          "price": 0.99,
           "prevClose": 0.985,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 873270,
-          "turnover": 8660,
-          "changePct": 0.41,
+          "volume": 937688,
+          "turnover": 9298,
+          "changePct": 0.51,
           "source": "tencent"
         },
         "581020": {
@@ -479,8 +479,8 @@
           "open": null,
           "high": null,
           "low": null,
-          "volume": 734511,
-          "turnover": 7229,
+          "volume": 827141,
+          "turnover": 8140,
           "changePct": 0,
           "source": "tencent"
         },
@@ -490,64 +490,64 @@
           "open": null,
           "high": null,
           "low": null,
-          "volume": 925136,
-          "turnover": 9119,
+          "volume": 1055365,
+          "turnover": 10405,
           "changePct": 0.51,
           "source": "tencent"
         },
         "581050": {
-          "price": 0.994,
+          "price": 0.993,
           "prevClose": 0.99,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 489964,
-          "turnover": 4869,
-          "changePct": 0.4,
+          "volume": 633741,
+          "turnover": 6295,
+          "changePct": 0.3,
           "source": "tencent"
         },
         "581060": {
-          "price": 1.019,
+          "price": 1.018,
           "prevClose": 1.011,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 2735477,
-          "turnover": 27949,
-          "changePct": 0.79,
+          "volume": 2973282,
+          "turnover": 30371,
+          "changePct": 0.69,
           "source": "tencent"
         },
         "581070": {
-          "price": 1.007,
+          "price": 1.006,
           "prevClose": 1.004,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 787262,
-          "turnover": 7908,
-          "changePct": 0.3,
+          "volume": 836994,
+          "turnover": 8408,
+          "changePct": 0.2,
           "source": "tencent"
         },
         "581080": {
-          "price": 0.97,
+          "price": 0.969,
           "prevClose": 0.967,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 647243,
-          "turnover": 6303,
-          "changePct": 0.31,
+          "volume": 710858,
+          "turnover": 6920,
+          "changePct": 0.21,
           "source": "tencent"
         },
         "581090": {
-          "price": 0.986,
+          "price": 0.983,
           "prevClose": 0.987,
           "open": null,
           "high": null,
           "low": null,
-          "volume": 776790,
-          "turnover": 7667,
-          "changePct": -0.1,
+          "volume": 845561,
+          "turnover": 8343,
+          "changePct": -0.41,
           "source": "tencent"
         }
       },
@@ -625,79 +625,116 @@
           "error": null
         },
         "581000": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 60,
+          "navPerShare": 0.9651,
+          "error": null
         },
         "581010": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 480,
+          "navPerShare": 0.9892,
+          "error": null
         },
         "581020": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 48,
+          "navPerShare": 0.9877,
+          "error": null
         },
         "581030": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 44,
+          "navPerShare": 0.9866,
+          "error": null
         },
         "581050": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 35,
+          "navPerShare": 0.9973,
+          "error": null
         },
         "581060": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 38,
+          "navPerShare": 1.0183,
+          "error": null
         },
         "581070": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 54,
+          "navPerShare": 1.0105,
+          "error": null
         },
         "581080": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 178,
+          "navPerShare": 0.9718,
+          "error": null
         },
         "581090": {
-          "status": "failed",
+          "status": "ok",
           "source": "sse_pcf",
-          "tradingDay": null,
-          "componentCount": null,
-          "navPerShare": null,
-          "error": "fetch failed"
+          "tradingDay": "2026-11-24",
+          "componentCount": 35,
+          "navPerShare": 0.9921,
+          "error": null
         }
       },
-      "shares": {}
+      "shares": {
+        "581000": {
+          "shares10k": 192201.75,
+          "date": "2026-11-23"
+        },
+        "581010": {
+          "shares10k": 166504.62,
+          "date": "2026-11-23"
+        },
+        "581020": {
+          "shares10k": 161610.1,
+          "date": "2026-11-23"
+        },
+        "581030": {
+          "shares10k": 176204.07,
+          "date": "2026-11-23"
+        },
+        "581050": {
+          "shares10k": 180001.13,
+          "date": "2026-11-23"
+        },
+        "581060": {
+          "shares10k": 159810.39,
+          "date": "2026-11-23"
+        },
+        "581070": {
+          "shares10k": 170508.89,
+          "date": "2026-11-23"
+        },
+        "581080": {
+          "shares10k": 170603.36,
+          "date": "2026-11-23"
+        },
+        "581090": {
+          "shares10k": 150703.4,
+          "date": "2026-11-23"
+        }
+      }
     }
   ],
   "note": "每日行情历史，由 scripts/fetch-data.mjs 每天收盘后追加。每一项是一天的18只快照。首日为2026-11-23上市日。",
