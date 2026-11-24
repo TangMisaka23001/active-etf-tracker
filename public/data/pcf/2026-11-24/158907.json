@@ -11,119 +11,126 @@
     {
       "code": "600519",
       "name": "贵州茅台",
-      "weightPct": 4.8927,
+      "weightPct": 4.8828,
       "quantity": 100,
       "flag": "允许"
     },
     {
       "code": "603259",
       "name": "药明康德",
-      "weightPct": 3.9311,
+      "weightPct": 3.9236,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "601318",
       "name": "中国平安",
-      "weightPct": 3.8676,
+      "weightPct": 3.8563,
       "quantity": 2100,
       "flag": "允许"
     },
     {
       "code": "002371",
       "name": "北方华创",
-      "weightPct": 3.6621,
+      "weightPct": 3.6835,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "600030",
       "name": "中信证券",
-      "weightPct": 3.4686,
+      "weightPct": 3.4617,
       "quantity": 4100,
       "flag": "允许"
     },
     {
       "code": "002008",
       "name": "大族激光",
-      "weightPct": 3.4442,
+      "weightPct": 3.459,
       "quantity": 2200,
       "flag": "允许"
     },
     {
       "code": "600036",
       "name": "招商银行",
-      "weightPct": 3.3493,
+      "weightPct": 3.3469,
       "quantity": 2300,
       "flag": "允许"
     },
     {
       "code": "002602",
       "name": "世纪华通",
-      "weightPct": 3.2484,
+      "weightPct": 3.2424,
       "quantity": 9000,
       "flag": "允许"
     },
     {
       "code": "600309",
       "name": "万华化学",
-      "weightPct": 3.1915,
+      "weightPct": 3.1929,
       "quantity": 1400,
       "flag": "允许"
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "weightPct": 3.1539,
+      "weightPct": 3.1724,
       "quantity": 500,
       "flag": "允许"
     },
     {
       "code": "002475",
       "name": "立讯精密",
-      "weightPct": 3.1023,
+      "weightPct": 3.11,
       "quantity": 1900,
       "flag": "允许"
     },
     {
       "code": "601398",
       "name": "工商银行",
-      "weightPct": 3.0262,
+      "weightPct": 3.0295,
       "quantity": 9800,
       "flag": "允许"
     },
     {
       "code": "300308",
       "name": "中际旭创",
-      "weightPct": 2.8774,
+      "weightPct": 2.9085,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "600183",
       "name": "生益科技",
-      "weightPct": 2.7204,
+      "weightPct": 2.741,
       "quantity": 1300,
       "flag": "允许"
     },
     {
       "code": "600031",
       "name": "三一重工",
-      "weightPct": 2.5018,
+      "weightPct": 2.4949,
       "quantity": 4100,
       "flag": "允许"
     },
     {
       "code": "601688",
       "name": "华泰证券",
-      "weightPct": 2.3264,
+      "weightPct": 2.3237,
       "quantity": 4000,
+      "flag": "允许"
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "weightPct": 2.3073,
+      "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "weightPct": 2.3031,
+      "weightPct": 2.303,
       "quantity": 300,
       "flag": "允许"
     },
@@ -137,15 +144,8 @@
     {
       "code": "601766",
       "name": "中国中车",
-      "weightPct": 2.2937,
+      "weightPct": 2.2971,
       "quantity": 10300,
-      "flag": "允许"
-    },
-    {
-      "code": "002463",
-      "name": "沪电股份",
-      "weightPct": 2.2879,
-      "quantity": 800,
       "flag": "允许"
     }
   ],
