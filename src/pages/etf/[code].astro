@@ -13,6 +13,7 @@ export function getStaticPaths() {
 const { etf } = Astro.props;
 const q = (latest.etfs ?? {})[etf.code];
 const pcf = (latest.pcfStatus ?? {})[etf.code];
+const sh = (latest.shares ?? {})[etf.code];
 const days = (history.days ?? []).filter((d) => d.etfs?.[etf.code]);
 
 // 最新一天的 PCF 快照（如果当天抓取成功）
@@ -42,6 +43,7 @@ const fmt = (v, suffix = '') => (v == null ? '—' : `${v > 0 ? '+' : ''}${Numbe
       <div class="card"><div class="k">当日涨跌</div><div class={`v ${cls(q.changePct)}`}>{fmt(q.changePct, '%')}</div><div class="d">来源：{q.source}</div></div>
       <div class="card"><div class="k">成交量 / 成交额</div><div class="v" style="font-size:16px">{q.volume != null ? q.volume.toLocaleString() : '—'}</div><div class="d">{q.turnover != null ? `成交额 ${q.turnover.toLocaleString()}` : ''}</div></div>
       <div class="card"><div class="k">PCF 状态</div><div class="v" style="font-size:16px">{pcf?.status === 'ok' ? `✓ ${pcf.componentCount}只成分` : pcf?.status === 'failed' ? '✗ 失败' : '—'}</div><div class="d">{pcf?.tradingDay ? `PCF 交易日 ${pcf.tradingDay}` : pcf?.error ?? ''}</div></div>
+      <div class="card"><div class="k">基金份额{sh ? `（${sh.date}）` : ''}</div><div class="v" style="font-size:16px">{sh ? `${(sh.shares10k / 10000).toFixed(2)}亿份` : '—'}</div><div class={`d ${cls(sh?.changePct)}`}>{sh?.change10k != null ? `较上期 ${sh.change10k > 0 ? '+' : ''}${Math.round(sh.change10k).toLocaleString()}万份 (${sh.changePct > 0 ? '+' : ''}${sh.changePct?.toFixed(2)}%)` : '首期份额记录，暂无增减'}</div></div>
     </div>
   ) : (
     <div class="note">还没有当日行情。跑一次 <code>npm run fetch</code> 或等每日定时任务后，这里会有价格与 PCF。</div>
@@ -78,14 +80,14 @@ const fmt = (v, suffix = '') => (v == null ? '—' : `${v > 0 ? '+' : ''}${Numbe
     <p class="lede">暂无 PCF 快照。深交所 / 上交所接口偶有失败时，状态会记在最新数据里，不阻塞其它 17 只。</p>
   )}
 
-  <h2>每日收盘价历史</h2>
+  <h2>每日收盘价与份额历史</h2>
   {days.length ? (
     <div class="tbl-wrap">
       <table>
-        <thead><tr><th>日期</th><th>收盘价</th><th>涨跌幅</th></tr></thead>
+        <thead><tr><th>日期</th><th>收盘价</th><th>涨跌幅</th><th>基金份额（亿份）</th></tr></thead>
         <tbody>
           {[...days].reverse().map((d) => (
-            <tr><td>{d.date}</td><td>{d.etfs[etf.code].price.toFixed(3)}</td><td class={cls(d.etfs[etf.code].changePct)}>{fmt(d.etfs[etf.code].changePct, '%')}</td></tr>
+            <tr><td>{d.date}</td><td>{d.etfs[etf.code].price.toFixed(3)}</td><td class={cls(d.etfs[etf.code].changePct)}>{fmt(d.etfs[etf.code].changePct, '%')}</td><td>{d.shares?.[etf.code]?.shares10k != null ? (d.shares[etf.code].shares10k / 10000).toFixed(2) : '—'}</td></tr>
           ))}
         </tbody>
       </table>
@@ -93,4 +95,5 @@ const fmt = (v, suffix = '') => (v == null ? '—' : `${v > 0 ? '+' : ''}${Numbe
   ) : (
     <p class="lede">暂无历史。每日抓取会把每一天追加到 <code>public/data/history.json</code>。</p>
   )}
+  <p class="lede">份额口径：上交所按日归档、深交所只有当前快照（T日晚为预估值、T+1早为确认值），所以份额日期可能比行情日期晚一天或早一天；份额增是申购、减是赎回。</p>
 </Layout>

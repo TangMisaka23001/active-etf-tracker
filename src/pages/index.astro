@@ -40,13 +40,19 @@ function spark(code: string) {
 const cls = (v: number | null | undefined) => (v == null ? 'flat' : v > 0 ? 'up' : v < 0 ? 'down' : 'flat');
 const fmt = (v: number | null | undefined, suffix = '') =>
   v == null ? '—' : `${v > 0 ? '+' : ''}${v.toFixed(2)}${suffix}`;
+const fmtShares = (s: { shares10k: number } | undefined) =>
+  s == null ? '—' : `${(s.shares10k / 10000).toFixed(2)}亿份`;
+const fmtSharesChg = (s: { change10k: number | null; changePct: number | null } | undefined) =>
+  s?.change10k == null
+    ? ''
+    : `${s.change10k > 0 ? '+' : ''}${Math.round(s.change10k).toLocaleString()}万份${s.changePct != null ? ` (${s.changePct > 0 ? '+' : ''}${s.changePct.toFixed(2)}%)` : ''}`;
 ---
 
 <Layout title="首批18只主动ETF追踪 | 每日涨跌与PCF持仓">
   <h1>首批18只主动ETF追踪</h1>
   <p class="lede">
     2026年10月19日获批、10月23日发行、11月23日上市。单只募集上限20亿元，合计360亿元。
-    每天收盘后自动更新场内价与交易所 PCF 持仓快照。
+    每天收盘后自动更新场内价、基金份额与交易所 PCF 持仓快照。
   </p>
 
   {!hasData && (
@@ -69,7 +75,7 @@ const fmt = (v: number | null | undefined, suffix = '') =>
   <div class="tbl-wrap">
     <table>
       <thead>
-        <tr><th>代码</th><th>基金</th><th>风格</th><th>最新价</th><th>当日涨跌</th><th>上市以来</th><th>走势</th><th>PCF</th><th></th></tr>
+        <tr><th>代码</th><th>基金</th><th>风格</th><th>最新价</th><th>当日涨跌</th><th>上市以来</th><th>份额</th><th>走势</th><th>PCF</th><th></th></tr>
       </thead>
       <tbody>
         {sorted.map((r) => {
@@ -83,6 +89,13 @@ const fmt = (v: number | null | undefined, suffix = '') =>
               <td>{r.q ? r.q.price.toFixed(3) : '—'}</td>
               <td class={cls(r.q?.changePct)}>{fmt(r.q?.changePct, '%')}</td>
               <td class={cls(r.sinceListing)}>{fmt(r.sinceListing, '%')}</td>
+              <td>
+                {fmtShares((latest.shares ?? {})[r.code])}
+                <br />
+                <span class={cls((latest.shares ?? {})[r.code]?.changePct)} style="font-size:12px">
+                  {fmtSharesChg((latest.shares ?? {})[r.code])}
+                </span>
+              </td>
               <td>
                 {sp ? (
                   <svg class="spark" width={sp.w} height={sp.h} viewBox={`0 0 ${sp.w} ${sp.h}`}>
@@ -130,6 +143,7 @@ const fmt = (v: number | null | undefined, suffix = '') =>
   <ul>
     <li><strong>每日涨跌</strong>：场内收盘价相对前一交易日收盘价，数据来自东方财富/腾讯/新浪/Yahoo（按顺序兜底）。</li>
     <li><strong>上市以来</strong>：相对本站记录的首个交易日（2026-11-23）收盘价，不是相对1元发行价。</li>
+    <li><strong>基金份额</strong>：总份额（亿份）及相对上一份份额记录的增减。份额增是申购、减是赎回，是资金进出的直接口径。上交所按日归档，深交所只有当前快照（T日晚为预估值、T+1早为确认值）；两所数据日期可能比行情晚一天，页面显示的是份额自身的日期。</li>
     <li><strong>持仓变动</strong>：点进单只详情页，看当日 PCF Top20 与上一日快照的对比（新增 / 剔除 / 权重变化≥0.5个百分点）。</li>
     <li><strong>PCF 口径</strong>：PCF 是申赎篮子，基于前一交易日日终组合，用于申赎与套利，不等同基金精确持仓；完整持仓以季报/半年报/年报为准。</li>
   </ul>

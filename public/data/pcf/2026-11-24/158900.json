@@ -11,21 +11,21 @@
     {
       "code": "002371",
       "name": "北方华创",
-      "weightPct": 2.8066,
+      "weightPct": 2.7893,
       "quantity": 100,
       "flag": "允许"
     },
     {
       "code": "601088",
       "name": "中国神华",
-      "weightPct": 2.3173,
+      "weightPct": 2.31,
       "quantity": 900,
       "flag": "允许"
     },
     {
       "code": "601328",
       "name": "交通银行",
-      "weightPct": 2.2161,
+      "weightPct": 2.2136,
       "quantity": 4900,
       "flag": "允许"
     },
@@ -39,14 +39,14 @@
     {
       "code": "300308",
       "name": "中际旭创",
-      "weightPct": 2.2089,
+      "weightPct": 2.2032,
       "quantity": 100,
       "flag": "允许"
     },
     {
       "code": "601988",
       "name": "中国银行",
-      "weightPct": 2.1723,
+      "weightPct": 2.1664,
       "quantity": 5800,
       "flag": "允许"
     },
@@ -60,91 +60,91 @@
     {
       "code": "601939",
       "name": "建设银行",
-      "weightPct": 2.1177,
+      "weightPct": 2.116,
       "quantity": 3400,
       "flag": "允许"
     },
     {
       "code": "688347",
       "name": "华虹宏力",
-      "weightPct": 2.0745,
+      "weightPct": 2.0897,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "000333",
       "name": "美的集团",
-      "weightPct": 1.8928,
+      "weightPct": 1.8922,
       "quantity": 400,
       "flag": "允许"
     },
     {
       "code": "600900",
       "name": "长江电力",
-      "weightPct": 1.744,
+      "weightPct": 1.7412,
       "quantity": 1100,
       "flag": "允许"
     },
     {
       "code": "601998",
       "name": "中信银行",
-      "weightPct": 1.7244,
+      "weightPct": 1.7208,
       "quantity": 3600,
       "flag": "允许"
     },
     {
       "code": "601166",
       "name": "兴业银行",
-      "weightPct": 1.717,
+      "weightPct": 1.7153,
       "quantity": 1700,
       "flag": "允许"
     },
     {
       "code": "600919",
       "name": "江苏银行",
-      "weightPct": 1.7061,
+      "weightPct": 1.7035,
       "quantity": 2500,
       "flag": "允许"
     },
     {
       "code": "600887",
       "name": "伊利股份",
-      "weightPct": 1.6712,
+      "weightPct": 1.6717,
       "quantity": 1000,
       "flag": "允许"
     },
     {
       "code": "601225",
       "name": "陕西煤业",
-      "weightPct": 1.653,
+      "weightPct": 1.6475,
       "quantity": 1200,
       "flag": "允许"
     },
     {
       "code": "603259",
       "name": "药明康德",
-      "weightPct": 1.4789,
+      "weightPct": 1.4868,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "601919",
       "name": "中远海控",
-      "weightPct": 1.3477,
+      "weightPct": 1.3447,
       "quantity": 1500,
       "flag": "允许"
     },
     {
       "code": "601899",
       "name": "紫金矿业",
-      "weightPct": 1.3264,
+      "weightPct": 1.3237,
       "quantity": 1100,
       "flag": "允许"
     },
     {
       "code": "000100",
       "name": "TCL科技",
-      "weightPct": 1.3028,
+      "weightPct": 1.3001,
       "quantity": 5300,
       "flag": "允许"
     }

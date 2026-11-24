@@ -1,10 +1,14 @@
-// 每日抓取：18 只主动 ETF 的场内价 + 交易所 PCF 持仓快照。
+// 每日抓取：18 只主动 ETF 的场内价 + 交易所 PCF 持仓快照 + 基金份额。
 // Node >= 20，无第三方依赖。跑法：`node scripts/fetch-data.mjs`
 // 数据源（全部免费、无需 key，按顺序尝试，失败就换下一个）：
 //   行情 1. 东方财富 push2  2. 腾讯 qt.gtimg.cn  3. 新浪 hq.sinajs.cn（需 Referer） 4. Yahoo Finance
 //   PCF   上交所 query.sse.com.cn/commonQuery.do（两条 sqlId，见下）
 //         深交所 www.szse.cn/api/report/ShowReport/data + reportdocs.static.szse.cn 的 XML
 //         口径说明见 README：PCF 是申赎篮子估算，不等同精确持仓。
+//   份额  上交所 query.sse.com.cn/commonQuery.do（sqlId ..._ETFGM_SEARCH_L，STAT_DATE 按日归档）
+//         深交所 fund.szse.cn/api/report/ShowReport/data（CATALOGID=1000_lf，只提供当前快照）
+//         口径见 README：份额变化是申赎的直接口径。端点形态参考
+//         simonlin1212/a-stock-data §4.7 etf_shares()（Apache-2.0）。
 // 注意：本机直连东方财富/腾讯常超时或 502（代理/网络原因），GitHub Actions
 // Runner 上通常可达。脚本对每个源都设 15 秒超时 + 重试，全部失败时以非零
 // 退出，让 Action 变红，而不是静默写假数据。
@@ -425,6 +429,97 @@ async function fetchPCF(e) {
   }
 }
 
+// ---------- ETF 份额 ----------
+// 份额变化是申赎的直接口径（申购→份额增，赎回→份额减），与 PCF 持仓变动互补。
+// 单位：万份。返回 { [code]: { shares10k, date } }，只含拉到的交易所。
+const SSE_SHARES_SQL = 'COMMON_SSE_ZQPZ_ETFZL_XXPL_ETFGM_SEARCH_L';
+async function sharesSSE(list, date) {
+  // 上交所按日归档，但当日数据一般收盘后才发布：从 date 起往前最多 5 天找最近一期。
+  for (let back = 0; back < 5; back++) {
+    const d = new Date(`${date}T12:00:00+08:00`);
+    d.setDate(d.getDate() - back);
+    const day = d.toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' });
+    try {
+      const json = await fetchJson(
+        `https://query.sse.com.cn/commonQuery.do?sqlId=${SSE_SHARES_SQL}&STAT_DATE=${day}&isPagination=true&pageHelp.pageSize=10000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=1`,
+        { Referer: 'https://www.sse.com.cn/' },
+      );
+      const total = json?.pageHelp?.total ?? 0;
+      const rows = json?.result ?? [];
+      // 服务端把每页压到 2000 条（全市场约 936 只），条数必须等于自报总数才算完整。
+      if (!total || rows.length !== total) continue;
+      const out = {};
+      for (const r of rows) {
+        if (r.STAT_DATE !== day) continue;
+        const code = String(r.SEC_CODE ?? '');
+        if (!list.some((e) => e.code === code)) continue;
+        const v = num(r.TOT_VOL);
+        if (v !== null) out[code] = v;
+      }
+      if (Object.keys(out).length) return { date: day, shares: out };
+    } catch (e) {
+      console.log(`shares SSE ${day} failed: ${e.message}`);
+    }
+  }
+  throw new Error('SSE shares: no data in last 5 days');
+}
+async function sharesSZSE(list) {
+  // 深交所只提供当前快照，metadata.subname 是快照日期（T 日晚为预估值、T+1 早为确认值）。
+  // 列表按代码升序，每页 20 条；9 只目标都在前几页，找到齐了就提前停。
+  const wanted = new Set(list.map((e) => e.code));
+  const found = {};
+  let snapDate = null;
+  let page = 1;
+  let pageCount = 1;
+  while (page <= pageCount) {
+    const payload = await fetchJson(
+      `https://fund.szse.cn/api/report/ShowReport/data?SHOWTYPE=JSON&CATALOGID=1000_lf&TABKEY=tab1&selectJjlb=ETF&PAGENO=${page}`,
+      { Referer: 'https://fund.szse.cn/' },
+    );
+    const table = Array.isArray(payload) ? payload[0] : null;
+    const meta = table?.metadata;
+    const data = table?.data;
+    if (!meta || !Array.isArray(data)) throw new Error(`SZSE shares: page ${page} bad structure`);
+    if (page === 1) {
+      snapDate = String(meta.subname ?? '').trim();
+      pageCount = Number(meta.pagecount) || 1;
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(snapDate)) throw new Error('SZSE shares: no snapshot date');
+    }
+    for (const rec of data) {
+      const code = (String(rec.sys_key ?? '').match(/<u>(\d{6})<\/u>/) || [])[1];
+      if (!code || !wanted.has(code)) continue;
+      const m = String(rec.dqgm ?? '').match(/>([\d,\.]+)<\/a>/);
+      const v = m ? num(m[1]) : null;
+      if (v !== null) found[code] = v;
+    }
+    if (Object.keys(found).length === wanted.size) break;
+    page++;
+    await new Promise((r) => setTimeout(r, 300));
+  }
+  if (!Object.keys(found).length) throw new Error('SZSE shares: no rows for our codes');
+  return { date: snapDate, shares: found };
+}
+async function fetchShares(list, date) {
+  const out = {};
+  const sh = list.filter((e) => e.exchange === 'SSE');
+  const sz = list.filter((e) => e.exchange === 'SZSE');
+  try {
+    const r = await sharesSSE(sh, date);
+    for (const [code, v] of Object.entries(r.shares)) out[code] = { shares10k: v, date: r.date };
+    console.log(`shares: SSE ok, ${Object.keys(r.shares).length} rows, date ${r.date}`);
+  } catch (e) {
+    console.log(`shares: SSE failed: ${e.message}`);
+  }
+  try {
+    const r = await sharesSZSE(sz);
+    for (const [code, v] of Object.entries(r.shares)) out[code] = { shares10k: v, date: r.date };
+    console.log(`shares: SZSE ok, ${Object.keys(r.shares).length} rows, date ${r.date}`);
+  } catch (e) {
+    console.log(`shares: SZSE failed: ${e.message}`);
+  }
+  return out;
+}
+
 // ---------- 主流程 ----------
 async function main() {
   const today = cstToday();
@@ -449,6 +544,28 @@ async function main() {
   const lastDay = await lastTradingDay();
   const isTradingDay = lastDay ? lastDay === date : true;
   console.log(`last trading day from kline: ${lastDay ?? 'unknown'}, today ${date}, isTradingDay=${isTradingDay}`);
+
+  // 份额：单只失败不阻塞，整所失败记缺失；变动相对上一份有份额记录的交易日。
+  const sharesRaw = await fetchShares(etfs, date);
+  const histPath = join(DATA_DIR, 'history.json');
+  const histPrev = JSON.parse(readFileSync(histPath, 'utf8'));
+  const prevShares = {};
+  for (const d of [...(histPrev.days ?? [])].reverse()) {
+    for (const [code, s] of Object.entries(d.shares ?? {})) {
+      if (!(code in prevShares) && s?.shares10k != null) prevShares[code] = s.shares10k;
+    }
+    if (Object.keys(prevShares).length === etfs.length) break;
+  }
+  const shares = {};
+  for (const [code, s] of Object.entries(sharesRaw)) {
+    const prev = prevShares[code];
+    shares[code] = {
+      ...s,
+      change10k: prev != null ? +(s.shares10k - prev).toFixed(2) : null,
+      changePct: prev != null && prev ? +(((s.shares10k - prev) / prev) * 100).toFixed(2) : null,
+    };
+  }
+  console.log(`shares: ${Object.keys(shares).length}/${etfs.length} ok`);
 
   // PCF：18 只串行拉，交易所接口有频率敏感，失败单只记 failed 不阻塞其它。
   const pcfStatus = {};
@@ -506,15 +623,15 @@ async function main() {
     source: 'eastmoney/tencent/sina/yahoo (first success per ETF)',
     etfs: quotes,
     pcfStatus,
+    shares,
     missingQuotes: missing,
   };
   writeFileSync(join(DATA_DIR, 'latest.json'), JSON.stringify(latest, null, 2));
 
   if (isTradingDay) {
-    const histPath = join(DATA_DIR, 'history.json');
     const hist = JSON.parse(readFileSync(histPath, 'utf8'));
     const idx = hist.days.findIndex((d) => d.date === date);
-    const day = { date, etfs: quotes, pcfStatus };
+    const day = { date, etfs: quotes, pcfStatus, shares: sharesRaw };
     if (idx >= 0) hist.days[idx] = day;
     else hist.days.push(day);
     hist.days = hist.days.slice(-365);
