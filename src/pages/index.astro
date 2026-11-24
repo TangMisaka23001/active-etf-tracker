@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import etfs from '../data/etfs.json';
+import baseline from '../data/baseline.json';
+import latest from '../../public/data/latest.json';
+import history from '../../public/data/history.json';
+
+const hasData = !!latest.date && Object.keys(latest.etfs ?? {}).length > 0;
+const rows = etfs.map((e) => {
+  const q = (latest.etfs ?? {})[e.code];
+  const first = (history.days ?? [])[0]?.etfs?.[e.code];
+  const sinceListing = q && first?.price ? +(((q.price - first.price) / first.price) * 100).toFixed(2) : null;
+  return { ...e, q, sinceListing };
+});
+const withQ = rows.filter((r) => r.q);
+const sorted = [...rows].sort((a, b) => (b.q?.changePct ?? -999) - (a.q?.changePct ?? -999));
+const ups = withQ.filter((r) => (r.q.changePct ?? 0) > 0).length;
+const downs = withQ.filter((r) => (r.q.changePct ?? 0) < 0).length;
+const avg = withQ.length
+  ? (withQ.reduce((s, r) => s + (r.q.changePct ?? 0), 0) / withQ.length).toFixed(2)
+  : null;
+const pcfOk = Object.values(latest.pcfStatus ?? {}).filter((s) => s.status === 'ok').length;
+
+function spark(code: string) {
+  const pts = (history.days ?? [])
+    .map((d) => d.etfs?.[code]?.price)
+    .filter((v): v is number => typeof v === 'number');
+  if (pts.length < 2) return null;
+  const min = Math.min(...pts);
+  const max = Math.max(...pts);
+  const span = max - min || 1;
+  const w = 96;
+  const h = 28;
+  const xy = pts
+    .map((v, i) => `${((i / (pts.length - 1)) * w).toFixed(1)},${(h - 2 - ((v - min) / span) * (h - 4)).toFixed(1)}`)
+    .join(' ');
+  const up = pts.at(-1)! >= pts[0];
+  return { xy, color: up ? '#c0392b' : '#1e7d32', w, h };
+}
+const cls = (v: number | null | undefined) => (v == null ? 'flat' : v > 0 ? 'up' : v < 0 ? 'down' : 'flat');
+const fmt = (v: number | null | undefined, suffix = '') =>
+  v == null ? '—' : `${v > 0 ? '+' : ''}${v.toFixed(2)}${suffix}`;
+---
+
+<Layout title="首批18只主动ETF追踪 | 每日涨跌与PCF持仓">
+  <h1>首批18只主动ETF追踪</h1>
+  <p class="lede">
+    2026年10月19日获批、10月23日发行、11月23日上市。单只募集上限20亿元，合计360亿元。
+    每天收盘后自动更新场内价与交易所 PCF 持仓快照。
+  </p>
+
+  {!hasData && (
+    <div class="note">
+      还没有跑过每日抓取：最新数据为空。先跑 <code>npm run fetch</code>，或等 GitHub Actions
+      在下一个交易日收盘后自动跑，表格和走势就会出现。上市前基线（截至2026-11-16）已在下方。
+    </div>
+  )}
+
+  {hasData && (
+    <div class="cards">
+      <div class="card"><div class="k">最新交易日</div><div class="v">{latest.date}</div><div class="d">抓取于 {new Date(latest.fetchedAt).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}</div></div>
+      <div class="card"><div class="k">上涨 / 下跌</div><div class="v">{ups} / {downs}</div><div class="d">共 {withQ.length} 只有行情</div></div>
+      <div class="card"><div class="k">平均涨跌幅</div><div class="v">{avg ? `${Number(avg) > 0 ? '+' : ''}${avg}%` : '—'}</div><div class="d">18只等权平均</div></div>
+      <div class="card"><div class="k">PCF 快照成功</div><div class="v">{pcfOk} / 18</div><div class="d">失败的单只会记 error，不阻塞其它</div></div>
+    </div>
+  )}
+
+  <h2>每日涨跌 · 按当日涨跌幅排序</h2>
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr><th>代码</th><th>基金</th><th>风格</th><th>最新价</th><th>当日涨跌</th><th>上市以来</th><th>走势</th><th>PCF</th><th></th></tr>
+      </thead>
+      <tbody>
+        {sorted.map((r) => {
+          const sp = spark(r.code);
+          const pcf = (latest.pcfStatus ?? {})[r.code];
+          return (
+            <tr>
+              <td><code>{r.code}</code><br /><span class="badge">{r.exchange === 'SSE' ? '上交所' : '深交所'}</span></td>
+              <td><strong>{r.short}</strong><br /><span style="color:#777">{r.manager}</span></td>
+              <td>{r.style}</td>
+              <td>{r.q ? r.q.price.toFixed(3) : '—'}</td>
+              <td class={cls(r.q?.changePct)}>{fmt(r.q?.changePct, '%')}</td>
+              <td class={cls(r.sinceListing)}>{fmt(r.sinceListing, '%')}</td>
+              <td>
+                {sp ? (
+                  <svg class="spark" width={sp.w} height={sp.h} viewBox={`0 0 ${sp.w} ${sp.h}`}>
+                    <polyline points={sp.xy} fill="none" stroke={sp.color} stroke-width="1.5" />
+                  </svg>
+                ) : '—'}
+              </td>
+              <td>
+                {pcf ? (
+                  <span class={`badge ${pcf.status === 'ok' ? 'ok' : 'fail'}`}>
+                    {pcf.status === 'ok' ? `✓ ${pcf.componentCount}只成分` : '✗ 失败'}
+                  </span>
+                ) : '—'}
+              </td>
+              <td><a href={`${import.meta.env.BASE_URL}etf/${r.code}/`}>详情 →</a></td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>上市前基线（截至2026-11-16）</h2>
+  <p class="lede">
+    18只平均股票仓位 {baseline.avgPositionPct}%，中位数 {baseline.medianPositionPct}%，净值在
+    {baseline.navRange[0]}–{baseline.navRange[1]} 元之间。仓位分化极大：最高招商价值智选 91.33%，最低国泰鑫汇 29.48%。
+    上市前须补仓至合同约定的80%下限之上，所以上市后第一周的 PCF 变动最值得看。
+  </p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>代码</th><th>基金</th><th>11-16仓位</th></tr></thead>
+      <tbody>
+        {etfs.map((e) => (
+          <tr>
+            <td><code>{e.code}</code></td>
+            <td>{e.short}</td>
+            <td>{e.position20261116}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>怎么读这个站</h2>
+  <ul>
+    <li><strong>每日涨跌</strong>：场内收盘价相对前一交易日收盘价，数据来自东方财富/腾讯/新浪/Yahoo（按顺序兜底）。</li>
+    <li><strong>上市以来</strong>：相对本站记录的首个交易日（2026-11-23）收盘价，不是相对1元发行价。</li>
+    <li><strong>持仓变动</strong>：点进单只详情页，看当日 PCF Top20 与上一日快照的对比（新增 / 剔除 / 权重变化≥0.5个百分点）。</li>
+    <li><strong>PCF 口径</strong>：PCF 是申赎篮子，基于前一交易日日终组合，用于申赎与套利，不等同基金精确持仓；完整持仓以季报/半年报/年报为准。</li>
+  </ul>
+</Layout>

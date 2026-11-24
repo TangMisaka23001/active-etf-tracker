@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-23",
+  "etf": "581020",
+  "name": "华安均衡慧选主动管理ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-24",
+  "navPerCU": 2962995.86,
+  "navPerShare": 0.9877,
+  "componentCount": 48,
+  "top": [
+    {
+      "code": "300759",
+      "name": "康龙化成",
+      "weightPct": 2.781,
+      "quantity": 2000,
+      "flag": "1"
+    },
+    {
+      "code": "300677",
+      "name": "英科医疗",
+      "weightPct": 2.5941,
+      "quantity": 1600,
+      "flag": "1"
+    },
+    {
+      "code": "002821",
+      "name": "凯莱英",
+      "weightPct": 2.4215,
+      "quantity": 500,
+      "flag": "1"
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "weightPct": 2.2238,
+      "quantity": 700,
+      "flag": "1"
+    },
+    {
+      "code": "300832",
+      "name": "新产业",
+      "weightPct": 1.9571,
+      "quantity": 1000,
+      "flag": "1"
+    },
+    {
+      "code": "300765",
+      "name": "石药创新",
+      "weightPct": 1.8199,
+      "quantity": 1700,
+      "flag": "1"
+    },
+    {
+      "code": "002001",
+      "name": "新和成",
+      "weightPct": 1.4476,
+      "quantity": 1700,
+      "flag": "1"
+    },
+    {
+      "code": "300760",
+      "name": "迈瑞医疗",
+      "weightPct": 1.2386,
+      "quantity": 200,
+      "flag": "1"
+    },
+    {
+      "code": "000951",
+      "name": "中国重汽",
+      "weightPct": 0.9917,
+      "quantity": 1500,
+      "flag": "1"
+    },
+    {
+      "code": "002415",
+      "name": "海康威视",
+      "weightPct": 0.949,
+      "quantity": 800,
+      "flag": "1"
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "weightPct": 0.9481,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "weightPct": 0.7674,
+      "quantity": 100,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}

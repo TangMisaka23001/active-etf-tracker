@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; color: #1a1a1a; background: #fafafa; line-height: 1.6; }
+a { color: #165d9c; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+.top { background: #10243a; color: #fff; padding: 14px 0; }
+.top .brand { color: #fff; font-size: 20px; font-weight: 700; text-decoration: none; }
+.top .sub { margin-left: 12px; font-size: 13px; color: #b8c7d6; }
+h1 { font-size: 24px; margin: 24px 0 8px; }
+h2 { font-size: 18px; margin: 28px 0 10px; }
+.lede { color: #555; margin: 0 0 16px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px 14px; }
+.card .k { font-size: 13px; color: #777; }
+.card .v { font-size: 22px; font-weight: 700; }
+.card .d { font-size: 13px; color: #777; }
+table { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }
+th, td { padding: 9px 10px; border-bottom: 1px solid #eee; text-align: right; white-space: nowrap; }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+th { background: #f4f6f8; font-size: 13px; color: #555; }
+tbody tr:hover { background: #f8fafc; }
+.up { color: #c0392b; font-weight: 600; }
+.down { color: #1e7d32; font-weight: 600; }
+.flat { color: #777; }
+.badge { display: inline-block; padding: 1px 8px; border-radius: 999px; background: #eef3f7; font-size: 12px; color: #445; }
+.badge.ok { background: #e6f4ea; color: #1e7d32; }
+.badge.fail { background: #fdecea; color: #c0392b; }
+.tbl-wrap { overflow-x: auto; }
+.note { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 14px; font-size: 14px; }
+.foot { color: #777; font-size: 13px; padding: 24px 16px 40px; }
+.spark { display: block; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }

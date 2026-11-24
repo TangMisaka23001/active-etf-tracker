@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-23",
+  "etf": "158902",
+  "name": "大成红利智选主动管理ETF",
+  "source": "szse_pcf_txt",
+  "tradingDay": "2026-11-24",
+  "navPerCU": 988358.24,
+  "navPerShare": 0.9884,
+  "componentCount": 89,
+  "top": [
+    {
+      "code": "601919",
+      "name": "中远海控",
+      "weightPct": 3.748,
+      "quantity": 2100,
+      "flag": "允许"
+    },
+    {
+      "code": "600256",
+      "name": "广汇能源",
+      "weightPct": 2.3093,
+      "quantity": 3600,
+      "flag": "允许"
+    },
+    {
+      "code": "601225",
+      "name": "陕西煤业",
+      "weightPct": 2.2324,
+      "quantity": 800,
+      "flag": "允许"
+    },
+    {
+      "code": "601699",
+      "name": "潞安环能",
+      "weightPct": 2.098,
+      "quantity": 1600,
+      "flag": "允许"
+    },
+    {
+      "code": "601988",
+      "name": "中国银行",
+      "weightPct": 2.0936,
+      "quantity": 2800,
+      "flag": "允许"
+    },
+    {
+      "code": "000651",
+      "name": "格力电器",
+      "weightPct": 2.0564,
+      "quantity": 500,
+      "flag": "允许"
+    },
+    {
+      "code": "601658",
+      "name": "邮储银行",
+      "weightPct": 2.0193,
+      "quantity": 3400,
+      "flag": "允许"
+    },
+    {
+      "code": "600398",
+      "name": "海澜之家",
+      "weightPct": 2.0171,
+      "quantity": 3200,
+      "flag": "允许"
+    },
+    {
+      "code": "600546",
+      "name": "山煤国际",
+      "weightPct": 1.9396,
+      "quantity": 1800,
+      "flag": "允许"
+    },
+    {
+      "code": "603565",
+      "name": "中谷物流",
+      "weightPct": 1.891,
+      "quantity": 1500,
+      "flag": "允许"
+    },
+    {
+      "code": "600919",
+      "name": "江苏银行",
+      "weightPct": 1.7757,
+      "quantity": 1300,
+      "flag": "允许"
+    },
+    {
+      "code": "601916",
+      "name": "浙商银行",
+      "weightPct": 1.7647,
+      "quantity": 5700,
+      "flag": "允许"
+    },
+    {
+      "code": "000983",
+      "name": "山西焦煤",
+      "weightPct": 1.7479,
+      "quantity": 2800,
+      "flag": "允许"
+    },
+    {
+      "code": "601288",
+      "name": "农业银行",
+      "weightPct": 1.7429,
+      "quantity": 2200,
+      "flag": "允许"
+    },
+    {
+      "code": "601009",
+      "name": "南京银行",
+      "weightPct": 1.6294,
+      "quantity": 1200,
+      "flag": "允许"
+    },
+    {
+      "code": "600039",
+      "name": "四川路桥",
+      "weightPct": 1.5899,
+      "quantity": 1800,
+      "flag": "允许"
+    },
+    {
+      "code": "600901",
+      "name": "江苏金租",
+      "weightPct": 1.5743,
+      "quantity": 2000,
+      "flag": "允许"
+    },
+    {
+      "code": "601998",
+      "name": "中信银行",
+      "weightPct": 1.5638,
+      "quantity": 1600,
+      "flag": "允许"
+    },
+    {
+      "code": "600348",
+      "name": "华阳股份",
+      "weightPct": 1.5398,
+      "quantity": 1900,
+      "flag": "允许"
+    },
+    {
+      "code": "600755",
+      "name": "厦门国贸",
+      "weightPct": 1.5346,
+      "quantity": 2900,
+      "flag": "允许"
+    }
+  ],
+  "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890220261124.txt",
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}

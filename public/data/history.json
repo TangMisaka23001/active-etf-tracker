@@ -1,0 +1,355 @@
+{
+  "days": [
+    {
+      "date": "2026-11-23",
+      "etfs": {
+        "158900": {
+          "price": 0.988,
+          "prevClose": 0.991,
+          "open": 0.981,
+          "high": 0.993,
+          "low": 0.955,
+          "volume": 551719689,
+          "turnover": 540980355.538,
+          "changePct": -0.3,
+          "source": "sina"
+        },
+        "158901": {
+          "price": 0.986,
+          "prevClose": 0.997,
+          "open": 0.98,
+          "high": 0.989,
+          "low": 0.97,
+          "volume": 414977048,
+          "turnover": 407368872.918,
+          "changePct": -1.1,
+          "source": "sina"
+        },
+        "158902": {
+          "price": 0.984,
+          "prevClose": 0.993,
+          "open": 0.987,
+          "high": 0.989,
+          "low": 0.96,
+          "volume": 434978162,
+          "turnover": 426398034.271,
+          "changePct": -0.91,
+          "source": "sina"
+        },
+        "158903": {
+          "price": 1.001,
+          "prevClose": 1.018,
+          "open": 1.004,
+          "high": 1.005,
+          "low": 0.982,
+          "volume": 731487379,
+          "turnover": 732489885.293,
+          "changePct": -1.67,
+          "source": "sina"
+        },
+        "158905": {
+          "price": 0.975,
+          "prevClose": 0.988,
+          "open": 0.97,
+          "high": 0.984,
+          "low": 0.95,
+          "volume": 373370489,
+          "turnover": 363151521.847,
+          "changePct": -1.32,
+          "source": "sina"
+        },
+        "158906": {
+          "price": 0.962,
+          "prevClose": 0.946,
+          "open": 0.93,
+          "high": 0.97,
+          "low": 0.93,
+          "volume": 314207904,
+          "turnover": 296755419.979,
+          "changePct": 1.69,
+          "source": "sina"
+        },
+        "158907": {
+          "price": 0.986,
+          "prevClose": 0.986,
+          "open": 0.97,
+          "high": 0.994,
+          "low": 0.967,
+          "volume": 547645402,
+          "turnover": 534584584.313,
+          "changePct": 0,
+          "source": "sina"
+        },
+        "158908": {
+          "price": 0.97,
+          "prevClose": 0.965,
+          "open": 0.938,
+          "high": 0.974,
+          "low": 0.938,
+          "volume": 303050653,
+          "turnover": 289618575.46,
+          "changePct": 0.52,
+          "source": "sina"
+        },
+        "158909": {
+          "price": 0.98,
+          "prevClose": 0.986,
+          "open": 0.96,
+          "high": 0.985,
+          "low": 0.953,
+          "volume": 414914671,
+          "turnover": 403294497.778,
+          "changePct": -0.61,
+          "source": "sina"
+        },
+        "581000": {
+          "price": 0.963,
+          "prevClose": 0.949,
+          "open": 0.938,
+          "high": 0.97,
+          "low": 0.923,
+          "volume": 235294015,
+          "turnover": 222308518,
+          "changePct": 1.48,
+          "source": "sina"
+        },
+        "581010": {
+          "price": 0.985,
+          "prevClose": 0.991,
+          "open": 0.985,
+          "high": 0.989,
+          "low": 0.95,
+          "volume": 412770438,
+          "turnover": 404089378,
+          "changePct": -0.61,
+          "source": "sina"
+        },
+        "581020": {
+          "price": 0.984,
+          "prevClose": 0.99,
+          "open": 0.982,
+          "high": 0.984,
+          "low": 0.963,
+          "volume": 526326422,
+          "turnover": 512967423,
+          "changePct": -0.61,
+          "source": "sina"
+        },
+        "581030": {
+          "price": 0.981,
+          "prevClose": 0.987,
+          "open": 0.94,
+          "high": 0.985,
+          "low": 0.94,
+          "volume": 280577500,
+          "turnover": 273149709,
+          "changePct": -0.61,
+          "source": "sina"
+        },
+        "581050": {
+          "price": 0.99,
+          "prevClose": 1.007,
+          "open": 0.98,
+          "high": 0.998,
+          "low": 0.98,
+          "volume": 291943161,
+          "turnover": 288735235,
+          "changePct": -1.69,
+          "source": "sina"
+        },
+        "581060": {
+          "price": 1.011,
+          "prevClose": 1.013,
+          "open": 0.99,
+          "high": 1.012,
+          "low": 0.99,
+          "volume": 989685955,
+          "turnover": 992076149,
+          "changePct": -0.2,
+          "source": "sina"
+        },
+        "581070": {
+          "price": 1.004,
+          "prevClose": 1.02,
+          "open": 1,
+          "high": 1.009,
+          "low": 0.99,
+          "volume": 414652065,
+          "turnover": 415593194,
+          "changePct": -1.57,
+          "source": "sina"
+        },
+        "581080": {
+          "price": 0.967,
+          "prevClose": 0.967,
+          "open": 0.93,
+          "high": 0.971,
+          "low": 0.93,
+          "volume": 371873706,
+          "turnover": 354841303,
+          "changePct": 0,
+          "source": "sina"
+        },
+        "581090": {
+          "price": 0.987,
+          "prevClose": 0.998,
+          "open": 0.97,
+          "high": 0.99,
+          "low": 0.965,
+          "volume": 558875444,
+          "turnover": 549685301,
+          "changePct": -1.1,
+          "source": "sina"
+        }
+      },
+      "pcfStatus": {
+        "158900": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 85,
+          "navPerShare": 0.9906,
+          "error": null
+        },
+        "158901": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 240,
+          "navPerShare": 0.9944,
+          "error": null
+        },
+        "158902": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 89,
+          "navPerShare": 0.9884,
+          "error": null
+        },
+        "158903": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 57,
+          "navPerShare": 1.0087,
+          "error": null
+        },
+        "158905": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 43,
+          "navPerShare": 0.984,
+          "error": null
+        },
+        "158906": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 86,
+          "navPerShare": 0.9646,
+          "error": null
+        },
+        "158907": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 52,
+          "navPerShare": 0.9909,
+          "error": null
+        },
+        "158908": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 268,
+          "navPerShare": 0.9742,
+          "error": null
+        },
+        "158909": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-24",
+          "componentCount": 93,
+          "navPerShare": 0.9843,
+          "error": null
+        },
+        "581000": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 60,
+          "navPerShare": 0.9651,
+          "error": null
+        },
+        "581010": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 480,
+          "navPerShare": 0.9892,
+          "error": null
+        },
+        "581020": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 48,
+          "navPerShare": 0.9877,
+          "error": null
+        },
+        "581030": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 44,
+          "navPerShare": 0.9866,
+          "error": null
+        },
+        "581050": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 35,
+          "navPerShare": 0.9973,
+          "error": null
+        },
+        "581060": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 38,
+          "navPerShare": 1.0183,
+          "error": null
+        },
+        "581070": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 54,
+          "navPerShare": 1.0105,
+          "error": null
+        },
+        "581080": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 178,
+          "navPerShare": 0.9718,
+          "error": null
+        },
+        "581090": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-24",
+          "componentCount": 35,
+          "navPerShare": 0.9921,
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "每日行情历史，由 scripts/fetch-data.mjs 每天收盘后追加。每一项是一天的18只快照。首日为2026-11-23上市日。",
+  "version": 1
+}

@@ -1,0 +1,1 @@
+{"dependencies":{"astro":"^5.12.0"},"description":"长期跟踪中国首批18只主动ETF：每日涨跌 + PCF持仓变动。Astro静态站，GitHub Actions每日跑数据。","engines":{"node":">=20"},"name":"active-etf-tracker","private":true,"scripts":{"build":"astro build","dev":"astro dev","fetch":"node scripts/fetch-data.mjs","preview":"astro preview"},"type":"module","version":"0.1.0"}

@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-23",
+  "etf": "158909",
+  "name": "建信均衡优选主动管理ETF",
+  "source": "szse_pcf_txt",
+  "tradingDay": "2026-11-24",
+  "navPerCU": 2952963.62,
+  "navPerShare": 0.9843,
+  "componentCount": 93,
+  "top": [
+    {
+      "code": "688256",
+      "name": "寒武纪",
+      "weightPct": 6.1958,
+      "quantity": 200,
+      "flag": "允许"
+    },
+    {
+      "code": "600066",
+      "name": "宇通客车",
+      "weightPct": 2.9058,
+      "quantity": 2700,
+      "flag": "允许"
+    },
+    {
+      "code": "601211",
+      "name": "国泰海通",
+      "weightPct": 2.6039,
+      "quantity": 4700,
+      "flag": "允许"
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "weightPct": 2.5501,
+      "quantity": 800,
+      "flag": "允许"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "weightPct": 2.3101,
+      "quantity": 300,
+      "flag": "允许"
+    },
+    {
+      "code": "688041",
+      "name": "海光信息",
+      "weightPct": 2.2215,
+      "quantity": 400,
+      "flag": "允许"
+    },
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "weightPct": 2.1515,
+      "quantity": 1400,
+      "flag": "允许"
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "weightPct": 2.0589,
+      "quantity": 500,
+      "flag": "允许"
+    },
+    {
+      "code": "600030",
+      "name": "中信证券",
+      "weightPct": 1.9674,
+      "quantity": 2300,
+      "flag": "允许"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "weightPct": 1.8324,
+      "quantity": 100,
+      "flag": "允许"
+    },
+    {
+      "code": "601398",
+      "name": "工商银行",
+      "weightPct": 1.8282,
+      "quantity": 5900,
+      "flag": "允许"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "weightPct": 1.8074,
+      "quantity": 300,
+      "flag": "允许"
+    },
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "weightPct": 1.758,
+      "quantity": 1200,
+      "flag": "允许"
+    },
+    {
+      "code": "600809",
+      "name": "山西汾酒",
+      "weightPct": 1.7498,
+      "quantity": 400,
+      "flag": "允许"
+    },
+    {
+      "code": "600900",
+      "name": "长江电力",
+      "weightPct": 1.6986,
+      "quantity": 1600,
+      "flag": "允许"
+    },
+    {
+      "code": "600887",
+      "name": "伊利股份",
+      "weightPct": 1.6687,
+      "quantity": 1500,
+      "flag": "允许"
+    },
+    {
+      "code": "000725",
+      "name": "京东方A",
+      "weightPct": 1.6046,
+      "quantity": 10600,
+      "flag": "允许"
+    },
+    {
+      "code": "601169",
+      "name": "北京银行",
+      "weightPct": 1.5925,
+      "quantity": 7500,
+      "flag": "允许"
+    },
+    {
+      "code": "002311",
+      "name": "海大集团",
+      "weightPct": 1.512,
+      "quantity": 900,
+      "flag": "允许"
+    },
+    {
+      "code": "688111",
+      "name": "金山办公",
+      "weightPct": 1.5038,
+      "quantity": 200,
+      "flag": "允许"
+    }
+  ],
+  "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890920261124.txt",
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}

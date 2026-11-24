@@ -1,0 +1,39 @@
+---
+// Layout.astro
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = '首批18只主动ETF：每日涨跌与PCF持仓变动追踪' } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="stylesheet" href={`${import.meta.env.BASE_URL}styles.css`} />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href={`${import.meta.env.BASE_URL}`}>主动ETF追踪</a>
+        <span class="sub">首批18只 · 每日更新 · 数据来自交易所PCF与公开行情</span>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="wrap foot">
+      <p>
+        数据口径：行情为场内收盘价；持仓来自交易所每日 PCF（申购赎回清单），是申赎篮子估算，不等同基金精确持仓；完整持仓以季报/半年报/年报为准。
+        本站仅做信息整理，不构成投资建议。
+      </p>
+      <p>
+        <a href="https://github.com/Jimmy-asks-AI/a-share-etf-pcf-metrics">PCF 方法参考：a-share-etf-pcf-metrics（MIT）</a>
+        · 数据文件在 <code>public/data/</code>，每天由 GitHub Actions 更新。
+      </p>
+    </footer>
+  </body>
+</html>

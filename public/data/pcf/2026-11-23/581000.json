@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-23",
+  "etf": "581000",
+  "name": "摩根大盘成长主动ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-24",
+  "navPerCU": 2895288.75,
+  "navPerShare": 0.9651,
+  "componentCount": 60,
+  "top": [
+    {
+      "code": "300014",
+      "name": "亿纬锂能",
+      "weightPct": 5.8287,
+      "quantity": 3800,
+      "flag": "1"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "weightPct": 5.7638,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "weightPct": 4.937,
+      "quantity": 2000,
+      "flag": "1"
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "weightPct": 3.142,
+      "quantity": 1100,
+      "flag": "1"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "weightPct": 3.1415,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "002812",
+      "name": "恩捷股份",
+      "weightPct": 2.9918,
+      "quantity": 2000,
+      "flag": "1"
+    },
+    {
+      "code": "002594",
+      "name": "比亚迪",
+      "weightPct": 2.965,
+      "quantity": 1100,
+      "flag": "1"
+    },
+    {
+      "code": "300476",
+      "name": "胜宏科技",
+      "weightPct": 2.3853,
+      "quantity": 600,
+      "flag": "1"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "weightPct": 1.8792,
+      "quantity": 300,
+      "flag": "1"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "weightPct": 1.8689,
+      "quantity": 100,
+      "flag": "1"
+    },
+    {
+      "code": "000893",
+      "name": "亚钾国际",
+      "weightPct": 1.4835,
+      "quantity": 1400,
+      "flag": "1"
+    },
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "weightPct": 1.4106,
+      "quantity": 900,
+      "flag": "1"
+    },
+    {
+      "code": "002475",
+      "name": "立讯精密",
+      "weightPct": 1.2782,
+      "quantity": 800,
+      "flag": "1"
+    },
+    {
+      "code": "300498",
+      "name": "温氏股份",
+      "weightPct": 1.0252,
+      "quantity": 1700,
+      "flag": "1"
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "weightPct": 0.9703,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "000807",
+      "name": "云铝股份",
+      "weightPct": 0.9586,
+      "quantity": 1300,
+      "flag": "1"
+    },
+    {
+      "code": "002602",
+      "name": "世纪华通",
+      "weightPct": 0.9555,
+      "quantity": 2600,
+      "flag": "1"
+    },
+    {
+      "code": "300124",
+      "name": "汇川技术",
+      "weightPct": 0.9434,
+      "quantity": 500,
+      "flag": "1"
+    },
+    {
+      "code": "002916",
+      "name": "深南电路",
+      "weightPct": 0.7188,
+      "quantity": 100,
+      "flag": "1"
+    },
+    {
+      "code": "001389",
+      "name": "广合科技",
+      "weightPct": 0.57,
+      "quantity": 200,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}
