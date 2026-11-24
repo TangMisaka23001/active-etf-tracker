@@ -28,5 +28,12 @@ tbody tr:hover { background: #f8fafc; }
 .note { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 14px; font-size: 14px; }
 .foot { color: #777; font-size: 13px; padding: 24px 16px 40px; }
 .spark { display: block; }
+.stock-sec { border-top: 2px solid #10243a; margin-top: 36px; padding-top: 4px; }
+.extlink { background: #eef6fb; border: 1px solid #bcd8ea; border-radius: 8px; padding: 10px 14px; font-size: 14px; margin: 14px 0; }
+.analysis h3 { font-size: 16px; margin: 20px 0 8px; }
+.analysis p, .analysis li { font-size: 14px; }
+.analysis ul, .analysis ol { margin: 8px 0; padding-left: 22px; }
+.analysis li { margin: 4px 0; }
+.analysis table { margin: 10px 0; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 @media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }
