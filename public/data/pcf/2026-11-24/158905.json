@@ -11,49 +11,49 @@
     {
       "code": "600406",
       "name": "国电南瑞",
-      "weightPct": 3.7788,
+      "weightPct": 3.7773,
       "quantity": 1500,
       "flag": "允许"
     },
     {
       "code": "000408",
       "name": "藏格矿业",
-      "weightPct": 3.6913,
+      "weightPct": 3.6932,
       "quantity": 600,
       "flag": "允许"
     },
     {
       "code": "600036",
       "name": "招商银行",
-      "weightPct": 3.5381,
+      "weightPct": 3.5324,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "600803",
       "name": "新奥股份",
-      "weightPct": 3.3673,
+      "weightPct": 3.3657,
       "quantity": 1500,
       "flag": "允许"
     },
     {
       "code": "600150",
       "name": "中国船舶",
-      "weightPct": 3.2176,
+      "weightPct": 3.2103,
       "quantity": 900,
       "flag": "允许"
     },
     {
       "code": "688411",
       "name": "海博思创",
-      "weightPct": 2.9562,
+      "weightPct": 2.9556,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "000333",
       "name": "美的集团",
-      "weightPct": 2.8642,
+      "weightPct": 2.8661,
       "quantity": 300,
       "flag": "允许"
     },
@@ -67,35 +67,35 @@
     {
       "code": "600795",
       "name": "国电电力",
-      "weightPct": 2.7591,
+      "weightPct": 2.7387,
       "quantity": 5000,
       "flag": "允许"
     },
     {
       "code": "000039",
       "name": "中集集团",
-      "weightPct": 2.7194,
+      "weightPct": 2.7255,
       "quantity": 3000,
       "flag": "允许"
     },
     {
       "code": "002352",
       "name": "顺丰控股",
-      "weightPct": 2.6381,
+      "weightPct": 2.6357,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "600066",
       "name": "宇通客车",
-      "weightPct": 2.5999,
+      "weightPct": 2.5975,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "002001",
       "name": "新和成",
-      "weightPct": 2.5233,
+      "weightPct": 2.5274,
       "quantity": 1000,
       "flag": "允许"
     },
@@ -109,28 +109,28 @@
     {
       "code": "601857",
       "name": "中国石油",
-      "weightPct": 2.4959,
+      "weightPct": 2.4918,
       "quantity": 2000,
       "flag": "允许"
     },
     {
       "code": "601808",
       "name": "中海油服",
-      "weightPct": 2.4105,
+      "weightPct": 2.4064,
       "quantity": 2000,
       "flag": "允许"
     },
     {
       "code": "601877",
       "name": "正泰电器",
-      "weightPct": 2.3241,
+      "weightPct": 2.3231,
       "quantity": 1000,
       "flag": "允许"
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "weightPct": 2.3222,
+      "weightPct": 2.3163,
       "quantity": 100,
       "flag": "允许"
     },
