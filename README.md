@@ -91,6 +91,7 @@ npm run build   # 构建到 dist/
 
 - **时间**：每月 1 号上午约 09:11（北京时间），首跑 2026-12-01。定时任务 `monthly-turtle-rerun`（Muse cron，任务名“龟龟策略 + 长赢评价月度重跑”）。
 - **截止日**：上月最后一个交易日；所有分析里的“现价”都用该日收盘价，财报用截至该日已披露的最新年报/季报。
+- **取数**：先跑 `python3 scripts/fetch-turtle-data.py`（35 只，约 8 分钟；数据源是 a-stock-data §6.4 新浪三表 + §6.3 东财个股信息 + §4.4 分红），产出 `turtle-data/<代码>.json` + `summary.csv`：每只 15 个年末期（2011–2025 起）的 OCF / Capex / 现金 / 有息负债 / 归母权益、机械 M5 / A3 / F_norm / TTM 的 L / F0、最新季末资产负债表 `latest_bs`（K 按方法口径用最新季末数算）、历年分红。**脚本只预填机械数，分析员仍要核对年报 + 做经营判断**（可比年份筛选、非经常影响、H 股募资剔除、受限现金等）；交叉核对过：格力 TTM OCF 247.18 亿 / Capex 14.91 亿与手算报告完全一致，中际旭创最新季末 K 513.81 亿 vs 报告 512.6 亿。`turtle-data/` 是本地工作底稿，不上站、不推送。
 - **龟龟**：按 V5.2.2 重做名单内每只股票的完整分析；名单按最新 PCF Top20 重算（被 3 只以上基金持有），已有的 35 只即使掉下去也保留（不删报告、不删页面），新达到 3 只的加进来；同步复核 turtle-turtle.com 公司页并更新 `top-holdings.json` 的外链字段；更新 `analysis/*.md` 与 `stock-verdicts.json`；站内写死的旧研究截止日一并改掉。
 - **长赢**：用新一轮 turtle 结论 + 新 PCF 快照 + 最新已披露仓位，按 `fund-grades-rubric.md` 锁定的口径重评 18 只（不许事后改口径），更新 `fund-grades.json`（cutoff 改成新截止日）与站内评价截止日。
 - **推送与汇报**：本地构建通过后推仓库并验证 CI 部署全绿；每次推送需人工点一次批准；汇报重点是结论翻转的股票（通过↔未通过）和评级翻转的基金（A/B/C 变化），无翻转也如实说一句。
@@ -115,5 +116,6 @@ npm run build   # 构建到 dist/
 - `src/data/stock-verdicts.json`：35 只股票的龟龟结论（经营基准、价格条件通过与否、Coverage(6)、趋势参考价、现价）
 - `src/data/top-holdings.json`：35 只股票的持有基金、合计权重与 turtle-turtle.com 外链
 - `src/data/fund-grades.json`：18 只基金的长赢评价（等级、简评、六条线读数、详细评价）；口径见 `fund-grades-rubric.md`
+- `scripts/fetch-turtle-data.py` + `turtle-data/`：龟龟分析取数脚本与预填数据（本地工作底稿，不推送；用法见每月重评一节与 `turtle-data/README.md`）
 
 本站仅做信息整理，不构成投资建议。
