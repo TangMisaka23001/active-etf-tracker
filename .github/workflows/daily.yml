@@ -1,0 +1,57 @@
+name: Daily active ETF data + deploy
+
+# 每个交易日收盘后跑一次：北京时间 16:00（UTC 08:00，周一至周五）。
+# 节假日时抓取脚本会用 K 线判断“今天不是交易日”，只更新 latest.json，
+# 不往 history 里追加假的一天；周末 Action 本身不跑。
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'public/data/**'
+  schedule:
+    - cron: '0 8 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch daily quotes + PCF
+        run: node scripts/fetch-data.mjs
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          git diff --cached --quiet || git commit -m "data: daily update $(date -u +%F)"
+          git push || echo "nothing to push or push failed"
+
+      - name: Build Astro site
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - uses: actions/deploy-pages@v4
