@@ -11,149 +11,161 @@
     {
       "code": "600519",
       "name": "贵州茅台",
-      "weightPct": 5.0124,
+      "weightPct": 5.0381,
       "quantity": 100,
       "flag": "允许"
     },
     {
       "code": "600030",
       "name": "中信证券",
-      "weightPct": 3.0981,
+      "weightPct": 3.0993,
       "quantity": 3600,
       "flag": "允许"
     },
     {
       "code": "300059",
       "name": "东方财富",
-      "weightPct": 3.0291,
+      "weightPct": 3.0224,
       "quantity": 4900,
       "flag": "允许"
     },
     {
       "code": "603296",
       "name": "华勤技术",
-      "weightPct": 2.7982,
+      "weightPct": 2.7825,
       "quantity": 1300,
       "flag": "允许"
     },
     {
       "code": "002602",
       "name": "世纪华通",
-      "weightPct": 2.612,
+      "weightPct": 2.585,
       "quantity": 7100,
       "flag": "允许"
     },
     {
       "code": "688018",
       "name": "乐鑫科技",
-      "weightPct": 2.5838,
+      "weightPct": 2.5286,
       "quantity": 500,
       "flag": "允许"
     },
     {
       "code": "688777",
       "name": "中控技术",
-      "weightPct": 2.2073,
+      "weightPct": 2.1796,
       "quantity": 1200,
       "flag": "允许"
     },
     {
       "code": "300033",
       "name": "同花顺",
-      "weightPct": 2.0336,
+      "weightPct": 2.0287,
       "quantity": 300,
       "flag": "允许"
     },
     {
       "code": "603259",
       "name": "药明康德",
-      "weightPct": 1.9608,
+      "weightPct": 1.9651,
       "quantity": 400,
       "flag": "允许"
     },
     {
       "code": "000333",
       "name": "美的集团",
-      "weightPct": 1.9477,
+      "weightPct": 1.9516,
       "quantity": 600,
       "flag": "允许"
     },
     {
       "code": "601899",
       "name": "紫金矿业",
-      "weightPct": 1.928,
+      "weightPct": 1.9181,
       "quantity": 2400,
       "flag": "允许"
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "weightPct": 1.8848,
+      "weightPct": 1.9113,
       "quantity": 300,
       "flag": "允许"
     },
     {
       "code": "300394",
       "name": "天孚通信",
-      "weightPct": 1.8417,
+      "weightPct": 1.858,
       "quantity": 400,
+      "flag": "允许"
+    },
+    {
+      "code": "601166",
+      "name": "兴业银行",
+      "weightPct": 1.7455,
+      "quantity": 2500,
       "flag": "允许"
     },
     {
       "code": "688787",
       "name": "海天瑞声",
-      "weightPct": 1.7736,
+      "weightPct": 1.7422,
       "quantity": 500,
       "flag": "允许"
     },
     {
       "code": "002371",
       "name": "北方华创",
-      "weightPct": 1.7544,
+      "weightPct": 1.7253,
       "quantity": 100,
-      "flag": "允许"
-    },
-    {
-      "code": "601166",
-      "name": "兴业银行",
-      "weightPct": 1.736,
-      "quantity": 2500,
       "flag": "允许"
     },
     {
       "code": "600600",
       "name": "青岛啤酒",
-      "weightPct": 1.7222,
+      "weightPct": 1.7244,
       "quantity": 900,
       "flag": "允许"
     },
     {
       "code": "688037",
       "name": "芯源微",
-      "weightPct": 1.6781,
+      "weightPct": 1.6512,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "600036",
       "name": "招商银行",
-      "weightPct": 1.6285,
+      "weightPct": 1.635,
       "quantity": 1100,
       "flag": "允许"
     },
     {
-      "code": "603859",
-      "name": "能科科技",
-      "weightPct": 1.591,
-      "quantity": 1400,
+      "code": "688318",
+      "name": "财富趋势",
+      "weightPct": 1.5791,
+      "quantity": 800,
       "flag": "允许"
     }
   ],
   "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890620261125.txt",
   "status": "ok",
   "changes": {
-    "added": [],
-    "removed": [],
+    "added": [
+      {
+        "code": "688318",
+        "name": "财富趋势",
+        "weightPct": 1.5791
+      }
+    ],
+    "removed": [
+      {
+        "code": "603859",
+        "name": "能科科技",
+        "weightPct": 1.6198
+      }
+    ],
     "weightChanged": []
   }
 }

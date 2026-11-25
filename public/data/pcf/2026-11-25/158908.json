@@ -11,141 +11,141 @@
     {
       "code": "600519",
       "name": "贵州茅台",
-      "weightPct": 7.4189,
+      "weightPct": 7.454,
       "quantity": 100,
       "flag": "允许"
     },
     {
       "code": "601318",
       "name": "中国平安",
-      "weightPct": 2.5099,
+      "weightPct": 2.5205,
       "quantity": 900,
       "flag": "允许"
     },
     {
       "code": "600036",
       "name": "招商银行",
-      "weightPct": 2.4091,
+      "weightPct": 2.4192,
       "quantity": 1100,
       "flag": "允许"
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "weightPct": 2.2401,
+      "weightPct": 2.2191,
       "quantity": 200,
-      "flag": "允许"
-    },
-    {
-      "code": "601899",
-      "name": "紫金矿业",
-      "weightPct": 2.1363,
-      "quantity": 1800,
       "flag": "允许"
     },
     {
       "code": "300308",
       "name": "中际旭创",
-      "weightPct": 2.1319,
+      "weightPct": 2.1554,
       "quantity": 100,
+      "flag": "允许"
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "weightPct": 2.128,
+      "quantity": 1800,
       "flag": "允许"
     },
     {
       "code": "000333",
       "name": "美的集团",
-      "weightPct": 1.9242,
+      "weightPct": 1.9244,
       "quantity": 400,
       "flag": "允许"
     },
     {
       "code": "601166",
       "name": "兴业银行",
-      "weightPct": 1.7462,
+      "weightPct": 1.7558,
       "quantity": 1700,
       "flag": "允许"
     },
     {
       "code": "600900",
       "name": "长江电力",
-      "weightPct": 1.6051,
+      "weightPct": 1.6147,
       "quantity": 1000,
       "flag": "允许"
     },
     {
       "code": "600887",
       "name": "伊利股份",
-      "weightPct": 1.5203,
+      "weightPct": 1.5258,
       "quantity": 900,
       "flag": "允许"
     },
     {
       "code": "601288",
       "name": "农业银行",
-      "weightPct": 1.4266,
+      "weightPct": 1.4358,
       "quantity": 3600,
       "flag": "允许"
     },
     {
       "code": "600030",
       "name": "中信证券",
-      "weightPct": 1.4003,
+      "weightPct": 1.4015,
       "quantity": 1100,
       "flag": "允许"
     },
     {
       "code": "601816",
       "name": "京沪高铁",
-      "weightPct": 1.2975,
+      "weightPct": 1.3049,
       "quantity": 4800,
       "flag": "允许"
     },
     {
       "code": "601138",
       "name": "工业富联",
-      "weightPct": 1.2296,
+      "weightPct": 1.2311,
       "quantity": 600,
       "flag": "允许"
     },
     {
       "code": "601857",
       "name": "中国石油",
-      "weightPct": 1.1813,
+      "weightPct": 1.1803,
       "quantity": 1900,
       "flag": "允许"
     },
     {
       "code": "601919",
       "name": "中远海控",
-      "weightPct": 1.1517,
+      "weightPct": 1.1543,
       "quantity": 1300,
       "flag": "允许"
     },
     {
       "code": "000338",
       "name": "潍柴动力",
-      "weightPct": 1.1359,
+      "weightPct": 1.1268,
       "quantity": 1200,
       "flag": "允许"
     },
     {
       "code": "601668",
       "name": "中国建筑",
-      "weightPct": 1.1147,
+      "weightPct": 1.1123,
       "quantity": 4700,
-      "flag": "允许"
-    },
-    {
-      "code": "002028",
-      "name": "思源电气",
-      "weightPct": 1.0782,
-      "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "000001",
       "name": "平安银行",
-      "weightPct": 1.063,
+      "weightPct": 1.0725,
       "quantity": 1700,
+      "flag": "允许"
+    },
+    {
+      "code": "002028",
+      "name": "思源电气",
+      "weightPct": 1.0724,
+      "quantity": 200,
       "flag": "允许"
     }
   ],
@@ -156,17 +156,17 @@
       {
         "code": "600519",
         "name": "贵州茅台",
-        "weightPct": 7.4189
+        "weightPct": 7.454
       },
       {
         "code": "601668",
         "name": "中国建筑",
-        "weightPct": 1.1147
+        "weightPct": 1.1123
       },
       {
         "code": "002028",
         "name": "思源电气",
-        "weightPct": 1.0782
+        "weightPct": 1.0724
       }
     ],
     "removed": [
@@ -191,8 +191,8 @@
         "code": "300750",
         "name": "宁德时代",
         "from": 3.5007,
-        "to": 2.2401,
-        "delta": -1.2606
+        "to": 2.2191,
+        "delta": -1.2816
       }
     ]
   }
