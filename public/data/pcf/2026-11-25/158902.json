@@ -11,161 +11,149 @@
     {
       "code": "601919",
       "name": "中远海控",
-      "weightPct": 3.7849,
+      "weightPct": 3.7143,
       "quantity": 2100,
       "flag": "允许"
     },
     {
       "code": "600256",
       "name": "广汇能源",
-      "weightPct": 2.2704,
+      "weightPct": 2.2924,
       "quantity": 3600,
       "flag": "允许"
     },
     {
       "code": "601225",
       "name": "陕西煤业",
-      "weightPct": 2.2211,
+      "weightPct": 2.2072,
       "quantity": 800,
+      "flag": "允许"
+    },
+    {
+      "code": "600398",
+      "name": "海澜之家",
+      "weightPct": 2.1192,
+      "quantity": 3200,
       "flag": "允许"
     },
     {
       "code": "601988",
       "name": "中国银行",
-      "weightPct": 2.1396,
+      "weightPct": 2.0996,
       "quantity": 2800,
       "flag": "允许"
     },
     {
       "code": "601699",
       "name": "潞安环能",
-      "weightPct": 2.0784,
+      "weightPct": 2.085,
       "quantity": 1600,
       "flag": "允许"
     },
     {
       "code": "000651",
       "name": "格力电器",
-      "weightPct": 2.0677,
+      "weightPct": 2.0642,
       "quantity": 500,
-      "flag": "允许"
-    },
-    {
-      "code": "600398",
-      "name": "海澜之家",
-      "weightPct": 2.0638,
-      "quantity": 3200,
       "flag": "允许"
     },
     {
       "code": "601658",
       "name": "邮储银行",
-      "weightPct": 2.0473,
+      "weightPct": 2.0403,
       "quantity": 3400,
       "flag": "允许"
     },
     {
       "code": "600546",
       "name": "山煤国际",
-      "weightPct": 1.9054,
+      "weightPct": 1.9091,
       "quantity": 1800,
       "flag": "允许"
     },
     {
       "code": "603565",
       "name": "中谷物流",
-      "weightPct": 1.8966,
+      "weightPct": 1.8798,
       "quantity": 1500,
       "flag": "允许"
     },
     {
       "code": "600919",
       "name": "江苏银行",
-      "weightPct": 1.8013,
+      "weightPct": 1.7722,
       "quantity": 1300,
       "flag": "允许"
     },
     {
       "code": "601916",
       "name": "浙商银行",
-      "weightPct": 1.7887,
+      "weightPct": 1.7655,
       "quantity": 5700,
-      "flag": "允许"
-    },
-    {
-      "code": "601288",
-      "name": "农业银行",
-      "weightPct": 1.7775,
-      "quantity": 2200,
       "flag": "允许"
     },
     {
       "code": "000983",
       "name": "山西焦煤",
-      "weightPct": 1.7288,
+      "weightPct": 1.7544,
       "quantity": 2800,
       "flag": "允许"
     },
     {
-      "code": "601009",
-      "name": "南京银行",
-      "weightPct": 1.6077,
-      "quantity": 1200,
+      "code": "601288",
+      "name": "农业银行",
+      "weightPct": 1.7394,
+      "quantity": 2200,
       "flag": "允许"
     },
     {
       "code": "600039",
       "name": "四川路桥",
-      "weightPct": 1.6028,
+      "weightPct": 1.6102,
       "quantity": 1800,
+      "flag": "允许"
+    },
+    {
+      "code": "601009",
+      "name": "南京银行",
+      "weightPct": 1.5943,
+      "quantity": 1200,
       "flag": "允许"
     },
     {
       "code": "600901",
       "name": "江苏金租",
-      "weightPct": 1.5751,
+      "weightPct": 1.5609,
       "quantity": 2000,
       "flag": "允许"
     },
     {
       "code": "601998",
       "name": "中信银行",
-      "weightPct": 1.5568,
+      "weightPct": 1.5438,
       "quantity": 1600,
+      "flag": "允许"
+    },
+    {
+      "code": "600755",
+      "name": "厦门国贸",
+      "weightPct": 1.5305,
+      "quantity": 2900,
       "flag": "允许"
     },
     {
       "code": "600348",
       "name": "华阳股份",
-      "weightPct": 1.5157,
+      "weightPct": 1.5293,
       "quantity": 1900,
-      "flag": "允许"
-    },
-    {
-      "code": "601857",
-      "name": "中国石油",
-      "weightPct": 1.5099,
-      "quantity": 1200,
       "flag": "允许"
     }
   ],
   "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890220261125.txt",
   "status": "ok",
   "changes": {
-    "added": [
-      {
-        "code": "601857",
-        "name": "中国石油",
-        "weightPct": 1.5099
-      }
-    ],
-    "removed": [
-      {
-        "code": "600755",
-        "name": "厦门国贸",
-        "weightPct": 1.5052
-      }
-    ],
+    "added": [],
+    "removed": [],
     "weightChanged": []
   }
 }
