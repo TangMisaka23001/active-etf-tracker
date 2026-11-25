@@ -3,157 +3,187 @@
   "etf": "158903",
   "name": "鹏华价值臻选主动管理ETF",
   "source": "szse_pcf_txt",
-  "tradingDay": "2026-11-24",
-  "navPerCU": 2017470.32,
-  "navPerShare": 1.0087,
+  "tradingDay": "2026-11-25",
+  "navPerCU": 2014706.04,
+  "navPerShare": 1.0074,
   "componentCount": 57,
   "top": [
     {
-      "code": "601318",
-      "name": "中国平安",
-      "weightPct": 5.1685,
-      "quantity": 1900,
+      "code": "000333",
+      "name": "美的集团",
+      "weightPct": 4.6712,
+      "quantity": 1000,
       "flag": "允许"
     },
     {
-      "code": "000333",
-      "name": "美的集团",
-      "weightPct": 5.1378,
-      "quantity": 1100,
+      "code": "601318",
+      "name": "中国平安",
+      "weightPct": 4.6172,
+      "quantity": 1700,
       "flag": "允许"
     },
     {
       "code": "600036",
       "name": "招商银行",
-      "weightPct": 4.9615,
-      "quantity": 2300,
+      "weightPct": 4.5289,
+      "quantity": 2100,
       "flag": "允许"
     },
     {
       "code": "601939",
       "name": "建设银行",
-      "weightPct": 3.8199,
-      "quantity": 6200,
+      "weightPct": 3.5195,
+      "quantity": 5700,
       "flag": "允许"
     },
     {
       "code": "601288",
       "name": "农业银行",
-      "weightPct": 3.1838,
-      "quantity": 8100,
+      "weightPct": 2.952,
+      "quantity": 7500,
       "flag": "允许"
     },
     {
       "code": "601166",
       "name": "兴业银行",
-      "weightPct": 3.0038,
-      "quantity": 3000,
+      "weightPct": 2.8087,
+      "quantity": 2800,
       "flag": "允许"
     },
     {
       "code": "002142",
       "name": "宁波银行",
-      "weightPct": 2.6157,
-      "quantity": 1500,
+      "weightPct": 2.4474,
+      "quantity": 1400,
       "flag": "允许"
     },
     {
       "code": "600030",
       "name": "中信证券",
-      "weightPct": 2.3639,
-      "quantity": 1900,
+      "weightPct": 2.2327,
+      "quantity": 1800,
       "flag": "允许"
     },
     {
       "code": "601328",
       "name": "交通银行",
-      "weightPct": 2.3591,
-      "quantity": 5300,
+      "weightPct": 2.2011,
+      "quantity": 4900,
       "flag": "允许"
     },
     {
       "code": "601601",
       "name": "中国太保",
-      "weightPct": 2.2664,
-      "quantity": 1400,
-      "flag": "允许"
-    },
-    {
-      "code": "600919",
-      "name": "江苏银行",
-      "weightPct": 2.1524,
-      "quantity": 3200,
+      "weightPct": 2.0919,
+      "quantity": 1300,
       "flag": "允许"
     },
     {
       "code": "600887",
       "name": "伊利股份",
-      "weightPct": 2.1264,
-      "quantity": 1300,
+      "weightPct": 1.9638,
+      "quantity": 1200,
+      "flag": "允许"
+    },
+    {
+      "code": "600919",
+      "name": "江苏银行",
+      "weightPct": 1.959,
+      "quantity": 2900,
       "flag": "允许"
     },
     {
       "code": "000725",
       "name": "京东方A",
-      "weightPct": 2.0594,
-      "quantity": 9400,
+      "weightPct": 1.8782,
+      "quantity": 8600,
       "flag": "允许"
     },
     {
       "code": "601225",
       "name": "陕西煤业",
-      "weightPct": 1.8972,
-      "quantity": 1400,
+      "weightPct": 1.7564,
+      "quantity": 1300,
       "flag": "允许"
     },
     {
       "code": "601211",
       "name": "国泰海通",
-      "weightPct": 1.8731,
-      "quantity": 2300,
+      "weightPct": 1.7021,
+      "quantity": 2100,
       "flag": "允许"
     },
     {
       "code": "601985",
       "name": "中国核电",
-      "weightPct": 1.8431,
-      "quantity": 3700,
+      "weightPct": 1.6893,
+      "quantity": 3400,
       "flag": "允许"
     },
     {
       "code": "000776",
       "name": "广发证券",
-      "weightPct": 1.7395,
-      "quantity": 1900,
+      "weightPct": 1.6403,
+      "quantity": 1800,
       "flag": "允许"
     },
     {
-      "code": "002078",
-      "name": "太阳纸业",
-      "weightPct": 1.6405,
-      "quantity": 2400,
+      "code": "600941",
+      "name": "中国移动",
+      "weightPct": 1.5957,
+      "quantity": 300,
+      "flag": "允许"
+    },
+    {
+      "code": "002714",
+      "name": "牧原股份",
+      "weightPct": 1.575,
+      "quantity": 700,
       "flag": "允许"
     },
     {
       "code": "002966",
       "name": "苏州银行",
-      "weightPct": 1.6275,
-      "quantity": 3300,
-      "flag": "允许"
-    },
-    {
-      "code": "600642",
-      "name": "申能股份",
-      "weightPct": 1.6221,
-      "quantity": 3500,
+      "weightPct": 1.5341,
+      "quantity": 3100,
       "flag": "允许"
     }
   ],
-  "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890320261124.txt",
+  "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890320261125.txt",
   "status": "ok",
   "changes": {
-    "added": [],
-    "removed": [],
-    "weightChanged": []
+    "added": [
+      {
+        "code": "600941",
+        "name": "中国移动",
+        "weightPct": 1.5957
+      },
+      {
+        "code": "002714",
+        "name": "牧原股份",
+        "weightPct": 1.575
+      }
+    ],
+    "removed": [
+      {
+        "code": "002078",
+        "name": "太阳纸业",
+        "weightPct": 1.6405
+      },
+      {
+        "code": "600642",
+        "name": "申能股份",
+        "weightPct": 1.6221
+      }
+    ],
+    "weightChanged": [
+      {
+        "code": "601318",
+        "name": "中国平安",
+        "from": 5.1685,
+        "to": 4.6172,
+        "delta": -0.5513
+      }
+    ]
   }
 }

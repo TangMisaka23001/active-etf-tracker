@@ -3,148 +3,148 @@
   "etf": "581080",
   "name": "招商价值智选主动ETF",
   "source": "sse_pcf",
-  "tradingDay": "2026-11-24",
-  "navPerCU": 1943629.52,
-  "navPerShare": 0.9718,
+  "tradingDay": "2026-11-25",
+  "navPerCU": 1926113.99,
+  "navPerShare": 0.9631,
   "componentCount": 178,
   "top": [
     {
       "code": "000338",
       "name": "潍柴动力",
-      "weightPct": 3.7442,
+      "weightPct": 3.8147,
       "quantity": 3900,
       "flag": "1"
     },
     {
       "code": "002415",
       "name": "海康威视",
-      "weightPct": 3.2553,
-      "quantity": 1800,
+      "weightPct": 3.4378,
+      "quantity": 1900,
       "flag": "1"
     },
     {
       "code": "002690",
       "name": "美亚光电",
-      "weightPct": 2.7274,
+      "weightPct": 2.7304,
       "quantity": 3000,
       "flag": "1"
     },
     {
       "code": "301109",
       "name": "军信股份",
-      "weightPct": 2.468,
+      "weightPct": 2.4688,
       "quantity": 3200,
       "flag": "1"
     },
     {
       "code": "002841",
       "name": "视源股份",
-      "weightPct": 2.3918,
+      "weightPct": 2.4572,
       "quantity": 1200,
       "flag": "1"
     },
     {
       "code": "000708",
       "name": "中信特钢",
-      "weightPct": 1.9448,
+      "weightPct": 1.9625,
       "quantity": 3000,
       "flag": "1"
     },
     {
       "code": "002736",
       "name": "国信证券",
-      "weightPct": 1.9405,
-      "quantity": 4200,
+      "weightPct": 1.8945,
+      "quantity": 4100,
       "flag": "1"
     },
     {
       "code": "002236",
       "name": "大华股份",
-      "weightPct": 1.8942,
+      "weightPct": 1.8925,
       "quantity": 2600,
       "flag": "1"
     },
     {
       "code": "002152",
       "name": "广电运通",
-      "weightPct": 1.6711,
+      "weightPct": 1.6551,
       "quantity": 4000,
       "flag": "1"
     },
     {
       "code": "002624",
       "name": "完美世界",
-      "weightPct": 1.4401,
+      "weightPct": 1.3971,
       "quantity": 3000,
       "flag": "1"
     },
     {
       "code": "000581",
       "name": "威孚高科",
-      "weightPct": 1.3805,
+      "weightPct": 1.3914,
       "quantity": 1600,
       "flag": "1"
     },
     {
       "code": "002832",
       "name": "比音勒芬",
-      "weightPct": 1.3359,
+      "weightPct": 1.3485,
       "quantity": 900,
       "flag": "1"
     },
     {
       "code": "000997",
       "name": "新大陆",
-      "weightPct": 1.1374,
+      "weightPct": 1.1375,
       "quantity": 1400,
       "flag": "1"
     },
     {
       "code": "002410",
       "name": "广联达",
-      "weightPct": 1.0808,
+      "weightPct": 1.078,
       "quantity": 2700,
       "flag": "1"
     },
     {
       "code": "301029",
       "name": "怡合达",
-      "weightPct": 1.0549,
+      "weightPct": 1.0691,
       "quantity": 800,
       "flag": "1"
     },
     {
       "code": "002500",
       "name": "山西证券",
-      "weightPct": 1.0002,
+      "weightPct": 0.9968,
       "quantity": 4000,
+      "flag": "1"
+    },
+    {
+      "code": "002938",
+      "name": "鹏鼎控股",
+      "weightPct": 0.9553,
+      "quantity": 400,
       "flag": "1"
     },
     {
       "code": "002262",
       "name": "恩华药业",
-      "weightPct": 0.9364,
+      "weightPct": 0.9316,
       "quantity": 800,
       "flag": "1"
     },
     {
       "code": "300146",
       "name": "汤臣倍健",
-      "weightPct": 0.9233,
+      "weightPct": 0.9242,
       "quantity": 1800,
-      "flag": "1"
-    },
-    {
-      "code": "002938",
-      "name": "鹏鼎控股",
-      "weightPct": 0.923,
-      "quantity": 400,
       "flag": "1"
     },
     {
       "code": "002373",
       "name": "千方科技",
-      "weightPct": 0.7471,
+      "weightPct": 0.7414,
       "quantity": 2000,
       "flag": "1"
     }

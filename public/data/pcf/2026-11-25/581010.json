@@ -3,156 +3,168 @@
   "etf": "581010",
   "name": "汇添富均衡策略智选主动管理ETF",
   "source": "sse_pcf",
-  "tradingDay": "2026-11-24",
-  "navPerCU": 4946026.79,
-  "navPerShare": 0.9892,
+  "tradingDay": "2026-11-25",
+  "navPerCU": 4939331.09,
+  "navPerShare": 0.9879,
   "componentCount": 480,
   "top": [
     {
       "code": "000333",
       "name": "美的集团",
-      "weightPct": 1.9031,
+      "weightPct": 1.9077,
       "quantity": 1000,
       "flag": "1"
     },
     {
       "code": "300308",
       "name": "中际旭创",
-      "weightPct": 1.687,
+      "weightPct": 1.6885,
       "quantity": 200,
       "flag": "1"
     },
     {
       "code": "000858",
       "name": "五 粮 液",
-      "weightPct": 1.1725,
-      "quantity": 800,
+      "weightPct": 1.0112,
+      "quantity": 700,
       "flag": "1"
     },
     {
       "code": "002594",
       "name": "比亚迪",
-      "weightPct": 0.9467,
+      "weightPct": 0.9227,
       "quantity": 600,
       "flag": "1"
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "weightPct": 0.9195,
+      "weightPct": 0.9207,
       "quantity": 200,
       "flag": "1"
     },
     {
       "code": "002714",
       "name": "牧原股份",
-      "weightPct": 0.9175,
+      "weightPct": 0.9173,
       "quantity": 1000,
       "flag": "1"
     },
     {
       "code": "002353",
       "name": "杰瑞股份",
-      "weightPct": 0.814,
+      "weightPct": 0.8209,
       "quantity": 600,
       "flag": "1"
     },
     {
       "code": "000651",
       "name": "格力电器",
-      "weightPct": 0.7397,
+      "weightPct": 0.738,
       "quantity": 900,
       "flag": "1"
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "weightPct": 0.7334,
+      "weightPct": 0.7289,
       "quantity": 200,
       "flag": "1"
     },
     {
       "code": "300498",
       "name": "温氏股份",
-      "weightPct": 0.6707,
+      "weightPct": 0.6701,
       "quantity": 1900,
       "flag": "1"
     },
     {
       "code": "003816",
       "name": "中国广核",
-      "weightPct": 0.6553,
+      "weightPct": 0.6533,
       "quantity": 7000,
       "flag": "1"
     },
     {
       "code": "300059",
       "name": "东方财富",
-      "weightPct": 0.64,
+      "weightPct": 0.6199,
       "quantity": 1700,
       "flag": "1"
     },
     {
       "code": "000568",
       "name": "泸州老窖",
-      "weightPct": 0.4823,
+      "weightPct": 0.4792,
       "quantity": 300,
       "flag": "1"
     },
     {
       "code": "300760",
       "name": "迈瑞医疗",
-      "weightPct": 0.371,
+      "weightPct": 0.3648,
       "quantity": 100,
       "flag": "1"
     },
     {
       "code": "002050",
       "name": "三花智控",
-      "weightPct": 0.3425,
+      "weightPct": 0.3478,
       "quantity": 500,
       "flag": "1"
     },
     {
       "code": "000001",
       "name": "平安银行",
-      "weightPct": 0.3243,
+      "weightPct": 0.3237,
       "quantity": 1300,
       "flag": "1"
     },
     {
       "code": "000983",
       "name": "山西焦煤",
-      "weightPct": 0.3243,
+      "weightPct": 0.3185,
       "quantity": 2600,
       "flag": "1"
     },
     {
       "code": "002311",
       "name": "海大集团",
-      "weightPct": 0.3009,
+      "weightPct": 0.3,
       "quantity": 300,
-      "flag": "1"
-    },
-    {
-      "code": "002142",
-      "name": "宁波银行",
-      "weightPct": 0.2839,
-      "quantity": 400,
       "flag": "1"
     },
     {
       "code": "002475",
       "name": "立讯精密",
-      "weightPct": 0.2806,
+      "weightPct": 0.2921,
       "quantity": 300,
+      "flag": "1"
+    },
+    {
+      "code": "002821",
+      "name": "凯莱英",
+      "weightPct": 0.2879,
+      "quantity": 100,
       "flag": "1"
     }
   ],
   "status": "ok",
   "changes": {
-    "added": [],
-    "removed": [],
+    "added": [
+      {
+        "code": "002821",
+        "name": "凯莱英",
+        "weightPct": 0.2879
+      }
+    ],
+    "removed": [
+      {
+        "code": "002142",
+        "name": "宁波银行",
+        "weightPct": 0.2839
+      }
+    ],
     "weightChanged": []
   }
 }

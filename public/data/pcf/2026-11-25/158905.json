@@ -3,153 +3,153 @@
   "etf": "158905",
   "name": "工银红利主动管理ETF",
   "source": "szse_pcf_txt",
-  "tradingDay": "2026-11-24",
-  "navPerCU": 984033.19,
-  "navPerShare": 0.984,
+  "tradingDay": "2026-11-25",
+  "navPerCU": 979063.44,
+  "navPerShare": 0.9791,
   "componentCount": 43,
   "top": [
     {
       "code": "600406",
       "name": "国电南瑞",
-      "weightPct": 3.7682,
+      "weightPct": 3.7505,
       "quantity": 1500,
       "flag": "允许"
     },
     {
       "code": "000408",
       "name": "藏格矿业",
-      "weightPct": 3.706,
+      "weightPct": 3.6083,
       "quantity": 600,
       "flag": "允许"
     },
     {
       "code": "600036",
       "name": "招商银行",
-      "weightPct": 3.5381,
+      "weightPct": 3.5487,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "600803",
       "name": "新奥股份",
-      "weightPct": 3.3551,
+      "weightPct": 3.3675,
       "quantity": 1500,
       "flag": "允许"
     },
     {
       "code": "600150",
       "name": "中国船舶",
-      "weightPct": 3.2322,
+      "weightPct": 3.21,
       "quantity": 900,
       "flag": "允许"
     },
     {
       "code": "688411",
       "name": "海博思创",
-      "weightPct": 2.9674,
+      "weightPct": 2.8875,
       "quantity": 200,
       "flag": "允许"
     },
     {
       "code": "000333",
       "name": "美的集团",
-      "weightPct": 2.8728,
+      "weightPct": 2.884,
       "quantity": 300,
       "flag": "允许"
     },
     {
       "code": "600089",
       "name": "特变电工",
-      "weightPct": 2.8048,
+      "weightPct": 2.7884,
       "quantity": 1500,
       "flag": "允许"
     },
     {
       "code": "600795",
       "name": "国电电力",
-      "weightPct": 2.754,
+      "weightPct": 2.7577,
       "quantity": 5000,
       "flag": "允许"
     },
     {
       "code": "000039",
       "name": "中集集团",
-      "weightPct": 2.7194,
+      "weightPct": 2.7118,
       "quantity": 3000,
       "flag": "允许"
     },
     {
       "code": "002352",
       "name": "顺丰控股",
-      "weightPct": 2.6365,
+      "weightPct": 2.6515,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "600066",
       "name": "宇通客车",
-      "weightPct": 2.608,
+      "weightPct": 2.6058,
       "quantity": 800,
       "flag": "允许"
     },
     {
       "code": "002001",
       "name": "新和成",
-      "weightPct": 2.5253,
+      "weightPct": 2.5524,
       "quantity": 1000,
-      "flag": "允许"
-    },
-    {
-      "code": "601857",
-      "name": "中国石油",
-      "weightPct": 2.5101,
-      "quantity": 2000,
       "flag": "允许"
     },
     {
       "code": "600256",
       "name": "广汇能源",
-      "weightPct": 2.4959,
+      "weightPct": 2.5371,
       "quantity": 4000,
+      "flag": "允许"
+    },
+    {
+      "code": "601857",
+      "name": "中国石油",
+      "weightPct": 2.5167,
+      "quantity": 2000,
       "flag": "允许"
     },
     {
       "code": "601808",
       "name": "中海油服",
-      "weightPct": 2.4085,
+      "weightPct": 2.4166,
       "quantity": 2000,
       "flag": "允许"
     },
     {
       "code": "601877",
       "name": "正泰电器",
-      "weightPct": 2.3231,
+      "weightPct": 2.3114,
       "quantity": 1000,
       "flag": "允许"
     },
     {
       "code": "300750",
       "name": "宁德时代",
-      "weightPct": 2.3106,
+      "weightPct": 2.2733,
       "quantity": 100,
       "flag": "允许"
     },
     {
       "code": "600901",
       "name": "江苏金租",
-      "weightPct": 2.2081,
+      "weightPct": 2.2164,
       "quantity": 2800,
       "flag": "允许"
     },
     {
       "code": "000933",
       "name": "神火股份",
-      "weightPct": 2.1595,
+      "weightPct": 2.1214,
       "quantity": 1000,
       "flag": "允许"
     }
   ],
-  "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890520261124.txt",
+  "sourceUrl": "https://reportdocs.static.szse.cn/files/text/etf/ETF15890520261125.txt",
   "status": "ok",
   "changes": {
     "added": [],

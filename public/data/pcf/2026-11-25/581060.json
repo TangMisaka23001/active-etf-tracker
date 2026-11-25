@@ -3,71 +3,71 @@
   "etf": "581060",
   "name": "永赢景气均衡主动管理ETF",
   "source": "sse_pcf",
-  "tradingDay": "2026-11-24",
-  "navPerCU": 3054903.74,
-  "navPerShare": 1.0183,
+  "tradingDay": "2026-11-25",
+  "navPerCU": 3070050.24,
+  "navPerShare": 1.0234,
   "componentCount": 38,
   "top": [
     {
       "code": "300661",
       "name": "圣邦股份",
-      "weightPct": 3.4027,
+      "weightPct": 3.4726,
       "quantity": 1400,
       "flag": "1"
     },
     {
       "code": "000975",
       "name": "山金国际",
-      "weightPct": 3.2481,
+      "weightPct": 3.1294,
       "quantity": 4500,
-      "flag": "1"
-    },
-    {
-      "code": "000977",
-      "name": "浪潮信息",
-      "weightPct": 1.8792,
-      "quantity": 1300,
       "flag": "1"
     },
     {
       "code": "300054",
       "name": "鼎龙股份",
-      "weightPct": 1.8724,
+      "weightPct": 1.9049,
       "quantity": 1000,
       "flag": "1"
     },
     {
       "code": "300236",
       "name": "上海新阳",
-      "weightPct": 1.863,
+      "weightPct": 1.8851,
       "quantity": 800,
       "flag": "1"
     },
     {
-      "code": "002371",
-      "name": "北方华创",
-      "weightPct": 1.7712,
-      "quantity": 100,
+      "code": "000977",
+      "name": "浪潮信息",
+      "weightPct": 1.8627,
+      "quantity": 1300,
       "flag": "1"
     },
     {
       "code": "300604",
       "name": "长川科技",
-      "weightPct": 1.7471,
+      "weightPct": 1.7955,
       "quantity": 300,
+      "flag": "1"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "weightPct": 1.7825,
+      "quantity": 100,
       "flag": "1"
     },
     {
       "code": "300308",
       "name": "中际旭创",
-      "weightPct": 1.3657,
+      "weightPct": 1.3583,
       "quantity": 100,
       "flag": "1"
     },
     {
       "code": "000338",
       "name": "潍柴动力",
-      "weightPct": 0.9773,
+      "weightPct": 0.9819,
       "quantity": 1600,
       "flag": "1"
     }
