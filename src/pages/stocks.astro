@@ -5,6 +5,15 @@ import verdicts from '../data/stock-verdicts.json';
 
 const stocks = holdings.stocks;
 const base = import.meta.env.BASE_URL;
+// 六年覆盖统一成百分比：verdicts 里混用比率（0.28）、百分比（50.6%）与“不适用”
+const fmtCoverage = (v: string) => {
+  if (v == null || v === '不适用') return '不适用';
+  if (String(v).endsWith('%')) return v;
+  const n = Number(v);
+  return Number.isFinite(n) ? `${(n * 100).toFixed(1)}%` : v;
+};
+// 参考价 0 元表示现金回本算不出参考价，不是价格为零
+const fmtSupport = (v: string) => (v === '0 元' ? '—' : v);
 ---
 
 <Layout title="按持仓股票看重叠 · 首批18只主动ETF追踪">
@@ -53,13 +62,13 @@ const base = import.meta.env.BASE_URL;
               <td>{v.op}</td>
               <td>
                 {v.price === 'pass' ? (
-                  <span class="badge ok">通过 · 安全垫中等</span>
+                  <span class="badge ok">通过</span>
                 ) : (
                   <span class="badge fail">未通过</span>
                 )}
               </td>
-              <td>{v.coverage}</td>
-              <td>{v.support}</td>
+              <td>{fmtCoverage(v.coverage)}</td>
+              <td>{fmtSupport(v.support)}</td>
               <td>{v.now}</td>
               <td>
                 <a href={`${base}stocks/${s.code}`}>分析 →</a>

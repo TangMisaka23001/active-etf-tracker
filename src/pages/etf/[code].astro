@@ -34,7 +34,7 @@ const analyzedCount = pcfSnap ? pcfSnap.top.filter((t) => verdicts[t.code]).leng
 const turtleByCode: Record<string, { companyUrl: string; reportCount: number } | null> = {};
 for (const s of holdings.stocks) turtleByCode[s.code] = s.turtleTurtle ?? null;
 const grade = fundGrades.grades[etf.code];
-const gradeCls = (gr: string) => (gr === 'A' ? 'ok' : gr === 'C' ? 'fail' : '');
+const gradeCls = (gr: string) => (gr === 'A' ? 'grade-a' : gr === 'C' ? 'grade-c' : 'grade-b');
 const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B 一般' : 'C 差');
 ---
 
@@ -51,7 +51,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
     <div class="cards">
       <div class="card"><div class="k">最新价（{latest.date}）</div><div class="v">{q.price.toFixed(3)}</div><div class="d">前收 {q.prevClose?.toFixed(3) ?? '—'}</div></div>
       <div class="card"><div class="k">当日涨跌</div><div class={`v ${cls(q.changePct)}`}>{fmt(q.changePct, '%')}</div><div class="d">来源：{q.source}</div></div>
-      <div class="card"><div class="k">成交量 / 成交额</div><div class="v" style="font-size:16px">{q.volume != null ? q.volume.toLocaleString() : '—'}</div><div class="d">{q.turnover != null ? `成交额 ${q.turnover.toLocaleString()}` : ''}</div></div>
+      <div class="card"><div class="k">成交量 / 成交额</div><div class="v" style="font-size:16px">{q.volume != null ? `${(q.volume / 10000).toFixed(2)}万手` : '—'}</div><div class="d">{q.turnover != null ? `成交额 ${q.turnover.toLocaleString()}万元` : ''}</div></div>
       <div class="card"><div class="k">PCF 状态</div><div class="v" style="font-size:16px">{pcf?.status === 'ok' ? `✓ ${pcf.componentCount}只成分` : pcf?.status === 'failed' ? '✗ 失败' : '—'}</div><div class="d">{pcf?.tradingDay ? `PCF 交易日 ${pcf.tradingDay}` : pcf?.error ?? ''}</div></div>
       <div class="card"><div class="k">基金份额{sh ? `（${sh.date}）` : ''}</div><div class="v" style="font-size:16px">{sh ? `${(sh.shares10k / 10000).toFixed(2)}亿份` : '—'}</div><div class={`d ${cls(sh?.changePct)}`}>{sh?.change10k != null ? `较上期 ${sh.change10k > 0 ? '+' : ''}${Math.round(sh.change10k).toLocaleString()}万份 (${sh.changePct > 0 ? '+' : ''}${sh.changePct?.toFixed(2)}%)` : '首期份额记录，暂无增减'}</div></div>
     </div>
@@ -87,7 +87,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
               <tr>
                 <td><code>{t.code}</code></td>
                 <td>{t.name}</td>
-                <td>{t.weightPct != null ? `${t.weightPct}%` : '—'}</td>
+                <td>{t.weightPct != null ? `${Number(t.weightPct).toFixed(2)}%` : '—'}</td>
                 <td>{t.quantity ?? '—'}</td>
                 <td>
                   {verdicts[t.code] ? (
@@ -130,18 +130,6 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
         <span class={`badge ${gradeCls(grade.grade)}`}>{gradeLabel(grade.grade)}</span>{' '}
         {grade.brief}
       </p>
-      <div class="tbl-wrap">
-        <table class="readings">
-          <tbody>
-            <tr><td>估值</td><td>{grade.valuation}</td></tr>
-            <tr><td>拥挤度</td><td>{grade.crowding}</td></tr>
-            <tr><td>风险</td><td>{grade.risk}</td></tr>
-            <tr><td>质量与分红</td><td>{grade.quality}</td></tr>
-            <tr><td>分散度</td><td>{grade.diversification}</td></tr>
-            <tr><td>仓位</td><td>{grade.position}</td></tr>
-          </tbody>
-        </table>
-      </div>
       <div class="analysis" set:html={mdToHtml(grade.detail)} />
       <p class="lede">评价方法：且慢长赢方法（估值 / 拥挤度 / 风险三线，加质量与分红、分散度、仓位），持仓为 {fundGrades.cutoff} PCF Top20 快照；股息率与 ROE 等数据以当时可核实的为准，未核实项见评价正文。</p>
     </>

@@ -63,6 +63,12 @@ const num = (v) => {
   const n = Number(String(v).replace(/[￥,，\s]/g, ''));
   return Number.isFinite(n) ? n : null;
 };
+// 成交额统一成万元：东财 push2 的 f48 与新浪的 p[9] 都是元，腾讯精简格式的 p[7] 本身就是万元；
+// 成交量三家都是手，不用换算。模板按“万手 / 万元”展示。
+const toWanYuan = (v) => {
+  const n = num(v);
+  return n == null ? null : +(n / 10000).toFixed(2);
+};
 const normDay = (d) => {
   const s = String(d ?? '').trim();
   if (/^\d{8}$/.test(s)) return `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
@@ -91,7 +97,7 @@ async function quotesEastmoney(list) {
       high: num(d.f44),
       low: num(d.f45),
       volume: num(d.f47),
-      turnover: num(d.f48),
+      turnover: toWanYuan(d.f48),
       changePct: num(d.f170) ?? +(((price - prev) / prev) * 100).toFixed(2),
       source: 'eastmoney',
     };
@@ -155,7 +161,7 @@ async function quotesSina(list) {
       high: num(p[4]),
       low: num(p[5]),
       volume: num(p[8]),
-      turnover: num(p[9]),
+      turnover: toWanYuan(p[9]),
       changePct: +(((price - prev) / prev) * 100).toFixed(2),
       source: 'sina',
     };

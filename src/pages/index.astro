@@ -30,13 +30,13 @@ function spark(code: string) {
   const min = Math.min(...pts);
   const max = Math.max(...pts);
   const span = max - min || 1;
-  const w = 96;
-  const h = 28;
+  const w = 72;
+  const h = 26;
   const xy = pts
     .map((v, i) => `${((i / (pts.length - 1)) * w).toFixed(1)},${(h - 2 - ((v - min) / span) * (h - 4)).toFixed(1)}`)
     .join(' ');
   const up = pts.at(-1)! >= pts[0];
-  return { xy, color: up ? '#c0392b' : '#1e7d32', w, h };
+  return { xy, color: up ? '#cf222e' : '#177245', w, h, first: pts[0], last: pts.at(-1)! };
 }
 const cls = (v: number | null | undefined) => (v == null ? 'flat' : v > 0 ? 'up' : v < 0 ? 'down' : 'flat');
 const fmt = (v: number | null | undefined, suffix = '') =>
@@ -47,7 +47,7 @@ const fmtSharesChg = (s: { change10k: number | null; changePct: number | null } 
   s?.change10k == null
     ? ''
     : `${s.change10k > 0 ? '+' : ''}${Math.round(s.change10k).toLocaleString()}万份${s.changePct != null ? ` (${s.changePct > 0 ? '+' : ''}${s.changePct.toFixed(2)}%)` : ''}`;
-const gradeCls = (gr: string) => (gr === 'A' ? 'ok' : gr === 'C' ? 'fail' : '');
+const gradeCls = (gr: string) => (gr === 'A' ? 'grade-a' : gr === 'C' ? 'grade-c' : 'grade-b');
 const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B 一般' : 'C 差');
 ---
 
@@ -105,6 +105,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
               <td>
                 {sp ? (
                   <svg class="spark" width={sp.w} height={sp.h} viewBox={`0 0 ${sp.w} ${sp.h}`}>
+                    <title>首日 {sp.first.toFixed(3)} → 最新 {sp.last.toFixed(3)}</title>
                     <polyline points={sp.xy} fill="none" stroke={sp.color} stroke-width="1.5" />
                   </svg>
                 ) : '—'}
@@ -122,8 +123,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
                   return g ? (
                     <>
                       <span class={`badge ${gradeCls(g.grade)}`}>{gradeLabel(g.grade)}</span>
-                      <br />
-                      <span style="font-size:13px">{g.brief}</span>
+                      <span class="grade-brief">{g.brief}</span>
                     </>
                   ) : '—';
                 })()}
@@ -150,7 +150,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
           <tr>
             <td><code>{e.code}</code></td>
             <td>{e.short}</td>
-            <td>{e.position20261116}%</td>
+            <td>{Number(e.position20261116).toFixed(2)}%</td>
           </tr>
         ))}
       </tbody>
