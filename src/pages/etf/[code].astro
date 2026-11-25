@@ -53,7 +53,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
       <div class="card"><div class="k">当日涨跌</div><div class={`v ${cls(q.changePct)}`}>{fmt(q.changePct, '%')}</div><div class="d">来源：{q.source}</div></div>
       <div class="card"><div class="k">成交量 / 成交额</div><div class="v" style="font-size:16px">{q.volume != null ? `${(q.volume / 10000).toFixed(2)}万手` : '—'}</div><div class="d">{q.turnover != null ? `成交额 ${q.turnover.toLocaleString()}万元` : ''}</div></div>
       <div class="card"><div class="k">PCF 状态</div><div class="v" style="font-size:16px">{pcf?.status === 'ok' ? `✓ ${pcf.componentCount}只成分` : pcf?.status === 'failed' ? '✗ 失败' : '—'}</div><div class="d">{pcf?.tradingDay ? `PCF 交易日 ${pcf.tradingDay}` : pcf?.error ?? ''}</div></div>
-      <div class="card"><div class="k">基金份额{sh ? `（${sh.date}）` : ''}</div><div class="v" style="font-size:16px">{sh ? `${(sh.shares10k / 10000).toFixed(2)}亿份` : '—'}</div><div class={`d ${cls(sh?.changePct)}`}>{sh?.change10k != null ? `较上期 ${sh.change10k > 0 ? '+' : ''}${Math.round(sh.change10k).toLocaleString()}万份 (${sh.changePct > 0 ? '+' : ''}${sh.changePct?.toFixed(2)}%)` : '首期份额记录，暂无增减'}</div></div>
+      <div class="card"><div class="k">基金份额{sh ? `（截至 ${sh.date}）` : ''}</div><div class="v" style="font-size:16px">{sh ? `${(sh.shares10k / 10000).toFixed(2)}亿份` : '—'}</div><div class={`d ${cls(sh?.changePct)}`}>{sh?.change10k != null ? `较上期 ${sh.change10k > 0 ? '+' : ''}${Math.round(sh.change10k).toLocaleString()}万份 (${sh.changePct > 0 ? '+' : ''}${sh.changePct?.toFixed(2)}%)` : '首期份额记录，暂无增减'}</div></div>
     </div>
   ) : (
     <div class="note">还没有当日行情。跑一次 <code>npm run fetch</code> 或等每日定时任务后，这里会有价格与 PCF。</div>
@@ -80,7 +80,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
         </p>
       )}
       <div class="tbl-wrap">
-        <table>
+        <table class="pcf">
           <thead><tr><th>股票代码</th><th>股票名称</th><th>权重</th><th>数量/份数</th><th>价格条件</th></tr></thead>
           <tbody>
             {pcfSnap.top.map((t) => (
@@ -92,21 +92,20 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
                 <td>
                   {verdicts[t.code] ? (
                     <>
-                      {verdicts[t.code].price === 'pass' ? (
-                        <span class="badge ok">通过</span>
-                      ) : (
-                        <span class="badge fail">未通过</span>
-                      )}{' '}
-                      {verdicts[t.code].priceDetail} ·{' '}
-                      <a href={`${import.meta.env.BASE_URL}stocks/${t.code}`}>分析 →</a>
-                      {turtleByCode[t.code] ? (
-                        <>
-                          {' '}·{' '}
+                      <span class="verdict-top">
+                        {verdicts[t.code].price === 'pass' ? (
+                          <span class="badge ok">通过</span>
+                        ) : (
+                          <span class="badge fail">未通过</span>
+                        )}
+                        <a href={`${import.meta.env.BASE_URL}stocks/${t.code}`}>分析 →</a>
+                        {turtleByCode[t.code] ? (
                           <a href={turtleByCode[t.code].companyUrl} target="_blank" rel="noopener">
                             {turtleByCode[t.code].reportCount} 份报告 →
                           </a>
-                        </>
-                      ) : null}
+                        ) : null}
+                      </span>
+                      <span class="verdict-detail">{verdicts[t.code].priceDetail}</span>
                     </>
                   ) : (
                     '—'
