@@ -1,116 +1,116 @@
 {
-  "date": "2026-11-25",
-  "fetchedAt": "2026-11-25T03:45:23.986Z",
+  "date": "2026-11-26",
+  "fetchedAt": "2026-11-25T18:19:47.331Z",
   "source": "eastmoney/tencent/sina/yahoo (first success per ETF)",
   "etfs": {
     "158900": {
-      "price": 0.98,
+      "price": 0.973,
       "prevClose": 0.989,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 719482,
-      "turnover": 7059,
-      "changePct": -0.91,
+      "volume": 2311079,
+      "turnover": 22629,
+      "changePct": -1.62,
       "source": "tencent"
     },
     "158901": {
-      "price": 0.986,
+      "price": 0.975,
       "prevClose": 0.989,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 401841,
-      "turnover": 3959,
-      "changePct": -0.3,
+      "volume": 1122813,
+      "turnover": 11020,
+      "changePct": -1.42,
       "source": "tencent"
     },
     "158902": {
-      "price": 0.979,
+      "price": 0.973,
       "prevClose": 0.979,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 382291,
-      "turnover": 3736,
-      "changePct": 0,
+      "volume": 897249,
+      "turnover": 8760,
+      "changePct": -0.61,
       "source": "tencent"
     },
     "158903": {
-      "price": 0.999,
+      "price": 1,
       "prevClose": 1.004,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 586366,
-      "turnover": 5853,
-      "changePct": -0.5,
+      "volume": 1330761,
+      "turnover": 13294,
+      "changePct": -0.4,
       "source": "tencent"
     },
     "158905": {
-      "price": 0.973,
+      "price": 0.964,
       "prevClose": 0.977,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 210068,
-      "turnover": 2043,
-      "changePct": -0.41,
+      "volume": 627539,
+      "turnover": 6080,
+      "changePct": -1.33,
       "source": "tencent"
     },
     "158906": {
-      "price": 0.959,
+      "price": 0.945,
       "prevClose": 0.966,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 400177,
-      "turnover": 3846,
-      "changePct": -0.72,
+      "volume": 917657,
+      "turnover": 8756,
+      "changePct": -2.17,
       "source": "tencent"
     },
     "158907": {
-      "price": 0.98,
+      "price": 0.962,
       "prevClose": 0.992,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 860573,
-      "turnover": 8447,
-      "changePct": -1.21,
+      "volume": 2400248,
+      "turnover": 23399,
+      "changePct": -3.02,
       "source": "tencent"
     },
     "158908": {
-      "price": 0.97,
+      "price": 0.955,
       "prevClose": 0.978,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 322631,
-      "turnover": 3131,
-      "changePct": -0.82,
+      "volume": 823106,
+      "turnover": 7940,
+      "changePct": -2.35,
       "source": "tencent"
     },
     "158909": {
-      "price": 0.976,
+      "price": 0.967,
       "prevClose": 0.989,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 205638,
-      "turnover": 2007,
-      "changePct": -1.31,
+      "volume": 446277,
+      "turnover": 4342,
+      "changePct": -2.22,
       "source": "tencent"
     },
     "581000": {
-      "price": 0.958,
+      "price": 0.944,
       "prevClose": 0.967,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 469580,
-      "turnover": 4507,
-      "changePct": -0.93,
+      "volume": 1050207,
+      "turnover": 10006,
+      "changePct": -2.38,
       "source": "tencent"
     },
     "581010": {
@@ -119,86 +119,86 @@
       "open": null,
       "high": null,
       "low": null,
-      "volume": 448490,
-      "turnover": 4401,
+      "volume": 1225089,
+      "turnover": 11995,
       "changePct": -0.41,
       "source": "tencent"
     },
     "581020": {
-      "price": 0.979,
+      "price": 0.975,
       "prevClose": 0.982,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 689515,
-      "turnover": 6742,
-      "changePct": -0.31,
+      "volume": 1337976,
+      "turnover": 13068,
+      "changePct": -0.71,
       "source": "tencent"
     },
     "581030": {
-      "price": 0.978,
+      "price": 0.972,
       "prevClose": 0.982,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 901855,
-      "turnover": 8818,
-      "changePct": -0.41,
+      "volume": 1671748,
+      "turnover": 16305,
+      "changePct": -1.02,
       "source": "tencent"
     },
     "581050": {
-      "price": 0.99,
+      "price": 0.988,
       "prevClose": 0.993,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 349742,
-      "turnover": 3463,
-      "changePct": -0.3,
+      "volume": 969167,
+      "turnover": 9582,
+      "changePct": -0.5,
       "source": "tencent"
     },
     "581060": {
-      "price": 1.004,
+      "price": 0.99,
       "prevClose": 1.017,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 1081574,
-      "turnover": 10858,
-      "changePct": -1.28,
+      "volume": 1750939,
+      "turnover": 17507,
+      "changePct": -2.65,
       "source": "tencent"
     },
     "581070": {
-      "price": 1.008,
+      "price": 1.007,
       "prevClose": 1.008,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 299666,
-      "turnover": 3012,
-      "changePct": 0,
+      "volume": 585451,
+      "turnover": 5886,
+      "changePct": -0.1,
       "source": "tencent"
     },
     "581080": {
-      "price": 0.957,
+      "price": 0.943,
       "prevClose": 0.961,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 439564,
-      "turnover": 4215,
-      "changePct": -0.42,
+      "volume": 1029116,
+      "turnover": 9800,
+      "changePct": -1.87,
       "source": "tencent"
     },
     "581090": {
-      "price": 0.979,
+      "price": 0.972,
       "prevClose": 0.982,
       "open": null,
       "high": null,
       "low": null,
-      "volume": 357518,
-      "turnover": 3497,
-      "changePct": -0.31,
+      "volume": 826771,
+      "turnover": 8076,
+      "changePct": -1.02,
       "source": "tencent"
     }
   },
@@ -276,12 +276,12 @@
       "error": null
     },
     "581000": {
-      "status": "failed",
+      "status": "ok",
       "source": "sse_pcf",
-      "tradingDay": null,
-      "componentCount": null,
-      "navPerShare": null,
-      "error": "fetch failed"
+      "tradingDay": "2026-11-25",
+      "componentCount": 60,
+      "navPerShare": 0.97,
+      "error": null
     },
     "581010": {
       "status": "ok",
@@ -350,58 +350,58 @@
   },
   "shares": {
     "581000": {
-      "shares10k": 234501.75,
-      "date": "2026-11-24",
-      "change10k": 42300,
-      "changePct": 22.01
+      "shares10k": 232401.75,
+      "date": "2026-11-25",
+      "change10k": -2100,
+      "changePct": -0.9
     },
     "581010": {
       "shares10k": 168504.62,
-      "date": "2026-11-24",
-      "change10k": 2000,
-      "changePct": 1.2
+      "date": "2026-11-25",
+      "change10k": 0,
+      "changePct": 0
     },
     "581020": {
-      "shares10k": 157410.1,
-      "date": "2026-11-24",
-      "change10k": -4200,
-      "changePct": -2.6
+      "shares10k": 149310.1,
+      "date": "2026-11-25",
+      "change10k": -8100,
+      "changePct": -5.15
     },
     "581030": {
-      "shares10k": 179604.07,
-      "date": "2026-11-24",
-      "change10k": 3400,
-      "changePct": 1.93
+      "shares10k": 174604.07,
+      "date": "2026-11-25",
+      "change10k": -5000,
+      "changePct": -2.78
     },
     "581050": {
-      "shares10k": 179601.13,
-      "date": "2026-11-24",
+      "shares10k": 179201.13,
+      "date": "2026-11-25",
       "change10k": -400,
       "changePct": -0.22
     },
     "581060": {
-      "shares10k": 144810.39,
-      "date": "2026-11-24",
-      "change10k": -15000,
-      "changePct": -9.39
+      "shares10k": 134310.39,
+      "date": "2026-11-25",
+      "change10k": -10500,
+      "changePct": -7.25
     },
     "581070": {
-      "shares10k": 156308.89,
-      "date": "2026-11-24",
-      "change10k": -14200,
-      "changePct": -8.33
+      "shares10k": 152808.89,
+      "date": "2026-11-25",
+      "change10k": -3500,
+      "changePct": -2.24
     },
     "581080": {
-      "shares10k": 167603.36,
-      "date": "2026-11-24",
-      "change10k": -3000,
-      "changePct": -1.76
+      "shares10k": 159803.36,
+      "date": "2026-11-25",
+      "change10k": -7800,
+      "changePct": -4.65
     },
     "581090": {
-      "shares10k": 141203.4,
-      "date": "2026-11-24",
-      "change10k": -9500,
-      "changePct": -6.3
+      "shares10k": 136803.4,
+      "date": "2026-11-25",
+      "change10k": -4400,
+      "changePct": -3.12
     }
   },
   "missingQuotes": []
