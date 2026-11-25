@@ -42,9 +42,9 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
   <p><a href={`${import.meta.env.BASE_URL}`}>← 回到18只总榜</a></p>
   <h1>{etf.name}</h1>
   <p class="lede">
-    {etf.manager} · {etf.exchange === 'SSE' ? '上交所' : '深交所'} · {etf.style}风格
-    {etf.benchmark ? ` · 业绩比较基准：${etf.benchmark}` : ''}
-    · 上市日期 {etf.listingDate} · 上市前仓位（2026-11-16）：{etf.position20261116}%
+    <span class="nobr">{etf.manager}</span> · <span class="nobr">{etf.exchange === 'SSE' ? '上交所' : '深交所'}</span> · <span class="nobr">{etf.style}风格</span>
+    {etf.benchmark ? (<> · <span class="nobr">业绩比较基准：{etf.benchmark}</span></>) : ''}
+    {' '}· <span class="nobr">上市日期 {etf.listingDate}</span> · <span class="nobr">上市前仓位（2026-11-16）：{etf.position20261116}%</span>
   </p>
 
   {q ? (
@@ -81,7 +81,7 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
       )}
       <div class="tbl-wrap">
         <table class="pcf">
-          <thead><tr><th>股票代码</th><th>股票名称</th><th>权重</th><th>数量/份数</th><th>价格条件</th></tr></thead>
+          <thead><tr><th>股票代码</th><th>股票名称</th><th>权重</th><th>数量/份数</th><th>价格条件</th><th>分析</th><th>报告</th></tr></thead>
           <tbody>
             {pcfSnap.top.map((t) => (
               <tr>
@@ -92,21 +92,29 @@ const gradeLabel = (gr: string) => (gr === 'A' ? 'A 优秀' : gr === 'B' ? 'B �
                 <td>
                   {verdicts[t.code] ? (
                     <>
-                      <span class="verdict-top">
-                        {verdicts[t.code].price === 'pass' ? (
-                          <span class="badge ok">通过</span>
-                        ) : (
-                          <span class="badge fail">未通过</span>
-                        )}
-                        <a href={`${import.meta.env.BASE_URL}stocks/${t.code}`}>分析 →</a>
-                        {turtleByCode[t.code] ? (
-                          <a href={turtleByCode[t.code].companyUrl} target="_blank" rel="noopener">
-                            {turtleByCode[t.code].reportCount} 份报告 →
-                          </a>
-                        ) : null}
-                      </span>
+                      {verdicts[t.code].price === 'pass' ? (
+                        <span class="badge ok">通过</span>
+                      ) : (
+                        <span class="badge fail">未通过</span>
+                      )}
                       <span class="verdict-detail">{verdicts[t.code].priceDetail}</span>
                     </>
+                  ) : (
+                    '—'
+                  )}
+                </td>
+                <td>
+                  {verdicts[t.code] ? (
+                    <a href={`${import.meta.env.BASE_URL}stocks/${t.code}`}>分析 →</a>
+                  ) : (
+                    '—'
+                  )}
+                </td>
+                <td>
+                  {turtleByCode[t.code] ? (
+                    <a href={turtleByCode[t.code].companyUrl} target="_blank" rel="noopener">
+                      {turtleByCode[t.code].reportCount} 份报告 →
+                    </a>
                   ) : (
                     '—'
                   )}

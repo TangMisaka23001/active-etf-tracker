@@ -41,10 +41,15 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
 h1 { font-size: 26px; line-height: 1.35; margin: 28px 0 10px; letter-spacing: -0.01em; }
 h2 { font-size: 19px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .lede { color: var(--muted); margin: 0 0 16px; max-width: 78ch; line-height: 1.75; text-wrap: balance; }
+.nobr { white-space: nowrap; }
 
-/* 详情页 PCF 表：价格条件列允许换行——徽章与链接在上、说明文字在下，避免整表被单行长文案撑出横向滚动 */
+/* 详情页 PCF 表：价格条件列允许换行——徽章在上、说明文字在下；分析、报告各成一列，避免链接挤在文案里 */
 .pcf td:nth-child(5) { white-space: normal; text-align: left; min-width: 300px; }
-.verdict-top { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.pcf th:nth-child(5) { text-align: left; }
+.pcf td:nth-child(6), .pcf td:nth-child(7) { white-space: nowrap; text-align: center; }
+.pcf th:nth-child(6), .pcf th:nth-child(7) { text-align: center; }
+/* PCF 表不撑满容器：7 列里只有价格条件列能吸掉多余宽度，封顶 1020px，免得“—”行留出大片空白 */
+.tbl-wrap:has(> table.pcf) { max-width: 1020px; }
 .verdict-detail { display: block; margin-top: 5px; font-size: 13px; line-height: 1.65; color: #3d4757; }
 
 /* 统计卡：等高，副文案贴底 */
@@ -110,7 +115,9 @@ tbody tr:last-child td { border-bottom: none; }
   table { font-size: 13px; }
   th, td { padding: 7px 8px; }
   h1 { font-size: 22px; }
-  /* 窄屏下 PCF 表藏掉数量列、收窄价格条件列，尽量一屏放下 */
-  .pcf th:nth-child(4), .pcf td:nth-child(4) { display: none; }
-  .pcf td:nth-child(5) { min-width: 170px; }
+  /* 窄屏下 PCF 表藏掉数量、报告两列，收窄价格条件列、收紧单元格，尽量一屏放下 */
+  .pcf th:nth-child(4), .pcf td:nth-child(4),
+  .pcf th:nth-child(7), .pcf td:nth-child(7) { display: none; }
+  .pcf td:nth-child(5) { min-width: 120px; }
+  .pcf th, .pcf td { padding: 7px 6px; }
 }
