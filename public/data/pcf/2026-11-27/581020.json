@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-27",
+  "etf": "581020",
+  "name": "华安均衡慧选主动管理ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-26",
+  "navPerCU": 2927618.4,
+  "navPerShare": 0.9759,
+  "componentCount": 49,
+  "top": [
+    {
+      "code": "300759",
+      "name": "康龙化成",
+      "weightPct": 2.7271,
+      "quantity": 2000,
+      "flag": "1"
+    },
+    {
+      "code": "300677",
+      "name": "英科医疗",
+      "weightPct": 2.5358,
+      "quantity": 1600,
+      "flag": "1"
+    },
+    {
+      "code": "002821",
+      "name": "凯莱英",
+      "weightPct": 2.3398,
+      "quantity": 500,
+      "flag": "1"
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "weightPct": 2.2509,
+      "quantity": 700,
+      "flag": "1"
+    },
+    {
+      "code": "300832",
+      "name": "新产业",
+      "weightPct": 1.9968,
+      "quantity": 1000,
+      "flag": "1"
+    },
+    {
+      "code": "300765",
+      "name": "石药创新",
+      "weightPct": 1.7507,
+      "quantity": 1700,
+      "flag": "1"
+    },
+    {
+      "code": "002001",
+      "name": "新和成",
+      "weightPct": 1.4407,
+      "quantity": 1700,
+      "flag": "1"
+    },
+    {
+      "code": "300760",
+      "name": "迈瑞医疗",
+      "weightPct": 1.2365,
+      "quantity": 200,
+      "flag": "1"
+    },
+    {
+      "code": "002422",
+      "name": "科伦药业",
+      "weightPct": 1.0269,
+      "quantity": 700,
+      "flag": "1"
+    },
+    {
+      "code": "000951",
+      "name": "中国重汽",
+      "weightPct": 0.9924,
+      "quantity": 1500,
+      "flag": "1"
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "weightPct": 0.9631,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "002415",
+      "name": "海康威视",
+      "weightPct": 0.9348,
+      "quantity": 800,
+      "flag": "1"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "weightPct": 0.7119,
+      "quantity": 100,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-27",
+  "etf": "581060",
+  "name": "永赢景气均衡主动管理ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-26",
+  "navPerCU": 2987792.46,
+  "navPerShare": 0.9959,
+  "componentCount": 37,
+  "top": [
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "weightPct": 3.3737,
+      "quantity": 1400,
+      "flag": "1"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "weightPct": 3.3135,
+      "quantity": 200,
+      "flag": "1"
+    },
+    {
+      "code": "000975",
+      "name": "山金国际",
+      "weightPct": 3.202,
+      "quantity": 4500,
+      "flag": "1"
+    },
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "weightPct": 1.8318,
+      "quantity": 1300,
+      "flag": "1"
+    },
+    {
+      "code": "300054",
+      "name": "鼎龙股份",
+      "weightPct": 1.7849,
+      "quantity": 1000,
+      "flag": "1"
+    },
+    {
+      "code": "300236",
+      "name": "上海新阳",
+      "weightPct": 1.7514,
+      "quantity": 800,
+      "flag": "1"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "weightPct": 1.6627,
+      "quantity": 300,
+      "flag": "1"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "weightPct": 1.3689,
+      "quantity": 100,
+      "flag": "1"
+    },
+    {
+      "code": "000338",
+      "name": "潍柴动力",
+      "weightPct": 0.9052,
+      "quantity": 1500,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": [
+      {
+        "code": "002371",
+        "name": "北方华创",
+        "from": 1.7825,
+        "to": 3.3135,
+        "delta": 1.531
+      }
+    ]
+  }
+}

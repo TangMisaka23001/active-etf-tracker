@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-27",
+  "etf": "581050",
+  "name": "易方达品质均衡主动管理ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-26",
+  "navPerCU": 1974385.81,
+  "navPerShare": 0.9872,
+  "componentCount": 35,
+  "top": [
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "weightPct": 3.1669,
+      "quantity": 300,
+      "flag": "1"
+    },
+    {
+      "code": "000568",
+      "name": "泸州老窖",
+      "weightPct": 2.8307,
+      "quantity": 700,
+      "flag": "1"
+    },
+    {
+      "code": "000100",
+      "name": "TCL科技",
+      "weightPct": 2.5168,
+      "quantity": 10100,
+      "flag": "1"
+    },
+    {
+      "code": "001979",
+      "name": "招商蛇口",
+      "weightPct": 2.5137,
+      "quantity": 7000,
+      "flag": "1"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "weightPct": 2.5071,
+      "quantity": 100,
+      "flag": "1"
+    },
+    {
+      "code": "000088",
+      "name": "盐田港",
+      "weightPct": 1.933,
+      "quantity": 8500,
+      "flag": "1"
+    },
+    {
+      "code": "000725",
+      "name": "京东方A",
+      "weightPct": 1.6828,
+      "quantity": 7500,
+      "flag": "1"
+    },
+    {
+      "code": "300573",
+      "name": "兴齐眼药",
+      "weightPct": 0.9658,
+      "quantity": 600,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [],
+    "removed": [],
+    "weightChanged": []
+  }
+}

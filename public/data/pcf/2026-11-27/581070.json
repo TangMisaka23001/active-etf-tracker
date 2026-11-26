@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-27",
+  "etf": "581070",
+  "name": "平安红利景气主动管理ETF",
+  "source": "sse_pcf",
+  "tradingDay": "2026-11-26",
+  "navPerCU": 1004348.27,
+  "navPerShare": 1.0043,
+  "componentCount": 57,
+  "top": [
+    {
+      "code": "000538",
+      "name": "云南白药",
+      "weightPct": 3.306,
+      "quantity": 600,
+      "flag": "1"
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "weightPct": 1.8746,
+      "quantity": 200,
+      "flag": "1"
+    },
+    {
+      "code": "000425",
+      "name": "徐工机械",
+      "weightPct": 1.8047,
+      "quantity": 2900,
+      "flag": "1"
+    },
+    {
+      "code": "002142",
+      "name": "宁波银行",
+      "weightPct": 1.7524,
+      "quantity": 500,
+      "flag": "1"
+    },
+    {
+      "code": "002001",
+      "name": "新和成",
+      "weightPct": 1.7292,
+      "quantity": 700,
+      "flag": "1"
+    },
+    {
+      "code": "002832",
+      "name": "比音勒芬",
+      "weightPct": 1.702,
+      "quantity": 600,
+      "flag": "1"
+    },
+    {
+      "code": "002170",
+      "name": "芭田股份",
+      "weightPct": 1.464,
+      "quantity": 1600,
+      "flag": "1"
+    },
+    {
+      "code": "000719",
+      "name": "中原传媒",
+      "weightPct": 1.4624,
+      "quantity": 1200,
+      "flag": "1"
+    },
+    {
+      "code": "002444",
+      "name": "巨星科技",
+      "weightPct": 1.2814,
+      "quantity": 500,
+      "flag": "1"
+    },
+    {
+      "code": "000338",
+      "name": "潍柴动力",
+      "weightPct": 1.2566,
+      "quantity": 700,
+      "flag": "1"
+    },
+    {
+      "code": "000951",
+      "name": "中国重汽",
+      "weightPct": 1.1572,
+      "quantity": 600,
+      "flag": "1"
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "weightPct": 0.9793,
+      "quantity": 400,
+      "flag": "1"
+    },
+    {
+      "code": "000690",
+      "name": "宝新能源",
+      "weightPct": 0.699,
+      "quantity": 1300,
+      "flag": "1"
+    },
+    {
+      "code": "002283",
+      "name": "天润工业",
+      "weightPct": 0.6878,
+      "quantity": 1100,
+      "flag": "1"
+    },
+    {
+      "code": "002293",
+      "name": "罗莱生活",
+      "weightPct": 0.6213,
+      "quantity": 500,
+      "flag": "1"
+    },
+    {
+      "code": "300054",
+      "name": "鼎龙股份",
+      "weightPct": 0.531,
+      "quantity": 100,
+      "flag": "1"
+    }
+  ],
+  "status": "ok",
+  "changes": {
+    "added": [
+      {
+        "code": "002283",
+        "name": "天润工业",
+        "weightPct": 0.6878
+      }
+    ],
+    "removed": [],
+    "weightChanged": []
+  }
+}

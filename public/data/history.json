@@ -1122,6 +1122,393 @@
           "date": "2026-11-24"
         }
       }
+    },
+    {
+      "date": "2026-11-27",
+      "etfs": {
+        "158900": {
+          "price": 0.979,
+          "prevClose": 0.973,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1423785,
+          "turnover": 13955,
+          "changePct": 0.62,
+          "source": "tencent"
+        },
+        "158901": {
+          "price": 0.982,
+          "prevClose": 0.975,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1005579,
+          "turnover": 9877,
+          "changePct": 0.72,
+          "source": "tencent"
+        },
+        "158902": {
+          "price": 0.982,
+          "prevClose": 0.973,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 809396,
+          "turnover": 7947,
+          "changePct": 0.92,
+          "source": "tencent"
+        },
+        "158903": {
+          "price": 1.002,
+          "prevClose": 1,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1540897,
+          "turnover": 15437,
+          "changePct": 0.2,
+          "source": "tencent"
+        },
+        "158905": {
+          "price": 0.97,
+          "prevClose": 0.964,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 691450,
+          "turnover": 6715,
+          "changePct": 0.62,
+          "source": "tencent"
+        },
+        "158906": {
+          "price": 0.948,
+          "prevClose": 0.945,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1053435,
+          "turnover": 9973,
+          "changePct": 0.32,
+          "source": "tencent"
+        },
+        "158907": {
+          "price": 0.969,
+          "prevClose": 0.962,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 2058154,
+          "turnover": 20000,
+          "changePct": 0.73,
+          "source": "tencent"
+        },
+        "158908": {
+          "price": 0.956,
+          "prevClose": 0.955,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 747708,
+          "turnover": 7147,
+          "changePct": 0.1,
+          "source": "tencent"
+        },
+        "158909": {
+          "price": 0.962,
+          "prevClose": 0.967,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 503530,
+          "turnover": 4855,
+          "changePct": -0.52,
+          "source": "tencent"
+        },
+        "581000": {
+          "price": 0.948,
+          "prevClose": 0.944,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 996633,
+          "turnover": 9459,
+          "changePct": 0.42,
+          "source": "tencent"
+        },
+        "581010": {
+          "price": 0.978,
+          "prevClose": 0.981,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1147782,
+          "turnover": 11250,
+          "changePct": -0.31,
+          "source": "tencent"
+        },
+        "581020": {
+          "price": 0.974,
+          "prevClose": 0.975,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1009628,
+          "turnover": 9860,
+          "changePct": -0.1,
+          "source": "tencent"
+        },
+        "581030": {
+          "price": 0.963,
+          "prevClose": 0.972,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1418913,
+          "turnover": 13721,
+          "changePct": -0.93,
+          "source": "tencent"
+        },
+        "581050": {
+          "price": 0.985,
+          "prevClose": 0.988,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 866595,
+          "turnover": 8557,
+          "changePct": -0.3,
+          "source": "tencent"
+        },
+        "581060": {
+          "price": 0.992,
+          "prevClose": 0.99,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 1359241,
+          "turnover": 13508,
+          "changePct": 0.2,
+          "source": "tencent"
+        },
+        "581070": {
+          "price": 1.004,
+          "prevClose": 1.007,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 276845,
+          "turnover": 2781,
+          "changePct": -0.3,
+          "source": "tencent"
+        },
+        "581080": {
+          "price": 0.935,
+          "prevClose": 0.943,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 783193,
+          "turnover": 7354,
+          "changePct": -0.85,
+          "source": "tencent"
+        },
+        "581090": {
+          "price": 0.98,
+          "prevClose": 0.972,
+          "open": null,
+          "high": null,
+          "low": null,
+          "volume": 616370,
+          "turnover": 6045,
+          "changePct": 0.82,
+          "source": "tencent"
+        }
+      },
+      "pcfStatus": {
+        "158900": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 85,
+          "navPerShare": 0.9768,
+          "error": null
+        },
+        "158901": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 239,
+          "navPerShare": 0.9799,
+          "error": null
+        },
+        "158902": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 89,
+          "navPerShare": 0.9757,
+          "error": null
+        },
+        "158903": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 58,
+          "navPerShare": 1.0045,
+          "error": null
+        },
+        "158905": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 43,
+          "navPerShare": 0.9677,
+          "error": null
+        },
+        "158906": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 86,
+          "navPerShare": 0.9445,
+          "error": null
+        },
+        "158907": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 54,
+          "navPerShare": 0.9681,
+          "error": null
+        },
+        "158908": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 271,
+          "navPerShare": 0.9564,
+          "error": null
+        },
+        "158909": {
+          "status": "ok",
+          "source": "szse_pcf_txt",
+          "tradingDay": "2026-11-26",
+          "componentCount": 93,
+          "navPerShare": 0.9696,
+          "error": null
+        },
+        "581000": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 59,
+          "navPerShare": 0.9428,
+          "error": null
+        },
+        "581010": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 480,
+          "navPerShare": 0.9783,
+          "error": null
+        },
+        "581020": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 49,
+          "navPerShare": 0.9759,
+          "error": null
+        },
+        "581030": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 44,
+          "navPerShare": 0.972,
+          "error": null
+        },
+        "581050": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 35,
+          "navPerShare": 0.9872,
+          "error": null
+        },
+        "581060": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 37,
+          "navPerShare": 0.9959,
+          "error": null
+        },
+        "581070": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 57,
+          "navPerShare": 1.0043,
+          "error": null
+        },
+        "581080": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 178,
+          "navPerShare": 0.9434,
+          "error": null
+        },
+        "581090": {
+          "status": "ok",
+          "source": "sse_pcf",
+          "tradingDay": "2026-11-26",
+          "componentCount": 35,
+          "navPerShare": 0.9758,
+          "error": null
+        }
+      },
+      "shares": {
+        "581000": {
+          "shares10k": 231501.75,
+          "date": "2026-11-26"
+        },
+        "581010": {
+          "shares10k": 169504.62,
+          "date": "2026-11-26"
+        },
+        "581020": {
+          "shares10k": 145410.1,
+          "date": "2026-11-26"
+        },
+        "581030": {
+          "shares10k": 171804.07,
+          "date": "2026-11-26"
+        },
+        "581050": {
+          "shares10k": 178801.13,
+          "date": "2026-11-26"
+        },
+        "581060": {
+          "shares10k": 124410.39,
+          "date": "2026-11-26"
+        },
+        "581070": {
+          "shares10k": 151108.89,
+          "date": "2026-11-26"
+        },
+        "581080": {
+          "shares10k": 157203.36,
+          "date": "2026-11-26"
+        },
+        "581090": {
+          "shares10k": 133203.4,
+          "date": "2026-11-26"
+        }
+      }
     }
   ],
   "note": "每日行情历史，由 scripts/fetch-data.mjs 每天收盘后追加。每一项是一天的18只快照。首日为2026-11-23上市日。",
